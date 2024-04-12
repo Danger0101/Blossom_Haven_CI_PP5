@@ -58,7 +58,7 @@ INSTALLED_APPS = [
     # allauth apps
     'allauth',
     'allauth.account',
-    'allauth.socialaccount.providers.paypal',
+    'allauth.socialaccount',
     
     # crispy forms
     'crispy_forms',
