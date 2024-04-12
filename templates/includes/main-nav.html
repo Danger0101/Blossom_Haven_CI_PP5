@@ -22,10 +22,10 @@
                 Floral Arrangements
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="{% url 'products' %}?category=rose" class="dropdown-item">Roses</a>
-                <a href="{% url 'products' %}?category=vibrant" class="dropdown-item">Vibrant</a>
+                <a href="{% url 'products' %}?category=roses" class="dropdown-item">Roses</a>
+                <a href="{% url 'products' %}?category=vibrant" class="dropdown-item">vibrant</a>
                 <a href="{% url 'products' %}?category=luxurious" class="dropdown-item">Luxurious</a>
-                <a href="{% url 'products' %}?category=activewear,essentials,jeans,shirts" class="dropdown-item">All Arangements</a>
+                <a href="{% url 'products' %}?category=roses,vibrant,luxurious" class="dropdown-item">All Arangements</a>
             </div>
         </li>
 
@@ -41,7 +41,7 @@
             </div>
         </li>
 
-        <li class="nav-item dropdown">
+        {% comment %} <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Special Offers
             </a>
@@ -51,6 +51,6 @@
                 <a href="{% url 'products' %}?category=clearance" class="dropdown-item">Clearance</a>
                 <a href="{% url 'products' %}?category=new_arrivals,deals,clearance" class="dropdown-item">All Specials</a>
             </div>
-        </li>
+        </li> {% endcomment %}
     </ul>
 </div>
