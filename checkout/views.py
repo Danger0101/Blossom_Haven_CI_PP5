@@ -9,7 +9,7 @@ from .models import Order, OrderLineItem
 from products.models import Product
 from profiles.models import UserProfile
 from profiles.forms import UserProfileForm
-from bag.contexts import bag_contents
+from cart.contexts import cart_contents
 
 import stripe
 import json
@@ -21,7 +21,7 @@ def cache_checkout_data(request):
         pid = request.POST.get('client_secret').split('_secret')[0]
         stripe.api_key = settings.STRIPE_SECRET_KEY
         stripe.PaymentIntent.modify(pid, metadata={
-            'bag': json.dumps(request.session.get('bag', {})),
+            'cart': json.dumps(request.session.get('cart', {})),
             'save_info': request.POST.get('save_info'),
             'username': request.user,
         })
@@ -31,13 +31,12 @@ def cache_checkout_data(request):
             processed right now. Please try again later.')
         return HttpResponse(content=e, status=400)
 
-
 def checkout(request):
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
     stripe_secret_key = settings.STRIPE_SECRET_KEY
 
     if request.method == 'POST':
-        bag = request.session.get('bag', {})
+        cart = request.session.get('cart', {})
 
         form_data = {
             'full_name': request.POST['full_name'],
@@ -51,14 +50,30 @@ def checkout(request):
             'county': request.POST['county'],
         }
 
-        order_form = OrderForm(form_data)
+        order_form = OrderForm(request.user, request.POST)  # Pass request.user to form
         if order_form.is_valid():
             order = order_form.save(commit=False)
             pid = request.POST.get('client_secret').split('_secret')[0]
             order.stripe_pid = pid
-            order.original_bag = json.dumps(bag)
+            order.original_cart = json.dumps(cart)
+            # New Addidtion
+            # Check if a shipping address is selected or a new one is entered
+            selected_shipping_address = order_form.cleaned_data.get('shipping_address')
+            if selected_shipping_address:
+                # Set the order's shipping address to the selected one
+                shipping_address = ShippingAddress.objects.get(pk=selected_shipping_address.pk)
+                order.full_name = shipping_address.full_name
+                order.email = shipping_address.email
+                order.phone_number = shipping_address.phone_number
+                order.country = shipping_address.country
+                order.postcode = shipping_address.postcode
+                order.town_or_city = shipping_address.town_or_city
+                order.street_address1 = shipping_address.street_address1
+                order.street_address2 = shipping_address.street_address2
+                order.county = shipping_address.county
+            # End of new addition
             order.save()
-            for item_id, item_data in bag.items():
+            for item_id, item_data in cart.items():
                 try:
                     product = Product.objects.get(id=item_id)
                     if isinstance(item_data, int):
@@ -79,11 +94,11 @@ def checkout(request):
                             order_line_item.save()
                 except Product.DoesNotExist:
                     messages.error(request, (
-                        "One of the products in your bag wasn't found in our database. "
+                        "One of the products in your cart wasn't found in our database. "
                         "Please call us for assistance!")
                     )
                     order.delete()
-                    return redirect(reverse('view_bag'))
+                    return redirect(reverse('view_cart'))
 
             # Save the info to the user's profile if all is well
             request.session['save_info'] = 'save-info' in request.POST
@@ -92,13 +107,13 @@ def checkout(request):
             messages.error(request, 'There was an error with your form. \
                 Please double check your information.')
     else:
-        bag = request.session.get('bag', {})
-        if not bag:
-            messages.error(request, "There's nothing in your bag at the moment")
+        cart = request.session.get('cart', {})
+        if not cart:
+            messages.error(request, "There's nothing in your cart at the moment")
             return redirect(reverse('products'))
 
-        current_bag = bag_contents(request)
-        total = current_bag['grand_total']
+        current_cart = cart_contents(request)
+        total = current_cart['grand_total']
         stripe_total = round(total * 100)
         stripe.api_key = stripe_secret_key
         intent = stripe.PaymentIntent.create(
@@ -110,7 +125,7 @@ def checkout(request):
         if request.user.is_authenticated:
             try:
                 profile = UserProfile.objects.get(user=request.user)
-                order_form = OrderForm(initial={
+                order_form = OrderForm(request.user, initial={
                     'full_name': profile.user.get_full_name(),
                     'email': profile.user.email,
                     'phone_number': profile.default_phone_number,
@@ -122,9 +137,9 @@ def checkout(request):
                     'county': profile.default_county,
                 })
             except UserProfile.DoesNotExist:
-                order_form = OrderForm()
+                order_form = OrderForm(request.user)
         else:
-            order_form = OrderForm()
+            order_form = OrderForm(request.user)
 
     if not stripe_public_key:
         messages.warning(request, 'Stripe public key is missing. \
@@ -172,8 +187,8 @@ def checkout_success(request, order_number):
         Your order number is {order_number}. A confirmation \
         email will be sent to {order.email}.')
 
-    if 'bag' in request.session:
-        del request.session['bag']
+    if 'cart' in request.session:
+        del request.session['cart']
 
     template = 'checkout/checkout_success.html'
     context = {
