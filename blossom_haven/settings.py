@@ -117,6 +117,9 @@ TEMPLATES = [
 
                 # `allauth` needs this from django
                 'django.template.context_processors.request',
+                
+                # Cart app contents
+                'cart.contexts.cart_contents',
             ],
         },
     },
