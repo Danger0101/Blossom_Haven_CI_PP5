@@ -1,5 +1,6 @@
 # Using some Botique Ado project code as a base for this project
 from django.db import models
+from cloudinary.models import CloudinaryField
 
 
 class Category(models.Model):
@@ -14,8 +15,7 @@ class Category(models.Model):
 
     def get_friendly_name(self):
         return self.friendly_name
-# End old code
-# New addition
+
 class Flower(models.Model):
     name = models.CharField(max_length=254)
     description = models.TextField()
@@ -23,7 +23,6 @@ class Flower(models.Model):
 
     def __str__(self):
         return self.name
-# End of new addition
 
 class Product(models.Model):
     category = models.ManyToManyField('Category', blank=True)
@@ -33,8 +32,7 @@ class Product(models.Model):
     price = models.DecimalField(max_digits=6, decimal_places=2)
     rating = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)
     image_url = models.URLField(max_length=1024, null=True, blank=True)
-    image = models.ImageField(null=True, blank=True)
-    # New addition
+    image = CloudinaryField('image', null=True, blank=True)
     is_available = models.BooleanField(default=True)
 
     def __str__(self):
@@ -65,4 +63,3 @@ class AddOn(models.Model):
 
     def __str__(self):
         return self.name
-# End of new addition
