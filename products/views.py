@@ -1,10 +1,15 @@
+# Uses Boutique Ado project code with a change to import statement
+# To match new models.py file
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
+from django.conf import settings
 
-from .models import Product, Category
+import cloudinary
+from cloudinary import uploader
+from .models import Product, Category, BouquetSize, Flower, AddOn
 from .forms import ProductForm
 
 # Create your views here.
@@ -81,7 +86,12 @@ def add_product(request):
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES)
         if form.is_valid():
-            product = form.save()
+            # Upload image to Cloudinary
+            image = request.FILES['image']
+            uploaded_image = uploader.upload(image, folder=settings.CLOUDINARY_FOLDER_NAME)
+            product = form.save(commit=False)
+            product.image = uploaded_image.url
+            product.save()
             messages.success(request, 'Successfully added product!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
@@ -108,6 +118,7 @@ def edit_product(request, product_id):
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES, instance=product)
         if form.is_valid():
+            # Save the updated product details
             form.save()
             messages.success(request, 'Successfully updated product!')
             return redirect(reverse('product_detail', args=[product.id]))
@@ -124,7 +135,6 @@ def edit_product(request, product_id):
     }
 
     return render(request, template, context)
-
 
 @login_required
 def delete_product(request, product_id):
