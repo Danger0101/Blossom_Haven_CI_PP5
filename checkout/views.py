@@ -23,7 +23,7 @@ def cache_checkout_data(request):
         stripe.PaymentIntent.modify(pid, metadata={
             'cart': json.dumps(request.session.get('cart', {})),
             'save_info': request.POST.get('save_info'),
-            'username': request.user,
+            'username': request.user.username if request.user.is_authenticated else None,
         })
         return HttpResponse(status=200)
     except Exception as e:
@@ -46,21 +46,20 @@ def checkout(request):
             'postcode': request.POST['postcode'],
             'town_or_city': request.POST['town_or_city'],
             'street_address1': request.POST['street_address1'],
-            'street_address2': request.POST['street_address2'],
-            'county': request.POST['county'],
+            'street_address2': request.POST.get('street_address2', ''),
+            'county': request.POST.get('county', ''),
         }
 
-        order_form = OrderForm(request.user, request.POST)  # Pass request.user to form
+        order_form = OrderForm(form_data)
         if order_form.is_valid():
             order = order_form.save(commit=False)
             pid = request.POST.get('client_secret').split('_secret')[0]
             order.stripe_pid = pid
             order.original_cart = json.dumps(cart)
-            # New Addidtion
             # Check if a shipping address is selected or a new one is entered
             selected_shipping_address = order_form.cleaned_data.get('shipping_address')
+            # Set the order's shipping address to the selected one
             if selected_shipping_address:
-                # Set the order's shipping address to the selected one
                 shipping_address = ShippingAddress.objects.get(pk=selected_shipping_address.pk)
                 order.full_name = shipping_address.full_name
                 order.email = shipping_address.email
@@ -71,7 +70,6 @@ def checkout(request):
                 order.street_address1 = shipping_address.street_address1
                 order.street_address2 = shipping_address.street_address2
                 order.county = shipping_address.county
-            # End of new addition
             order.save()
             for item_id, item_data in cart.items():
                 try:
@@ -125,7 +123,7 @@ def checkout(request):
         if request.user.is_authenticated:
             try:
                 profile = UserProfile.objects.get(user=request.user)
-                order_form = OrderForm(request.user, initial={
+                order_form = OrderForm(initial={
                     'full_name': profile.user.get_full_name(),
                     'email': profile.user.email,
                     'phone_number': profile.default_phone_number,
@@ -137,9 +135,9 @@ def checkout(request):
                     'county': profile.default_county,
                 })
             except UserProfile.DoesNotExist:
-                order_form = OrderForm(request.user)
+                order_form = OrderForm()
         else:
-            order_form = OrderForm(request.user)
+            order_form = OrderForm()
 
     if not stripe_public_key:
         messages.warning(request, 'Stripe public key is missing. \
@@ -156,7 +154,7 @@ def checkout(request):
 
 
 def checkout_success(request, order_number):
-    """
+     """
     Handle successful checkouts
     """
     save_info = request.session.get('save_info')
