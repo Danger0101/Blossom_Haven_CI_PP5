@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 
 from pathlib import Path
 import os
+import cloudinary
 from env import *
 # import dj_database_url
 
@@ -26,7 +27,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ['DJANGO_SECRET_KEY']
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
     '.herokuapp.com',
@@ -34,8 +35,6 @@ ALLOWED_HOSTS = [
     '127.0.0.1',
     'https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/'
 ]
-
-
 
 # Application definition
 
@@ -79,6 +78,9 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    
+    # Whitenoise for static files
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     
     # allauth account middleware:
     "allauth.account.middleware.AccountMiddleware",
@@ -234,3 +236,14 @@ STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
 
 # Email
 DEFAULT_FROM_EMAIL = 'shop.blossom.haven@gmail.com'
+
+# Cloudinary
+CLOUDINARY_NAME = os.getenv('CLOUDINARY_NAME', '')
+CLOUDINARY_API_KEY = os.getenv('CLOUDINARY_API_KEY', '')
+CLOUDINARY_API_SECRET_KEY = os.getenv('CLOUDINARY_API_SECRET_KEY', '')       
+cloudinary.config( 
+    cloud_name=CLOUDINARY_NAME,
+    api_key=CLOUDINARY_API_KEY,
+    api_secret=CLOUDINARY_API_SECRET_KEY
+)
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
