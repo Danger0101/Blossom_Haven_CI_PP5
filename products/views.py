@@ -9,7 +9,7 @@ from django.conf import settings
 
 import cloudinary
 from cloudinary import uploader
-from .models import Product, Category, BouquetSize, Flower, AddOn
+from .models import Product, Category
 from .forms import ProductForm
 
 # Create your views here.
