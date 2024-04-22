@@ -1,7 +1,6 @@
-# products/models.py
 from django.db import models
 from cloudinary.models import CloudinaryField
-from inventory.models import Flower
+import uuid
 
 class Category(models.Model):
     class Meta:
@@ -17,7 +16,7 @@ class Category(models.Model):
         return self.friendly_name
 
 class Product(models.Model):
-    category = models.ManyToManyField('Category', blank=True)
+    category = models.ManyToManyField(Category, blank=True)
     sku = models.CharField(max_length=254, null=True, blank=True, unique=True)
     name = models.CharField(max_length=254)
     description = models.TextField()
@@ -25,8 +24,21 @@ class Product(models.Model):
     rating = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)
     image_url = models.URLField(max_length=1024, null=True, blank=True)
     image = CloudinaryField('image', null=True, blank=True)
-    bouquet_sizes = models.ManyToManyField('inventory.BouquetSize', related_name='products')
-    addons = models.ManyToManyField('inventory.AddOn', related_name='products')
 
+    def __str__(self):
+        return self.name
+    
+    def save(self, *args, **kwargs):
+        if not self.sku or Product.objects.filter(sku=self.sku).exists():
+            self.sku = str(uuid.uuid4()).replace('-', '').upper()[:10]
+        super().save(*args, **kwargs)
+
+class AddOn(models.Model):
+    sku = models.CharField(max_length=254, null=True, blank=True, unique=True)
+    name = models.CharField(max_length=254)
+    price = models.DecimalField(max_digits=6, decimal_places=2)
+    image_url = models.URLField(max_length=1024, null=True, blank=True)
+    image = CloudinaryField('image', null=True, blank=True)
+    
     def __str__(self):
         return self.name
