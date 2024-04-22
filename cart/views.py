@@ -21,6 +21,13 @@ def add_to_cart(request, item_id):
         size = request.POST['product_size']
     cart = request.session.get('cart', {})
 
+    if product.inventory.quantity == 0:
+        messages.error(request, f'This product is currently out of stock.')
+        return redirect(redirect_url)
+    elif product.inventory.quantity < quantity:
+        messages.error(request, f'Only {product.inventory.quantity} items available in stock.')
+        return redirect(redirect_url)
+
     if size:
         if item_id in list(cart.keys()):
             if size in cart[item_id]['items_by_size'].keys():
@@ -42,8 +49,8 @@ def add_to_cart(request, item_id):
 
     request.session['cart'] = cart
     return redirect(redirect_url)
-    
 
+    
 def adjust_cart(request, item_id):
     """Adjust the quantity of the specified product to the specified amount"""
 
