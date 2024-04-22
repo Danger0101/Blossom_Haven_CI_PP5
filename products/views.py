@@ -86,12 +86,20 @@ def add_product(request):
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES)
         if form.is_valid():
+            product = form.save(commit=False)
             # Upload image to Cloudinary
             image = request.FILES['image']
             uploaded_image = uploader.upload(image, folder=settings.CLOUDINARY_FOLDER_NAME)
-            product = form.save(commit=False)
             product.image = uploaded_image.url
             product.save()
+            # Create or update inventory entry
+            initial_quantity = form.cleaned_data.get('initial_quantity')
+            inventory, created = Inventory.objects.get_or_create(product=product)
+            if created:
+                inventory.quantity = initial_quantity
+            else:
+                inventory.quantity += initial_quantity
+            inventory.save()
             messages.success(request, 'Successfully added product!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
@@ -119,7 +127,16 @@ def edit_product(request, product_id):
         form = ProductForm(request.POST, request.FILES, instance=product)
         if form.is_valid():
             # Save the updated product details
-            form.save()
+            product = form.save()
+            # Update inventory if initial_quantity is provided
+            initial_quantity = form.cleaned_data.get('initial_quantity')
+            if initial_quantity is not None:
+                inventory, created = Inventory.objects.get_or_create(product=product)
+                if created:
+                    inventory.quantity = initial_quantity
+                else:
+                    inventory.quantity += initial_quantity
+                inventory.save()
             messages.success(request, 'Successfully updated product!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
@@ -135,6 +152,7 @@ def edit_product(request, product_id):
     }
 
     return render(request, template, context)
+
 
 @login_required
 def delete_product(request, product_id):
