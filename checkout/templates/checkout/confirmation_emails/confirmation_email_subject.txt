@@ -1,1 +1,1 @@
-Boutique Ado Confirmation for Order Number {{ order.order_number }}
+Blossom Haven Confirmation for Order Number {{ order.order_number }}
