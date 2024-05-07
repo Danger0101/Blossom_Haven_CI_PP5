@@ -23,7 +23,9 @@
                             {% if item.product.image %}
                             <img class="w-100" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
                             {% else %}
-                            <img class="w-100" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.product.name }}">
+                                <a href="">
+                                    <img class="card-img-top img-fluid" src="https://res.cloudinary.com/dcfn1wr8r/image/upload/f_auto,q_auto/ebyvaxpq9apybsagk0xu" alt="{{ product.name }}">
+                                </a>
                             {% endif %}
                         </div>
                         <div class="col-9">
