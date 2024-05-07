@@ -1,12 +1,5 @@
 from django.contrib import admin
 from .models import Product, Category
-from inventory.models import Inventory
-
-
-class InventoryInline(admin.StackedInline):
-    model = Inventory
-    can_delete = False
-    verbose_name_plural = 'Inventory'
 
 
 class ProductAdmin(admin.ModelAdmin):
@@ -19,7 +12,6 @@ class ProductAdmin(admin.ModelAdmin):
     ordering = ('name', 'sku', 'price', 'rating',)
     search_fields = ('sku', 'name')
     list_per_page = 20
-    inlines = (InventoryInline,)
 
 
 class CategoryAdmin(admin.ModelAdmin):
