@@ -6,6 +6,7 @@ from inventory.models import Inventory
 
 class ProductForm(forms.ModelForm):
     quantity = forms.IntegerField(label='Quantity', required=True)
+    is_addon = forms.BooleanField(label='Is Addon', required=False)
 
     class Meta:
         model = Product
@@ -18,6 +19,7 @@ class ProductForm(forms.ModelForm):
             'rating',
             'image',
             'image_url',
+            'is_addon',
         ]
 
     image = forms.ImageField(label='Image', required=False, widget=CustomClearableFileInput)
@@ -39,6 +41,9 @@ class ProductForm(forms.ModelForm):
             else:
                 initial_quantity = 0
             self.fields['quantity'].initial = initial_quantity
+
+            # Set initial value for is_addon field
+            self.fields['is_addon'].initial = self.instance.is_addon
 
     def save(self, commit=True):
         # Save inventory data along with product
