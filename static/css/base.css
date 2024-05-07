@@ -54,7 +54,6 @@ body {
 .btn-black:focus {
         background: #b0eca8;
         color: #000;
-        font-size: 1.25rem;
 }
 
 .dropdown-menu {
@@ -326,6 +325,18 @@ input[name='q']::placeholder {
         border-radius: 0;
 }
 
+/* Addon image styles */
+.addon-item .addon-image img {
+        max-width: 75px;
+        max-height: 75px;
+        width: auto;
+        height: auto;
+}
+
+.table th,
+.table td {
+        vertical-align: middle;
+}
 
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
@@ -388,4 +399,33 @@ input[name='q']::placeholder {
         .decrement-qty {
                 padding: .25rem .5rem !important;
         }
+}
+
+@media (max-width: 850px) {
+    .icon-mobile {
+        font-size: 0.25rem;
+        width: 0.25rem;
+        height: 0.25rem;
+    }
+
+    .mobile-cart-addon {
+        font-size: 1rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    .addon-item .addon-image img {
+        max-width: 35px;
+        max-height: 35px;
+        width: auto;
+        height: auto;
+    }
+
+    .table th, 
+    .table td {
+        vertical-align: middle;
+        font-size: 0.75rem;
+        padding: 0.25rem !important;
+        margin: 0.25rem !important;
+    }
 }
