@@ -89,19 +89,21 @@ def add_product(request):
         form = ProductForm(request.POST, request.FILES)
         if form.is_valid():
             product = form.save(commit=False)
-            # Upload image to Cloudinary
-            image = request.FILES['image']
-            uploaded_image = uploader.upload(image, folder=settings.CLOUDINARY_FOLDER_NAME)
-            product.image = uploaded_image.url
+            # Check if 'image' key exists in request.FILES
+            if 'image' in request.FILES:
+                image = request.FILES['image']
+                # Upload image to Cloudinary
+                uploaded_image = uploader.upload(image, folder=settings.CLOUDINARY_FOLDER_NAME)
+                product.image = uploaded_image.url
             product.save()
-            # Create or update inventory entry
-            initial_quantity = form.cleaned_data.get('initial_quantity')
-            inventory, created = Inventory.objects.get_or_create(product=product)
-            if created:
+
+            # Link initial quantity to the product
+            initial_quantity = form.cleaned_data.get('quantity')
+            if initial_quantity is not None:
+                inventory, created = Inventory.objects.get_or_create(product=product)
                 inventory.quantity = initial_quantity
-            else:
-                inventory.quantity += initial_quantity
-            inventory.save()
+                inventory.save()
+
             messages.success(request, 'Successfully added product!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
