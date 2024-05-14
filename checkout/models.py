@@ -11,6 +11,14 @@ from profiles.models import UserProfile
 
 
 class Order(models.Model):
+    STATUS_CHOICES = (
+        ('P', 'Pending'),
+        ('S', 'Shipped'),
+        ('D', 'Delivered'),
+        ('C', 'Cancelled'),
+    )
+    status = models.CharField(max_length=1, choices=STATUS_CHOICES, default='P')
+    tracking_number = models.CharField(max_length=50, null=True, blank=True)
     order_number = models.CharField(max_length=32, null=False, editable=False)
     user_profile = models.ForeignKey(UserProfile, on_delete=models.SET_NULL,
                                      null=True, blank=True, related_name='orders')
