@@ -31,6 +31,9 @@ def all_products(request):
                 products = products.annotate(lower_name=Lower('name'))
             if sortkey == 'category':
                 sortkey = 'category__name'
+            if sortkey == 'rating':
+                sortkey = 'avg_rating'
+                products = products.annotate(avg_rating=Avg('reviews__user_rating'))
             if 'direction' in request.GET:
                 direction = request.GET['direction']
                 if direction == 'desc':
