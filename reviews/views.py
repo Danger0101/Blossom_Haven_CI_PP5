@@ -9,6 +9,13 @@ from products.models import Product
 @login_required
 def create_review(request, product_id):
     product = get_object_or_404(Product, pk=product_id)
+    
+    # Check if the user has already written a review for this product
+    existing_review = Review.objects.filter(product=product, user=request.user).exists()
+    if existing_review:
+        messages.warning(request, 'You have already submitted a review for this product.')
+        return redirect('product_detail', product_id=product_id)
+    
     if request.method == 'POST':
         form = ReviewForm(request.POST)
         if form.is_valid():
