@@ -2,6 +2,8 @@ from django.contrib import admin
 from .models import Review
 
 class ReviewAdmin(admin.ModelAdmin):
+    readonly_fields = ('date', 'edit_date', 'user', 'product', 'review_title', 'user_rating', 'review')
+    
     list_display = (
         'product',
         'user',
