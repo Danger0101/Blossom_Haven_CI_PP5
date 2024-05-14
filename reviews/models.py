@@ -7,10 +7,23 @@ from products.models import Product
 User = get_user_model()
 
 class Review(models.Model):
-    product = models.ForeignKey(Product, null=True, blank=True, on_delete=models.CASCADE)
-    user = models.ForeignKey(User, null=True, blank=True, on_delete=models.CASCADE)
-    user_rating = models.IntegerField(default=0, validators=[MinValueValidator(0), MaxValueValidator(5)])
-    review_title = models.CharField(max_length=100, null=True, blank=True)
+    product = models.ForeignKey(
+        Product,
+        related_name='reviews',
+        null=True,
+        on_delete=models.CASCADE)
+    user = models.ForeignKey(
+        User,
+        related_name='reviews',
+        null=True,
+        on_delete=models.CASCADE)
+    user_rating = models.IntegerField(
+        default=0,
+        validators=[MinValueValidator(0),MaxValueValidator(5)])
+    review_title = models.CharField(
+        max_length=100,
+        null=True,
+        blank=True)
     review = models.TextField()
     date = models.DateTimeField(auto_now_add=True)
     edit_date = models.DateTimeField(auto_now=True)
