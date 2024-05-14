@@ -16,7 +16,6 @@ class ProductForm(forms.ModelForm):
             'name',
             'description',
             'price',
-            'rating',
             'image',
             'image_url',
             'is_addon',

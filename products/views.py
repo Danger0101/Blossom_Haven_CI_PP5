@@ -1,22 +1,20 @@
-# Uses Boutique Ado project code with a change to import statement
-# To match new models.py file
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
-from django.db.models import Q
+from django.db.models import Q, Avg
 from django.db.models.functions import Lower
 from django.conf import settings
+from django.db.models import Avg
 
 import cloudinary
 from cloudinary import uploader
 from .models import Product, Category
 from .forms import ProductForm
 from inventory.models import Inventory
-
+from reviews.models import Review
 
 def all_products(request):
     """ A view to show all products, including sorting and search queries """
-
     products = Product.objects.all()
     query = None
     categories = None
@@ -52,6 +50,10 @@ def all_products(request):
             
             queries = Q(name__icontains=query) | Q(description__icontains=query)
             products = products.filter(queries)
+    
+    for product in products:
+        avg_rating = Review.objects.filter(product=product).aggregate(Avg('user_rating'))
+        product.avg_rating = avg_rating['user_rating__avg']
 
     current_sorting = f'{sort}_{direction}'
 
@@ -69,10 +71,13 @@ def product_detail(request, product_id):
     """ A view to show individual product details """
     product = get_object_or_404(Product, pk=product_id)
     addon_products = Product.objects.filter(is_addon=True)
+    # Calculate the average rating for the product
+    product_avg_rating = Review.objects.filter(product=product).aggregate(Avg('user_rating'))['user_rating__avg']
     
     context = {
         'product': product,
         'addon_products': addon_products,
+        'product_avg_rating': product_avg_rating,
     }
 
     return render(request, 'products/product_detail.html', context)

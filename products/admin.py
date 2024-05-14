@@ -7,9 +7,8 @@ class ProductAdmin(admin.ModelAdmin):
         'sku',
         'name',
         'price',
-        'rating',
     )
-    ordering = ('name', 'sku', 'price', 'rating',)
+    ordering = ('name', 'sku', 'price',)
     search_fields = ('sku', 'name')
     list_per_page = 20
 
