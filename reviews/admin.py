@@ -1,3 +1,19 @@
 from django.contrib import admin
+from .models import Review
 
-# Register your models here.
+class ReviewAdmin(admin.ModelAdmin):
+    list_display = (
+        'product',
+        'user',
+        'review_title',
+        'user_rating',
+        'date',
+        'edit_date',
+    )
+    ordering = ('date', 'user_rating', 'product', 'user', 'review_title', 'edit_date',)
+    sortable_by = ('date', 'user_rating', 'product', 'user', 'review_title', 'edit_date',)
+    search_fields = ('product__name', 'user__username', 'review_title', 'user_rating', 'date', 'edit_date',)
+    list_filter = ('product', 'user', 'review_title', 'user_rating', 'date', 'edit_date',)
+    list_per_page = 20
+    
+admin.site.register(Review, ReviewAdmin)

@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="overlay"></div>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header text-center">
+                    <h2>Reviews for "{{ product.name }}"</h2>
+                </div>
+                <div class="card-body">
+                    <div class="d-flex justify-content-between mb-3">
+                        <div>
+                            <a href="{% url 'product_detail' product.id %}" class="btn btn-outline-secondary btn-sm">
+                                <i class="fas fa-arrow-left mr-1"></i> Back to Product
+                            </a>
+                        </div>
+                        <div>
+                            <a href="{% url 'create_review' product.id %}" class="btn btn-primary btn-sm">
+                                Leave a Review for {{ product.name }}
+                            </a>
+                        </div>
+                    </div>
+                    {% if product_reviews %}
+                    <ul class="list-group">
+                        {% for review in product_reviews %}
+                        <li class="list-group-item">
+                            <h3 class="text-center">{{ review.user }}</h3>
+                            <h4 class="text-center">{{ review.review_title }}</h4>
+                            <p class="text-center"><i class="fas fa-star mr-1"></i>{{ review.user_rating|floatformat:1 }} / 5</p>
+                            <p class="text-center">{{ review.review }}</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                {% if request.user == review.user %}
+                                <div>
+                                    <a href="{% url 'edit_review' review.id %}" class="btn btn-primary btn-sm mr-2">Edit</a>
+                                    <a href="{% url 'delete_review' review.id %}" class="btn btn-danger btn-sm">Delete</a>
+                                </div>
+                                {% endif %}
+                                <small>Date: {{ review.date }}</small>
+                            </div>
+                        </li>
+                        <br>
+                        {% endfor %}
+                    </ul>
+                    <div class="pagination justify-content-center mt-3">
+                        {% if product_reviews.has_previous %}
+                        <a class="btn btn-outline-primary" href="?page=1">&laquo; First</a>
+                        <a class="btn btn-outline-primary" href="?page={{ product_reviews.previous_page_number }}">Previous</a>
+                        {% endif %}
+                        <span class="current">
+                            Page {{ product_reviews.number }} of {{ product_reviews.paginator.num_pages }}
+                        </span>
+                        {% if product_reviews.has_next %}
+                        <a class="btn btn-outline-primary" href="?page={{ product_reviews.next_page_number }}">Next</a>
+                        <a class="btn btn-outline-primary" href="?page={{ product_reviews.paginator.num_pages }}">Last &raquo;</a>
+                        {% endif %}
+                    </div>
+                    {% else %}
+                    <p class="text-center">No reviews found.</p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
