@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpR
 from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
+from django.core.mail import send_mail
 
 from .forms import OrderForm
 from .models import Order, OrderLineItem
@@ -184,6 +185,8 @@ def checkout_success(request, order_number):
     messages.success(request, f'Order successfully processed! \
         Your order number is {order_number}. A confirmation \
         email will be sent to {order.email}.')
+    # Send email notification to user about their order
+    send_order_confirmation_email(order)
 
     if 'cart' in request.session:
         del request.session['cart']
@@ -194,3 +197,22 @@ def checkout_success(request, order_number):
     }
 
     return render(request, template, context)
+
+
+def send_order_confirmation_email(order):
+    """
+    Send email notification to user about their order
+    """
+    subject = 'Order Confirmation'
+    message = f'Hi {order.full_name},\n\nThank you for your order. Your order number is {order.order_number}.\n\n'
+    message += 'Order Details:\n'
+    # Add order details to the email message
+    for item in order.lineitems.all():
+        message += f'- {item.product.name} ({item.quantity})\n'
+    message += f'Total: {order.grand_total}\n\n'
+    message += 'We will update you soon about the delivery status.\n\n'
+    message += 'Thank you for shopping with us!\n\n'
+    message += 'Best regards,\nThe Blossom Haven Team'
+
+    # Send email using Django's built-in email sending functionality
+    send_mail(subject, message, settings.DEFAULT_FROM_EMAIL, [order.email])
