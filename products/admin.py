@@ -4,9 +4,9 @@ from .models import Product, Category
 
 class ProductAdmin(admin.ModelAdmin):
     list_display = (
-        'sku',
         'name',
         'price',
+        'sku',
     )
     ordering = ('name', 'sku', 'price',)
     search_fields = ('sku', 'name')
