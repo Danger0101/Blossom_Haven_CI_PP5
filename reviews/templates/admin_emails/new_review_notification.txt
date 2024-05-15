@@ -1,0 +1,13 @@
+Dear Admin,
+
+A new review has been submitted for the product "{{ product_name }}". Here are the details:
+
+Reviewer: {{ reviewer_name }}
+Title: {{ review_title }}
+Rating: {{ review_rating }}
+Comment: {{ review_comment }}
+
+Please review it in the admin panel.
+
+Best regards,
+Blossom Haven

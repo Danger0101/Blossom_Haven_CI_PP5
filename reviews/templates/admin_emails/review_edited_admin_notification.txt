@@ -1,0 +1,13 @@
+Dear Admin,
+
+The review for the product "{{ product_name }}" has been edited. Here are the updated details:
+
+Reviewer: {{ reviewer_name }}
+Title: {{ review_title }}
+Rating: {{ review_rating }}
+Comment: {{ review_comment }}
+
+Please review the changes in the admin panel.
+
+Best regards,
+Blossom Haven

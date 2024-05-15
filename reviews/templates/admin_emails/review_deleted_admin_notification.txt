@@ -1,0 +1,6 @@
+Dear Admin,
+
+The review for the product "{{ product_name }}" has been deleted by the {{ reviewer_name }}.
+
+Best regards,
+Blossom Haven
