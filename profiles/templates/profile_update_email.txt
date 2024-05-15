@@ -1,0 +1,10 @@
+Hello {{user.username}}
+
+Your profile has been sucessfully updated.
+
+Don't recognize this activity? We recommend you change your password immediately and contact us.
+
+If you have any queries, please contact us at shop.blossom.haven@gmail.com or reply to this email.
+
+Best regards,
+Blossom Haven

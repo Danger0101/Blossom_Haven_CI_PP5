@@ -1,5 +1,8 @@
 from django.shortcuts import render, get_object_or_404
 from django.contrib import messages
+from django.core.mail import send_mail
+from django.template.loader import render_to_string
+from django.conf import settings
 
 from .models import UserProfile
 from .forms import UserProfileForm
@@ -14,6 +17,8 @@ def profile(request):
         form = UserProfileForm(request.POST, instance=profile)
         if form.is_valid():
             form.save()
+            # Send email notification for profile update
+            send_profile_update_email(request.user)
             messages.success(request, 'Profile updated successfully')
         else:
             messages.error(request, 'Update failed. Please ensure the form is valid.')
@@ -46,3 +51,12 @@ def order_history(request, order_number):
     }
 
     return render(request, template, context)
+
+
+def send_profile_update_email(user):
+    """
+    Send email notification when a user's profile is updated.
+    """
+    subject = 'Profile Updated Successfully'
+    message = render_to_string('profile_update_email.txt', {'user': user})
+    send_mail(subject, message, settings.EMAIL_HOST_USER, [user.email])
