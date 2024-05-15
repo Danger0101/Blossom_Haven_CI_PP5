@@ -1,0 +1,19 @@
+Order Confirmation
+
+Hi {{ order.full_name }},
+
+Thank you for your order. Your order number is {{ order.order_number }}.
+
+Order Details:
+{% for item in order.lineitems.all %}
+Product: {{ item.product.name }} | Quantity: {{ item.quantity }}
+{% endfor %}
+
+Total: {{ order.grand_total }}
+
+We will update you soon about the delivery status.
+
+Thank you for shopping with us!
+
+Best regards,
+Blossom Haven
