@@ -3,6 +3,7 @@ from .models import Product, Category
 
 
 class ProductAdmin(admin.ModelAdmin):
+    readonly_fields = ('sku',)
     list_display = (
         'name',
         'price',
