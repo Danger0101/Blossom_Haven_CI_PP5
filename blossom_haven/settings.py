@@ -241,6 +241,7 @@ cloudinary.config(
     api_key=CLOUDINARY_API_KEY,
     api_secret=CLOUDINARY_API_SECRET_KEY
 )
+CLOUDINARY_FOLDER_NAME = os.getenv('CLOUDINARY_FOLDER_NAME', '')
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 # Email configuration
