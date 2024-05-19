@@ -106,6 +106,7 @@ def add_product(request):
                     # Access the URL of the uploaded image from the dictionary
                     product.image = uploaded_image['url']
                 product.save()
+                form.save_m2m()
 
                 # Link initial quantity to the product
                 initial_quantity = form.cleaned_data.get('quantity')
@@ -148,6 +149,7 @@ def edit_product(request, product_id):
         if form.is_valid():
             # Save the updated product details
             product = form.save()
+            form.save_m2m()
             # Update inventory if initial_quantity is provided
             initial_quantity = form.cleaned_data.get('initial_quantity')
             if initial_quantity is not None:
