@@ -14,7 +14,6 @@ class ProductForm(forms.ModelForm):
             'description',
             'price',
             'image',
-            'image_url',
             'is_addon',
         ]
         widgets = {
