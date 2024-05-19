@@ -13,7 +13,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 from pathlib import Path
 import os
 import cloudinary
-from env import *
+# from env import *
 import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
