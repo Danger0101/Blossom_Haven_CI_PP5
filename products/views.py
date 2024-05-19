@@ -95,27 +95,35 @@ def add_product(request):
 
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES)
-        if form.is_valid():
-            product = form.save(commit=False)
-            # Check if 'image' key exists in request.FILES
-            if 'image' in request.FILES:
-                image = request.FILES['image']
-                # Upload image to Cloudinary
-                uploaded_image = uploader.upload(image, folder=settings.CLOUDINARY_FOLDER_NAME)
-                product.image = uploaded_image.url
-            product.save()
+        try:
+            if form.is_valid():
+                product = form.save(commit=False)
+                # Check if 'image' key exists in request.FILES
+                if 'image' in request.FILES:
+                    image = request.FILES['image']
+                    # Upload image to Cloudinary
+                    uploaded_image = uploader.upload(image, folder=settings.CLOUDINARY_FOLDER_NAME)
+                    # Access the URL of the uploaded image from the dictionary
+                    product.image = uploaded_image['url']
+                product.save()
 
-            # Link initial quantity to the product
-            initial_quantity = form.cleaned_data.get('quantity')
-            if initial_quantity is not None:
-                inventory, created = Inventory.objects.get_or_create(product=product)
-                inventory.quantity = initial_quantity
-                inventory.save()
+                # Link initial quantity to the product
+                initial_quantity = form.cleaned_data.get('quantity')
+                if initial_quantity is not None:
+                    inventory, created = Inventory.objects.get_or_create(product=product)
+                    inventory.quantity = initial_quantity
+                    inventory.save()
 
-            messages.success(request, 'Successfully added product!')
-            return redirect(reverse('product_detail', args=[product.id]))
-        else:
-            messages.error(request, 'Failed to add product. Please ensure the form is valid.')
+                messages.success(request, 'Successfully added product!')
+                return redirect(reverse('product_detail', args=[product.id]))
+            else:
+                messages.error(request, 'Failed to add product. Please ensure the form is valid.')
+        except Exception as e:
+            # Log the exception or handle it in a way that makes sense for your application
+            error_message = f'An error occurred while processing your request: {str(e)}'
+            messages.error(request, error_message)
+            # Display the error message as a toast
+            messages.error(request, 'An error occurred while processing your request. Please try again.')
     else:
         form = ProductForm()
         
