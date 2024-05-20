@@ -1,19 +1,21 @@
-html {
+html,
+body {
     height: 100%;
+    margin: 0;
 }
 
 body {
-    background: url('https://res.cloudinary.com/dcfn1wr8r/image/upload/f_auto,q_auto/zpfspedanl4zry8sber3') no-repeat center center fixed;
-    background-size: cover;
-    height: 100%;
-    color: #555;
-    font-family: 'Lato';
     display: flex;
     flex-direction: column;
+    background: url('https://res.cloudinary.com/dcfn1wr8r/image/upload/f_auto,q_auto/zpfspedanl4zry8sber3') no-repeat center center fixed;
+    background-size: cover;
+    color: #555;
+    font-family: 'Lato';
 }
 
 main {
     flex: 1 0 auto;
+    padding-bottom: 5rem;
 }
 
 /* Footer css */
@@ -55,6 +57,10 @@ footer .btn-primary:hover {
     background-color: #c6f6c1;
     color: #212529;
     border-color: #212121;
+}
+
+.header-container {
+    padding-top: 116px;
 }
 
 /* Navbar css */
@@ -455,6 +461,7 @@ input[name='q']::placeholder {
     .decrement-qty {
         padding: .25rem .5rem !important;
     }
+
     .qty_input {
         width: 6rem !important;
     }
@@ -490,5 +497,19 @@ input[name='q']::placeholder {
         font-size: 0.75rem;
         padding: 0.25rem !important;
         margin: 0.25rem !important;
+    }
+
+    .header-container {
+        padding-top: 116px;
+    }
+
+    main {
+        padding-bottom: 100px;
+    }
+
+    body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
     }
 }
