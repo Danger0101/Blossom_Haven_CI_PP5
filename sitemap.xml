@@ -1,0 +1,675 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	  xmlns:xhtml="http://www.w3.org/1999/xhtml"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	  	  
+<!-- www.check-domains.com sitemap generator -->
+
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>1.0000</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/accounts/signup/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.8000</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/accounts/login/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.8000</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/cart/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.8000</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/products/?sort=price&amp;direction=asc</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.8000</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/products/?sort=rating&amp;direction=desc</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.8000</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/products/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.8000</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/products/?category=roses</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.8000</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/products/?category=vibrant</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.8000</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/products/?category=luxurious</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.8000</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/products/?category=roses,vibrant,luxurious</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.8000</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/products/?category=valentines</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.8000</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/products/?category=birthday</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.8000</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/products/?category=mothers_day</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.8000</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/products/?category=housewarmings</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.8000</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/products/?category=thank_you</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.8000</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/products/?category=anniversaries</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.8000</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/products/?category=graduations</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.8000</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/products/?category=sympathy</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.8000</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/accounts/password/reset/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.6400</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/products/5/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.6400</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/products/2/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.6400</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/products/1/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.6400</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/products/3/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.6400</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/products/23/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.6400</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/products/6/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.6400</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/products/4/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.6400</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/products/50/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.6400</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/products/15/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.6400</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/products/37/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.6400</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/products/28/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.6400</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/products/?category=get_well</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.6400</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/products/25/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.6400</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/products/18/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.6400</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/products/13/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.6400</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/products/9/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.6400</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/products/22/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.6400</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/products/20/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.6400</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/products/29/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.6400</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/products/17/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.6400</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/products/47/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.6400</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/products/14/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.6400</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/products/19/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.6400</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/products/24/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.6400</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/products/44/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.6400</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/products/26/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.6400</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/products/36/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.6400</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/products/34/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.6400</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/products/46/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.6400</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/products/45/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.6400</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/products/27/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.6400</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/products/35/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.6400</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/products/42/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.6400</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/products/40/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.6400</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/products/21/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.6400</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/products/16/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.6400</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/products/39/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.6400</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/products/43/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.6400</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/products/32/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.6400</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/products/30/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.6400</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/products/41/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.6400</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/products/33/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.6400</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/products/38/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.6400</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/products/31/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.6400</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/products/48/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.6400</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/products/49/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.6400</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/reviews/product/5/reviews/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.5120</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/reviews/product/2/reviews/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.5120</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/reviews/product/1/reviews/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.5120</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/reviews/product/3/reviews/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.5120</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/reviews/product/23/reviews/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.5120</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/reviews/product/6/reviews/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.5120</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/reviews/product/4/reviews/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.5120</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/reviews/product/50/reviews/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.5120</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/reviews/product/15/reviews/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.5120</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/reviews/product/37/reviews/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.5120</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/reviews/product/28/reviews/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.5120</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/reviews/product/25/reviews/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.5120</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/reviews/product/18/reviews/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.5120</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/reviews/product/13/reviews/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.5120</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/reviews/product/9/reviews/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.5120</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/reviews/product/22/reviews/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.5120</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/reviews/product/20/reviews/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.5120</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/reviews/product/29/reviews/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.5120</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/reviews/product/17/reviews/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.5120</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/reviews/product/47/reviews/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.5120</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/reviews/product/14/reviews/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.5120</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/reviews/product/19/reviews/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.5120</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/reviews/product/24/reviews/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.5120</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/reviews/product/44/reviews/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.5120</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/reviews/product/26/reviews/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.5120</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/reviews/product/36/reviews/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.5120</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/reviews/product/34/reviews/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.5120</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/reviews/product/46/reviews/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.5120</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/reviews/product/45/reviews/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.5120</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/reviews/product/27/reviews/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.5120</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/reviews/product/35/reviews/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.5120</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/reviews/product/42/reviews/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.5120</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/reviews/product/40/reviews/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.5120</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/reviews/product/21/reviews/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.5120</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/reviews/product/16/reviews/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.5120</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/reviews/product/39/reviews/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.5120</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/reviews/product/43/reviews/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.5120</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/reviews/product/32/reviews/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.5120</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/reviews/product/30/reviews/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.5120</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/reviews/product/41/reviews/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.5120</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/reviews/product/33/reviews/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.5120</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/reviews/product/38/reviews/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.5120</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/reviews/product/31/reviews/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.5120</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/reviews/product/48/reviews/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.5120</priority>
+</url>
+<url>
+   <loc>https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/reviews/product/49/reviews/</loc>
+   <lastmod>2024-05-20T14:23:10+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.5120</priority>
+</url>
+</urlset>
