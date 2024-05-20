@@ -147,6 +147,13 @@ def edit_product(request, product_id):
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES, instance=product)
         if form.is_valid():
+            product = form.save(commit=False)
+            if 'image' in request.FILES:
+                image = request.FILES['image']
+                # Upload image to Cloudinary
+                uploaded_image = uploader.upload(image, folder=settings.CLOUDINARY_FOLDER_NAME)
+                # Access the URL of the uploaded image from the dictionary
+                product.image = uploaded_image['url']
             # Save the updated product details
             product = form.save()
             form.save_m2m()
