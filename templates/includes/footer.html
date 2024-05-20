@@ -1,25 +1,33 @@
 {% load crispy_forms_tags %}
 
-<footer class="container-fluid bg-dark text-white py-4">
+<footer class="container-fluid text-white py-4 mt-auto">
     <div class="container">
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-sm-12 col-md-4 mb-3 mb-md-0">
                 <h5>Follow Us</h5>
                 <div class="social-links">
-                    <a href="#" target="_blank" rel="noopener noreferrer" class="text-white mr-3" aria-label="Facebook"><i class="fab fa-facebook"></i> Facebook</a>
-                    <a href="#" target="_blank" rel="noopener noreferrer" class="text-white" aria-label="Instagram"><i class="fab fa-instagram"></i> Instagram</a>
+                    <div class="row">
+                        <a href="https://www.facebook.com/people/Blossom-Haven/61559961592246/" target="_blank" rel="noopener noreferrer" class="text-white mr-3" aria-label="Facebook">
+                            <i class="fab fa-facebook"></i> Facebook
+                        </a>
+                    </div>
+                    <div class="row">
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="text-white" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i> Instagram
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-sm-12 col-md-4 mb-3 mb-md-0">
                 <h5>Legal</h5>
-                <p>
+                <div class="row">
                     <a href="#" class="text-white" data-toggle="modal" data-target="#termsModal" aria-label="Terms of Service">Terms of Service</a>
-                </p>
-                <p>
-                    <a href="#" class="text-white" data-toggle="modal" data-target="#privacyModal" aria-label="Privacy Policy">Privacy Policy</a>
-                </p>
+                </div>
+                <div class="row">
+                    <a href="https://www.instagram.com/shop_blossom_haven/" class="text-white" data-toggle="modal" data-target="#privacyModal" aria-label="Privacy Policy">Privacy Policy</a>
+                </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-sm-12 col-md-4 mb-3 mb-md-0">
                 <h5>Subscribe to Our Newsletter</h5>
                 <form action="https://herokuapp.us17.list-manage.com/subscribe/post?u=a611f1f878720d7c61dfb9d5d&amp;id=4dc7b20122&amp;f_id=002a8ee2f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
                     <div class="form-group">
