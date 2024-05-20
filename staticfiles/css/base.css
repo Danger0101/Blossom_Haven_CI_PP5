@@ -16,6 +16,7 @@ main {
     flex: 1 0 auto;
 }
 
+/* Footer css */
 footer {
     background-color: #0d3500 !important;
     color: rgb(69, 255, 41);
@@ -56,7 +57,7 @@ footer .btn-primary:hover {
     border-color: #212121;
 }
 
-/* New CSS */
+/* Navbar css */
 .logo-font {
     text-transform: uppercase;
 }
@@ -130,6 +131,11 @@ footer .btn-primary:hover {
 .bg-search-btn:hover {
     background-color: #95eb8a;
     color: #000;
+}
+
+/* product images */
+.product-image {
+    max-width: 256px;
 }
 
 /* from Bulma */
