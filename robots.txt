@@ -1,0 +1,8 @@
+user-agent: *
+Disallow: /accounts/
+Disallow: /cart/
+Disallow: /checkout/
+Disallow: /reviews/
+Disallow: /profile/
+Disallow: /admin/
+Sitemap: https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/sitemap.xml
