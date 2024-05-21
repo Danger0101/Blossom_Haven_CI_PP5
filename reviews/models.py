@@ -18,8 +18,8 @@ class Review(models.Model):
         null=True,
         on_delete=models.CASCADE)
     user_rating = models.IntegerField(
-        default=0,
-        validators=[MinValueValidator(0),MaxValueValidator(5)])
+        default=1,
+        validators=[MinValueValidator(1),MaxValueValidator(5)])
     review_title = models.CharField(
         max_length=100,
         null=True,
