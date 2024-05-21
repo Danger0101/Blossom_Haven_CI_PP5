@@ -3,12 +3,19 @@ from django.contrib import messages
 
 from products.models import Product
 
-# Create your views here.
 
 def view_cart(request):
     """ A view that renders the cart contents page """
+    cart = request.session.get('cart', {})
+    for item_id, quantity in cart.items():
+        product = get_object_or_404(Product, pk=item_id)
+        if product.inventory.quantity == 0:
+            messages.warning(request, f'The item "{product.name}" in your cart is now out of stock.')
+        elif quantity > product.inventory.quantity:
+            messages.warning(request, f'You have added more "{product.name}" to your cart than currently available in stock.')
 
     return render(request, 'cart/cart.html')
+
 
 def add_to_cart(request, item_id):
     """ Add a quantity of the specified product to the shopping cart """
