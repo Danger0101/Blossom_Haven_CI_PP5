@@ -16,36 +16,32 @@ def add_to_cart(request, item_id):
     product = get_object_or_404(Product, pk=item_id)
     quantity = int(request.POST.get('quantity'))
     redirect_url = request.POST.get('redirect_url')
-    size = None
-    if 'product_size' in request.POST:
-        size = request.POST['product_size']
     cart = request.session.get('cart', {})
 
+    if quantity <= 0:
+        messages.error(request, 'Quantity must be greater than zero.')
+        return redirect(redirect_url)
+
     if product.inventory.quantity == 0:
-        messages.error(request, f'This product is currently out of stock.')
+        messages.error(request, 'This product is currently out of stock.')
         return redirect(redirect_url)
     elif product.inventory.quantity < quantity:
         messages.error(request, f'Only {product.inventory.quantity} items available in stock.')
         return redirect(redirect_url)
 
-    if size:
-        if item_id in list(cart.keys()):
-            if size in cart[item_id]['items_by_size'].keys():
-                cart[item_id]['items_by_size'][size] += quantity
-                messages.success(request, f'Updated size {size.upper()} {product.name} quantity to {cart[item_id]["items_by_size"][size]}')
-            else:
-                cart[item_id]['items_by_size'][size] = quantity
-                messages.success(request, f'Added size {size.upper()} {product.name} to your cart')
-        else:
-            cart[item_id] = {'items_by_size': {size: quantity}}
-            messages.success(request, f'Added size {size.upper()} {product.name} to your cart')
+    if item_id in cart:
+        new_quantity = cart[item_id] + quantity
+        if new_quantity > product.inventory.quantity:
+            messages.error(request, f'Cannot add more items. Only {product.inventory.quantity} available in stock.')
+            return redirect(redirect_url)
+        cart[item_id] = new_quantity
+        messages.success(request, f'Updated {product.name} quantity to {cart[item_id]}')
     else:
-        if item_id in list(cart.keys()):
-            cart[item_id] += quantity
-            messages.success(request, f'Updated {product.name} quantity to {cart[item_id]}')
-        else:
-            cart[item_id] = quantity
-            messages.success(request, f'Added {product.name} to your cart')
+        if quantity > product.inventory.quantity:
+            messages.error(request, f'Cannot add more items. Only {product.inventory.quantity} available in stock.')
+            return redirect(redirect_url)
+        cart[item_id] = quantity
+        messages.success(request, f'Added {product.name} to your cart')
 
     request.session['cart'] = cart
     return redirect(redirect_url)
@@ -56,30 +52,26 @@ def adjust_cart(request, item_id):
 
     product = get_object_or_404(Product, pk=item_id)
     quantity = int(request.POST.get('quantity'))
-    size = None
-    if 'product_size' in request.POST:
-        size = request.POST['product_size']
     cart = request.session.get('cart', {})
 
-    if size:
-        if quantity > 0:
-            cart[item_id]['items_by_size'][size] = quantity
-            messages.success(request, f'Updated size {size.upper()} {product.name} quantity to {cart[item_id]["items_by_size"][size]}')
-        else:
-            del cart[item_id]['items_by_size'][size]
-            if not cart[item_id]['items_by_size']:
-                cart.pop(item_id)
-            messages.success(request, f'Removed size {size.upper()} {product.name} from your cart')
+    if quantity < 0:
+        messages.error(request, 'Quantity cannot be negative.')
+        return redirect(reverse('view_cart'))
+
+    if quantity > product.inventory.quantity:
+        messages.error(request, f'Cannot adjust quantity. Only {product.inventory.quantity} available in stock.')
+        return redirect(reverse('view_cart'))
+
+    if quantity > 0:
+        cart[item_id] = quantity
+        messages.success(request, f'Updated {product.name} quantity to {cart[item_id]}')
     else:
-        if quantity > 0:
-            cart[item_id] = quantity
-            messages.success(request, f'Updated {product.name} quantity to {cart[item_id]}')
-        else:
-            cart.pop(item_id)
-            messages.success(request, f'Removed {product.name} from your cart')
+        cart.pop(item_id)
+        messages.success(request, f'Removed {product.name} from your cart')
 
     request.session['cart'] = cart
     return redirect(reverse('view_cart'))
+
 
 
 def remove_from_cart(request, item_id):
@@ -87,19 +79,10 @@ def remove_from_cart(request, item_id):
 
     try:
         product = get_object_or_404(Product, pk=item_id)
-        size = None
-        if 'product_size' in request.POST:
-            size = request.POST['product_size']
         cart = request.session.get('cart', {})
 
-        if size:
-            del cart[item_id]['items_by_size'][size]
-            if not cart[item_id]['items_by_size']:
-                cart.pop(item_id)
-            messages.success(request, f'Removed size {size.upper()} {product.name} from your cart')
-        else:
-            cart.pop(item_id)
-            messages.success(request, f'Removed {product.name} from your cart')
+        cart.pop(item_id)
+        messages.success(request, f'Removed {product.name} from your cart')
 
         request.session['cart'] = cart
         return HttpResponse(status=200)

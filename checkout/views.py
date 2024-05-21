@@ -39,6 +39,12 @@ def checkout(request):
 
     if request.method == 'POST':
         cart = request.session.get('cart', {})
+        # Verify that the cart quantities do not exceed available stock
+        for item_id, quantity in cart.items():
+            product = get_object_or_404(Product, pk=item_id)
+            if quantity > product.inventory.quantity:
+                messages.error(request, f'Cannot proceed to checkout. Only {product.inventory.quantity} of {product.name} available in stock.')
+                return redirect(reverse('view_cart'))
 
         form_data = {
             'full_name': request.POST['full_name'],
@@ -73,25 +79,15 @@ def checkout(request):
                 order.street_address2 = shipping_address.street_address2
                 order.county = shipping_address.county
             order.save()
-            for item_id, item_data in cart.items():
+            for item_id, quantity in cart.items():
                 try:
                     product = Product.objects.get(id=item_id)
-                    if isinstance(item_data, int):
-                        order_line_item = OrderLineItem(
-                            order=order,
-                            product=product,
-                            quantity=item_data,
-                        )
-                        order_line_item.save()
-                    else:
-                        for size, quantity in item_data['items_by_size'].items():
-                            order_line_item = OrderLineItem(
-                                order=order,
-                                product=product,
-                                quantity=quantity,
-                                product_size=size,
-                            )
-                            order_line_item.save()
+                    order_line_item = OrderLineItem(
+                        order=order,
+                        product=product,
+                        quantity=quantity,
+                    )
+                    order_line_item.save()
                 except Product.DoesNotExist:
                     messages.error(request, (
                         "One of the products in your cart wasn't found in our database. "
