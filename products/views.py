@@ -4,7 +4,6 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Q, Avg
 from django.db.models.functions import Lower
 from django.conf import settings
-from django.db.models import Avg
 
 import cloudinary
 from cloudinary import uploader
