@@ -52,10 +52,6 @@ def all_products(request):
             
             queries = Q(name__icontains=query) | Q(description__icontains=query)
             products = products.filter(queries)
-    
-    for product in products:
-        avg_rating = Review.objects.filter(product=product).aggregate(Avg('user_rating'))
-        product.avg_rating = avg_rating['user_rating__avg']
 
     current_sorting = f'{sort}_{direction}'
 
