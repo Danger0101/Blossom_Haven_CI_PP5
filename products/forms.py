@@ -3,6 +3,7 @@ from .widgets import CustomClearableFileInput
 from .models import Product, Category
 from inventory.models import Inventory
 
+
 class ProductForm(forms.ModelForm):
     quantity = forms.IntegerField(label='Quantity', required=True)
 
@@ -41,7 +42,8 @@ class ProductForm(forms.ModelForm):
         instance = super().save(commit=False)
         if commit:
             instance.save()
-            product_inventory, created = Inventory.objects.get_or_create(product=instance)
+            product_inventory, created = (
+                Inventory.objects.get_or_create(product=instance))
             product_inventory.quantity = self.cleaned_data['quantity']
             product_inventory.save()
         return instance
