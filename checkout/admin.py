@@ -53,7 +53,7 @@ class OrderAdmin(admin.ModelAdmin):
                     request, (
                         "Tracking number not set for"
                         f" Order #{order.order_number}. "
-                        "Please set it manually.",)
+                        "Please set it manually."),
                     level=messages.ERROR)
             else:
                 order.status = 'S'  # Update status to 'Shipped'
