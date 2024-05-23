@@ -417,12 +417,13 @@ All Scripts checked with [PEP8 Code institute](https://pep8ci.herokuapp.com/)
 
 **Cart**
 
-| **File**         | **Line** | **Image**                                                                |
-| :--------------: | :------: | :----------------------------------------------------------------------: |
-| cart\apps.py     | All      | ![Cart Apps Pep8 screenshot](./media/pep8/cart/cart_apps_py.png)         |
-| cart\contexts.py | All      | ![Cart Contexts Pep8 screenshot](./media/pep8/cart/cart_contexts_py.png) |
-| cart\urls.py     | All      | ![Cart Urls Pep8 screenshot](./media/pep8/cart/cart_urls_py.png)         |
-| cart\views.py    | All      | ![Cart Views Pep8 screenshot](./media/pep8/cart/cart_views_py.png)       |
+| **File**                        | **Line** | **Image**                                                                |
+| :-----------------------------: | :------: | :----------------------------------------------------------------------: |
+| cart\apps.py                    | All      | ![Cart Apps Pep8 screenshot](./media/pep8/cart/cart_apps_py.png)         |
+| cart\contexts.py                | All      | ![Cart Contexts Pep8 screenshot](./media/pep8/cart/cart_contexts_py.png) |
+| cart\urls.py                    | All      | ![Cart Urls Pep8 screenshot](./media/pep8/cart/cart_urls_py.png)         |
+| cart\views.py                   | All      | ![Cart Views Pep8 screenshot](./media/pep8/cart/cart_views_py.png)       |
+| cart\templatetags\cart_tools.py | All      | ![Cart carttools Pep8 screenshot](./media/pep8/cart/cart_tools_py.png)   |
 
 **Checkout**
 
@@ -787,6 +788,7 @@ Used Heroku to deploy the website. You can [Visit Live Site by clicking here](ht
 - [Django 5.2](https://docs.djangoproject.com/en/5.0/)
 - [Django-allauth](https://docs.allauth.org/en/latest/)
 - [fooocus](https://github.com/lllyasviel/Fooocus?tab=readme-ov-file)
+- [Microsoft Paint](https://www.microsoft.com/en-gb/windows/paint)
 
 ## Wireframes
 
