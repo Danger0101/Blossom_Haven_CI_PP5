@@ -1,4 +1,10 @@
-from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
+from django.shortcuts import (
+    render,
+    redirect,
+    reverse,
+    get_object_or_404,
+    HttpResponse
+)
 from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
@@ -25,13 +31,17 @@ def cache_checkout_data(request):
         stripe.PaymentIntent.modify(pid, metadata={
             'cart': json.dumps(request.session.get('cart', {})),
             'save_info': request.POST.get('save_info'),
-            'username': request.user.username if request.user.is_authenticated else None,
+            'username': (
+                request.user.username
+                if request.user.is_authenticated
+                else None),
         })
         return HttpResponse(status=200)
     except Exception as e:
         messages.error(request, 'Sorry, your payment cannot be \
             processed right now. Please try again later.')
         return HttpResponse(content=e, status=400)
+
 
 def checkout(request):
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
@@ -43,7 +53,10 @@ def checkout(request):
         for item_id, quantity in cart.items():
             product = get_object_or_404(Product, pk=item_id)
             if quantity > product.inventory.quantity:
-                messages.error(request, f'Cannot proceed to checkout. Only {product.inventory.quantity} of {product.name} available in stock.')
+                messages.error(request, (
+                    'Cannot proceed to checkout. '
+                    f'Only {product.inventory.quantity}'
+                    ' of {product.name} available in stock.'))
                 return redirect(reverse('view_cart'))
 
         form_data = {
@@ -65,10 +78,12 @@ def checkout(request):
             order.stripe_pid = pid
             order.original_cart = json.dumps(cart)
             # Check if a shipping address is selected or a new one is entered
-            selected_shipping_address = order_form.cleaned_data.get('shipping_address')
+            selected_shipping_address = (
+                order_form.cleaned_data.get('shipping_address'))
             # Set the order's shipping address to the selected one
             if selected_shipping_address:
-                shipping_address = ShippingAddress.objects.get(pk=selected_shipping_address.pk)
+                shipping_address = ShippingAddress.objects.get(
+                    pk=selected_shipping_address.pk)
                 order.full_name = shipping_address.full_name
                 order.email = shipping_address.email
                 order.phone_number = shipping_address.phone_number
@@ -90,22 +105,24 @@ def checkout(request):
                     order_line_item.save()
                 except Product.DoesNotExist:
                     messages.error(request, (
-                        "One of the products in your cart wasn't found in our database. "
-                        "Please call us for assistance!")
+                        "One of the products in your cart wasn't found in "
+                        "our database. Please call us for assistance!")
                     )
                     order.delete()
                     return redirect(reverse('view_cart'))
 
             # Save the info to the user's profile if all is well
             request.session['save_info'] = 'save-info' in request.POST
-            return redirect(reverse('checkout_success', args=[order.order_number]))
+            return redirect(reverse(
+                'checkout_success', args=[order.order_number]))
         else:
             messages.error(request, 'There was an error with your form. \
                 Please double check your information.')
     else:
         cart = request.session.get('cart', {})
         if not cart:
-            messages.error(request, "There's nothing in your cart at the moment")
+            messages.error(request, (
+                "There's nothing in your cart at the moment"))
             return redirect(reverse('products'))
 
         current_cart = cart_contents(request)
@@ -117,7 +134,8 @@ def checkout(request):
             currency=settings.STRIPE_CURRENCY,
         )
 
-        # Attempt to prefill the form with any info the user maintains in their profile
+        # Attempt to prefill the form with
+        # any info the user maintains in their profile
         if request.user.is_authenticated:
             try:
                 profile = UserProfile.objects.get(user=request.user)
@@ -205,4 +223,8 @@ def send_order_confirmation_email(order):
     context = {'order': order}
     message = render_to_string(template, context)
     # Send email using Django's built-in email sending functionality
-    send_mail(subject, message, settings.DEFAULT_FROM_EMAIL, [order.email])
+    send_mail(
+        subject,
+        message,
+        settings.DEFAULT_FROM_EMAIL,
+        [order.email])
