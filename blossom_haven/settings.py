@@ -45,7 +45,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    
+
     # blossom_haven apps
     'home',
     'products',
@@ -54,16 +54,16 @@ INSTALLED_APPS = [
     'inventory',
     'profiles',
     'reviews',
-    
+
     # allauth apps
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
-    
+
     # crispy forms
     'crispy_forms',
     "crispy_bootstrap4",
-    
+
     # Django Countries
     'django_countries',
 ]
@@ -79,26 +79,28 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    
+
     # Whitenoise for static files
     'whitenoise.middleware.WhiteNoiseMiddleware',
-    
+
     # allauth account middleware:
     "allauth.account.middleware.AccountMiddleware",
 ]
 
+# Here for future reference, not currently used.
 # Django Allauth social account providers configuration
-SOCIALACCOUNT_PROVIDERS = {
-    # For each OAuth based provider, either add a ``SocialApp``
-    # (``socialaccount`` app) containing the required client
-    # credentials, or list them here:
-    'paypal': {
-        'APP': {
-            'client_id': 'PAYPAL_CLIENT_ID',
-            'secret': 'PAYPAL_CLIENT_SECRET',
-        }
-    },
-}
+# SOCIALACCOUNT_PROVIDERS = {
+#     # For each OAuth based provider, either add a ``SocialApp``
+#     # (``socialaccount`` app) containing the required client
+#     # credentials, or list them here:
+#     #Example for paypal: possible future implementation:
+#     'paypal': {
+#         'APP': {
+#             'client_id': 'PAYPAL_CLIENT_ID',
+#             'secret': 'PAYPAL_CLIENT_SECRET',
+#         }
+#     },
+# }
 
 ROOT_URLCONF = 'blossom_haven.urls'
 
@@ -120,7 +122,7 @@ TEMPLATES = [
 
                 # `allauth` needs this from django
                 'django.template.context_processors.request',
-                
+
                 # Cart app contents
                 'cart.contexts.cart_contents',
             ],
@@ -152,9 +154,6 @@ LOGIN_REDIRECT_URL = '/'
 
 WSGI_APPLICATION = 'blossom_haven.wsgi.application'
 
-
-
-
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 if 'DATABASE_URL' in os.environ:
@@ -163,7 +162,8 @@ if 'DATABASE_URL' in os.environ:
         'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
 else:
-    # Local database for development (SQLite3, env.py remove DATABASE_URL if present)
+    # Local database for development
+    # (SQLite3, env.py remove DATABASE_URL if present)
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',
@@ -176,16 +176,28 @@ else:
 
 AUTH_PASSWORD_VALIDATORS = [
     {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+        'NAME': (
+            'django.contrib.auth.password_validation.'
+            'UserAttributeSimilarityValidator'
+        ),
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+        'NAME': (
+            'django.contrib.auth.password_validation.'
+            'MinimumLengthValidator'
+        ),
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
+        'NAME': (
+            'django.contrib.auth.password_validation.'
+            'CommonPasswordValidator'
+        ),
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+        'NAME': (
+            'django.contrib.auth.password_validation.'
+            'NumericPasswordValidator'
+        ),
     },
 ]
 
@@ -235,8 +247,8 @@ DEFAULT_FROM_EMAIL = 'shop.blossom.haven@gmail.com'
 # Cloudinary
 CLOUDINARY_NAME = os.getenv('CLOUDINARY_NAME', '')
 CLOUDINARY_API_KEY = os.getenv('CLOUDINARY_API_KEY', '')
-CLOUDINARY_API_SECRET_KEY = os.getenv('CLOUDINARY_API_SECRET_KEY', '')       
-cloudinary.config( 
+CLOUDINARY_API_SECRET_KEY = os.getenv('CLOUDINARY_API_SECRET_KEY', '')
+cloudinary.config(
     cloud_name=CLOUDINARY_NAME,
     api_key=CLOUDINARY_API_KEY,
     api_secret=CLOUDINARY_API_SECRET_KEY
