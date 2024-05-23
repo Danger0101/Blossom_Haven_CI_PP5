@@ -193,7 +193,7 @@ The site allows users:
 
 **Forgot Password Email**
 
-![Forgot Password Email Image)
+![Forgot Password Email Image]()
 
 ---
 
@@ -407,32 +407,115 @@ The site allows users:
 
 All Scripts checked with [PEP8 Code institute](https://pep8ci.herokuapp.com/)
 
-|                   **File**                    | **Line** | **Errors or Warnings** |
-| :-------------------------------------------: | :------: | :--------------------: |
-| blossom_haven\settings.py |   All    |          None          |
+**blossom_haven**
 
+| **File**                  | **Line** | **Image**                                                                              |
+| :-----------------------: | :------: | :------------------------------------------------------------------------------------: |
+| blossom_haven\settings.py | All      | ![Blossom Haven Settings Pep8 screenshot](./media/pep8/bolossm-haven/main_urls_py.png) |
+| blossom_haven\urls.py     | All      | ![Blossom Haven Urls Pep8 screenshot](./media/pep8/bolossm-haven/settings_py.png)      |
+| blossom_haven\wsgi.py     | All      | ![Blossom Haven WSGI Pep8 screenshot](./media/pep8/bolossm-haven/wsgi_py.png)          |
+
+**Cart**
+
+| **File**         | **Line** | **Image**                                                                |
+| :--------------: | :------: | :----------------------------------------------------------------------: |
+| cart\apps.py     | All      | ![Cart Apps Pep8 screenshot](./media/pep8/cart/cart_apps_py.png)         |
+| cart\contexts.py | All      | ![Cart Contexts Pep8 screenshot](./media/pep8/cart/cart_contexts_py.png) |
+| cart\urls.py     | All      | ![Cart Urls Pep8 screenshot](./media/pep8/cart/cart_urls_py.png)         |
+| cart\views.py    | All      | ![Cart Views Pep8 screenshot](./media/pep8/cart/cart_views_py.png)       |
+
+**Checkout**
+
+| **File**                    | **Line** | **Image**                                                                                          |
+| :-------------------------: | :------: | :------------------------------------------------------------------------------------------------: |
+| checkout\admin.py           | All      | ![Checkout Admin Pep8 screenshot](./media/pep8/checkout/checkout_admin_py.png)                     |
+| checkout\apps.py            | All      | ![Checkout Apps Pep8 screenshot](./media/pep8/checkout/checkout_apps_py.png)                       |
+| checkout\forms.py           | All      | ![Checkout Forms Pep8 screenshot](./media/pep8/checkout/checkout_forms_py.png)                     |
+| checkout\models.py          | All      | ![Checkout Models Pep8 screenshot](./media/pep8/checkout/checkout_models_py.png)                   |
+| checkout\signals.py         | All      | ![Checkout Signals Pep8 screenshot](./media/pep8/checkout/checkout_signals_py.png)                 |
+| checkout\views.py           | All      | ![Checkout Views Pep8 screenshot](./media/pep8/checkout/checkout_views_py.png)                     |
+| checkout\webhook_handler.py | All      | ![Checkout Webhook Handler Pep8 screenshot](./media/pep8/checkout/checkout_webhook_handler_py.png) |
+| checkout\webhooks.py        | All      | ![Checkout Webhook Pep8 screenshot](./media/pep8/checkout/checkout_webhooks_py.png)                |
+
+**Home**
+
+| **File**      | **Line** | **Image**                                                          |
+| :-----------: | :------: | :----------------------------------------------------------------: |
+| home\apps.py  | All      | ![Home Apps Pep8 screenshot](./media/pep8/home/home_apps_py.png)   |
+| home\urls.py  | All      | ![Home Urls Pep8 screenshot](./media/pep8/home/home_urls_py.png)   |
+| home\views.py | All      | ![Home Views Pep8 screenshot](./media/pep8/home/home_views_py.png) |
+
+**Inventory**
+
+| **File**             | **Line** | **Image**                                                           |
+| :------------------: | :------: | :-----------------------------------------------------------------: |
+| inventory\admin.py   | All      | ![Pep8 screenshot](./media/pep8/inventory/inventory_admin_py.png)   |
+| inventory\apps.py    | All      | ![Pep8 screenshot](./media/pep8/inventory/inventory_apps_py.png)    |
+| inventory\models.py  | All      | ![Pep8 screenshot](./media/pep8/inventory/inventory_models_py.png)  |
+| inventory\signals.py | All      | ![Pep8 screenshot](./media/pep8/inventory/inventory_signals_py.png) |
+
+**Products**
+
+| **File**            | **Line** | **Image** |
+| :-----------------: | :------: | :--------------------------------------------------------------: |
+| products\admin.py   | All      | ![Pep8 screenshot](./media/pep8/products/products_admin_py.png)  |
+| products\apps.py    | All      | ![Pep8 screenshot](./media/pep8/products/products_apps_py.png)   |
+| products\forms.py   | All      | ![Pep8 screenshot](./media/pep8/products/products_forms_py.png)  |
+| products\models.py  | All      | ![Pep8 screenshot](./media/pep8/products/products_models_py.png) |
+| products\urls.py    | All      | ![Pep8 screenshot](./media/pep8/products/products_views_py.png)  |
+| products\views.py   | All      | ![Pep8 screenshot](./media/pep8/products/products_views_py.png)  |
+| products\widgets.py | All      | ![Pep8 screenshot](./media/pep8/products/products_widget_py.png) |
+
+**Profiles**
+
+| **File**            | **Line** | **Image**                                                                         |
+| :-----------------: | :------: | :-------------------------------------------------------------------------------: |
+| profiles\apps.py    | All      | ![Profiles Apps Pep8 screenshot](./media/pep8/profiles/profile_apps_py.png)       |
+| profiles\forms.py   | All      | ![Profiles Forms Pep8 screenshot](./media/pep8/profiles/profile_forms_py.png)     |
+| profiles\models.py  | All      | ![Profiles Models Pep8 screenshot](./media/pep8/profiles/profile_models_py.png)   |
+| profiles\signals.py | All      | ![Profiles Signals Pep8 screenshot](./media/pep8/profiles/profile_signals_py.png) |
+| profiles\urls.py    | All      | ![Profiles Urls Pep8 screenshot](./media/pep8/profiles/profile_urls_py.png)       |
+| profiles\views.py   | All      | ![Profiles Views Pep8 screenshot](./media/pep8/profiles/profile_views_py.png)     |
+
+**Reviews**
+
+| **File**          | **Line** | **Image**                                                                               |
+| :---------------: | :------: | :-------------------------------------------------------------------------------------: |
+| reviews\admin.py  | All      | ![Review Admin Pep8 screenshot](./media/pep8/reviews/reviews_admin_py.png)              |
+| reviews\apps.py   | All      | ![Review Apps Pep8 screenshotPep8 screenshot](./media/pep8/reviews/reviews_apps_py.png) |
+| reviews\forms.py  | All      | ![Review Forms Pep8 screenshot](./media/pep8/reviews/reviews_forms_py.png)              |
+| reviews\models.py | All      | ![Review Models Pep8 screenshot](./media/pep8/reviews/reviews_models_py.png)            |
+| reviews\urls.py   | All      | ![Review Urls Pep8 screenshot](./media/pep8/reviews/reviews_urls_py.png)                |
+| reviews\views.py  | All      | ![Review Views Pep8 screenshot](./media/pep8/reviews/reviews_views_py.png)              |
+
+**Others**
+     
+| **File**  | **Line** | **Image**                                                      |
+| :-------: | :------: | :------------------------------------------------------------: |
+| manage.py | All      | ![Manage.py Pep8 screenshot](./media/pep8/other/manage_py.png) |
 
 ## Javascript
 
 - All my custom js scripts were run though [jshint](https://jshint.com/).
 
-**reservation_checks.js**
+| **File**                  | **Line** | **Image** |
+| :-----------------------: | :------: | :-------: |
+|  | All | ![]() |
+|  | All | ![]() |
+|  | All | ![]() |
+|  | All | ![]() |
 
-![reservation_checks.js; js check](./staticfiles/images/js_checks/reservation_script_check.png)
-
-**meals.js**
-
-![meals.js; js check](./staticfiles/images/js_checks/menu_script_check.png)
-
-**arrows.js**
-
-![arrows.js; js check](./staticfiles/images/js_checks/arrows_script_check.png)
+---
 
 ### CSS
 
 - checked my custom css with [W3 CSS Validator](https://jigsaw.w3.org/css-validator/) direct input; completed with no issues found.
 
-![css verification img](./staticfiles/images/css_verification_img.png)
+**static\css\base.css**
+
+![css verification img]()
+
+---
 
 ### HTML
 
@@ -442,42 +525,6 @@ All Scripts checked with [PEP8 Code institute](https://pep8ci.herokuapp.com/)
 
 ![Index HTML w3 Validation Image](./staticfiles/images/html_checks/index_html_check.png)
 
-**About**
-
-![About Us HTML w3 Validation Image](./staticfiles/images/html_checks/about_html_check.png)
-
-**Menu**
-
-![Menu HTML w3 Validation Image](./staticfiles/images/html_checks/menu_html_check.png)
-
-**Contact Us**
-
-![Contact Us HTML w3 Validation Image](./staticfiles/images/html_checks/contact_us_html_check.png)
-
-**Login**
-
-![Login HTML w3 Validation Image](./staticfiles/images/html_checks/login_html_check.png)
-
-**Sign Up**
-
-![Signup HTML w3 Validation Image](./staticfiles/images/html_checks/sign_up_html_check.png)
-
-**My Reservation**
-
-![My Reservation HTML w3 Validation Imag](./staticfiles/images/html_checks/my_reservations_html_check.png)
-
-**Edit Reservatoin**
-
-![Edit Reservation HTML w3 Validation Imag](./staticfiles/images/html_checks/edit_reservations_html_check.png)
-
-**Make Reservatoin**
-
-![Make Reservation HTML w3 Validation Imag](./staticfiles/images/html_checks/make_reservations_html_check.png)
-
-**Change Details**
-
-![Change details HTML w3 Validation Imag](./staticfiles/images/html_checks/change_details_html_check.png)
-
 ### Contrast
 
 - Checked all non logged in pages with [A11Y contrast checker](https://color.a11y.com/) Cameback with no issues.
@@ -486,25 +533,7 @@ All Scripts checked with [PEP8 Code institute](https://pep8ci.herokuapp.com/)
 
 ![Contrast checker index Image](./staticfiles/images/contrast_checks/index_page.png)
 
-**About Us**
-
-![Contrast checker about us Image](./staticfiles/images/contrast_checks/about_page.png)
-
-**Menu**
-
-![Contrast checker menu Image](./staticfiles/images/contrast_checks/menu_page.png)
-
-**Contact Us**
-
-![Contrast checker contact us Image](./staticfiles/images/contrast_checks/contact_us_page.png)
-
-**Login**
-
-![Contrast checker login Image](./staticfiles/images/contrast_checks/login_page.png)
-
-**Sign Up**
-
-![Contrast checker sign up Image](./staticfiles/images/contrast_checks/sign_up_page.png)
+---
 
 ## Lighthouse
 
