@@ -1,4 +1,8 @@
-from django.shortcuts import render, redirect, reverse, get_object_or_404
+from django.shortcuts import (
+    render, redirect,
+    reverse,
+    get_object_or_404
+)
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q, Avg
@@ -11,6 +15,7 @@ from .models import Product, Category
 from .forms import ProductForm
 from inventory.models import Inventory
 from reviews.models import Review
+
 
 def all_products(request):
     """ A view to show all products, including sorting and search queries """
@@ -32,13 +37,14 @@ def all_products(request):
                 sortkey = 'category__name'
             if sortkey == 'rating':
                 sortkey = 'avg_rating'
-                products = products.annotate(avg_rating=Avg('reviews__user_rating'))
+                products = (
+                    products.annotate(avg_rating=Avg('reviews__user_rating')))
             if 'direction' in request.GET:
                 direction = request.GET['direction']
                 if direction == 'desc':
                     sortkey = f'-{sortkey}'
             products = products.order_by(sortkey)
-            
+
         if 'category' in request.GET:
             categories = request.GET['category'].split(',')
             products = products.filter(category__name__in=categories)
@@ -47,10 +53,12 @@ def all_products(request):
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
-                messages.error(request, "You didn't enter any search criteria!")
+                messages.error(request, (
+                    "You didn't enter any search criteria!"))
                 return redirect(reverse('products'))
-            
-            queries = Q(name__icontains=query) | Q(description__icontains=query)
+
+            queries = (
+                Q(name__icontains=query) | Q(description__icontains=query))
             products = products.filter(queries)
 
     current_sorting = f'{sort}_{direction}'
@@ -70,8 +78,10 @@ def product_detail(request, product_id):
     product = get_object_or_404(Product, pk=product_id)
     addon_products = Product.objects.filter(is_addon=True)
     # Calculate the average rating for the product
-    product_avg_rating = Review.objects.filter(product=product).aggregate(Avg('user_rating'))['user_rating__avg']
-    
+    product_avg_rating = (
+        Review.objects.filter(product=product).aggregate(
+            Avg('user_rating'))['user_rating__avg'])
+
     context = {
         'product': product,
         'addon_products': addon_products,
@@ -97,7 +107,8 @@ def add_product(request):
                 if 'image' in request.FILES:
                     image = request.FILES['image']
                     # Upload image to Cloudinary
-                    uploaded_image = uploader.upload(image, folder=settings.CLOUDINARY_FOLDER_NAME)
+                    uploaded_image = uploader.upload(
+                        image, folder=settings.CLOUDINARY_FOLDER_NAME)
                     # Access the URL of the uploaded image from the dictionary
                     product.image = uploaded_image['url']
                 product.save()
@@ -106,23 +117,29 @@ def add_product(request):
                 # Link initial quantity to the product
                 initial_quantity = form.cleaned_data.get('quantity')
                 if initial_quantity is not None:
-                    inventory, created = Inventory.objects.get_or_create(product=product)
+                    inventory, created = Inventory.objects.get_or_create(
+                        product=product)
                     inventory.quantity = initial_quantity
                     inventory.save()
 
                 messages.success(request, 'Successfully added product!')
                 return redirect(reverse('product_detail', args=[product.id]))
             else:
-                messages.error(request, 'Failed to add product. Please ensure the form is valid.')
+                messages.error(request, (
+                    'Failed to add product. Please ensure the form is valid.'))
         except Exception as e:
-            # Log the exception or handle it in a way that makes sense for your application
-            error_message = f'An error occurred while processing your request: {str(e)}'
+            # Log the exception or handle it in a way
+            # that makes sense for your application
+            error_message = (
+                f'An error occurred while processing your request: {str(e)}')
             messages.error(request, error_message)
             # Display the error message as a toast
-            messages.error(request, 'An error occurred while processing your request. Please try again.')
+            messages.error(request, (
+                'An error occurred while processing '
+                'your request. Please try again.'))
     else:
         form = ProductForm()
-        
+
     template = 'products/add_product.html'
     context = {
         'form': form,
@@ -146,7 +163,8 @@ def edit_product(request, product_id):
             if 'image' in request.FILES:
                 image = request.FILES['image']
                 # Upload image to Cloudinary
-                uploaded_image = uploader.upload(image, folder=settings.CLOUDINARY_FOLDER_NAME)
+                uploaded_image = uploader.upload(
+                    image, folder=settings.CLOUDINARY_FOLDER_NAME)
                 # Access the URL of the uploaded image from the dictionary
                 product.image = uploaded_image['url']
             # Save the updated product details
@@ -155,7 +173,8 @@ def edit_product(request, product_id):
             # Update inventory if initial_quantity is provided
             initial_quantity = form.cleaned_data.get('initial_quantity')
             if initial_quantity is not None:
-                inventory, created = Inventory.objects.get_or_create(product=product)
+                inventory, created = Inventory.objects.get_or_create(
+                    product=product)
                 if created:
                     inventory.quantity = initial_quantity
                 else:
@@ -164,7 +183,9 @@ def edit_product(request, product_id):
             messages.success(request, 'Successfully updated product!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(request, 'Failed to update product. Please ensure the form is valid.')
+            messages.error(request, (
+                'Failed to update product. '
+                'Please ensure the form is valid.'))
     else:
         form = ProductForm(instance=product)
         messages.info(request, f'You are editing {product.name}')

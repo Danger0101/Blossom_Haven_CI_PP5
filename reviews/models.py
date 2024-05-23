@@ -6,6 +6,7 @@ from products.models import Product
 
 User = get_user_model()
 
+
 class Review(models.Model):
     product = models.ForeignKey(
         Product,
@@ -19,7 +20,7 @@ class Review(models.Model):
         on_delete=models.CASCADE)
     user_rating = models.IntegerField(
         default=1,
-        validators=[MinValueValidator(1),MaxValueValidator(5)])
+        validators=[MinValueValidator(1), MaxValueValidator(5)])
     review_title = models.CharField(
         max_length=100,
         null=True,
@@ -30,4 +31,5 @@ class Review(models.Model):
 
     @property
     def product_avg_rating(self):
-        return self.product.review_set.aggregate(Avg('user_rating'))['user_rating__avg']
+        return self.product.review_set.aggregate(
+            Avg('user_rating'))['user_rating__avg']
