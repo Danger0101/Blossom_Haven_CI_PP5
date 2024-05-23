@@ -15,8 +15,9 @@ def cart_contents(request):
         try:
             product = get_object_or_404(Product, pk=item_id)
         except Product.DoesNotExist:
-            messages.error(request, "One of the products in your cart wasn't found in our database. "
-                                    "Please message us for assistance!")
+            messages.error(request, (
+                "One of the products in your cart wasn't found in "
+                "our database. Please message us for assistance!"))
             continue
 
         if isinstance(item_data, int):
@@ -28,7 +29,10 @@ def cart_contents(request):
                 'product': product,
             })
         else:
-            messages.error(request, 'There was an error with the quantity in your cart. Please contact us for assistance.')
+            messages.error(
+                request, (
+                    'There was an error with the quantity '
+                    'in your cart. Please contact us for assistance.'))
 
     if total < settings.FREE_DELIVERY_THRESHOLD:
         delivery = total * Decimal(settings.STANDARD_DELIVERY_PERCENTAGE / 100)
