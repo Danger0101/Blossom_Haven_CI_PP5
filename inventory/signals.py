@@ -3,6 +3,7 @@ from django.dispatch import receiver
 from .models import Inventory
 from products.models import Product
 
+
 # Signals for Product model
 @receiver(post_save, sender=Product)
 def create_product_inventory(sender, instance, created, **kwargs):
@@ -12,6 +13,7 @@ def create_product_inventory(sender, instance, created, **kwargs):
     if created:
         print('Creating inventory entry for product')
         Inventory.objects.create(product=instance)
+
 
 @receiver(post_save, sender=Product)
 def save_product_inventory(sender, instance, **kwargs):
