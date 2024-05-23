@@ -14,30 +14,55 @@ The site allows users:
 
 - [User Stories & Sprints](#user-stories)
 
-|        **[Features](#features)**        |                **[Testing](#testing)**                |      **[Lighthouse](#lighthouse)**      |
-| :-------------------------------------: | :---------------------------------------------------: | :-------------------------------------: |
-|            [Navbar](#navbar)            |          - [Manual Testing](#manual-testing)          |          [Index LH](#index-lh)          |
-|             [Index](#index)             |    [Automated Testing](#automated-testing-scripts)    |          [About LH](#about-lh)          |
-|          [About Us](#about-us)          | [Bugs & Issues Encounterd](#bugs--issues-encountered) |          [Admin LH](#admin-lh)          |
-|           [Sign Up](#signup)            |                                                       |   [Reservations LH](#reservations-lh)   |
-|           [Sign in](#sign-in)           |                                                       |           [Menu LH](#menu-lh)           |
-|    [Change Details](#change-details)    |                                                       |         [Signup LH](#signup-lh)         |
-|   [My Reservations](#my-reservations)   |                                                       |        [Sign in LH](#sign-in-lh)        |
-| [Make Reservations](#make-reservations) |                                                       | [Change Details LH](#change-details-lh) |
-| [Edit Reservations](#edit-reservations) |                                                       | [Contact Us LH](#contact-us-details-lh) |
-|              [Menu](#menu)              |                                                       |                                         |
-|       [Contact Use](#contact-us)        |                                                       |                                         |
-|            [Footer](#footer)            |                                                       |                                         |
-|       [Error Pages](#error-pages)       |                                                       |                                         |
-|      [Django Admin](#django-admin)      |                                                       |                                         |
+|           **[Features](#features)**             |
+| :---------------------------------------------: |
+|            [Navbar](#navbar)                    |
+|             [Index](#index)                     |
+|          [About Us](#about-us)                  |
+|           [Sign Up](#signup)                    |
+|           [Sign in](#sign-in)                   |
+|          [Profiles](#Profiles)                  |
+|           [Reviews](#Reviews)                   |
+|      [Products List](#Products-List)            |
+| [Products Details](#Products-Details)           |
+| [Add & Edit Products](#Add-or-Edit-Products)  |
+|       [Facebook Page](#Facebook-Page)           |
+|    [Instagram Page](#Instagram-Page)            |
+|    [Footer](#Footer)                            |
+|       [Error Pages](#error-pages)               |
+|      [Django Admin](#django-admin)              |  
 
-| **[Validation Testing](#validation-testing)** |    **[Setup](#setup)**    |                 **More**                 |
-| :-------------------------------------------: | :-----------------------: | :--------------------------------------: |
-|               [Python](#python)               |   [Database](#database)   |        [Wireframes](#wireframes)         |
-|           [JavaScript](#javascript)           | [Cloudinary](#cloudinary) |           [Credits](#credits)            |
-|                  [CSS](#css)                  | [Deployment](#deployment) | [Future Features](#future-feature-ideas) |
-|                 [HTML](#html)                 |                           |                                          |
-|             [Contrast](#contrast)             |                           |                                          |
+|               **[Testing](#testing)**                |
+| :--------------------------------------------------: |
+| [Manual Testing](#manual-testing)                    |
+| [Automated Testing](#automated-testing-scripts)      |
+| [Bugs & Issues Encounterd](#bugs--issues-encountered)|
+
+| **[Validation Testing](#validation-testing)** | 
+| :-------------------------------------------: |
+|               [Python](#python)               |
+|           [JavaScript](#javascript)           |
+|                  [CSS](#css)                  |
+|                 [HTML](#html)                 |
+|             [Contrast](#contrast)             |
+
+| **[Lighthouse](#Lighthouse)** |
+| :---------------------------: |
+|  |
+
+
+|    **[Setup](#setup)**    |
+| :-----------------------: |
+|   [Database](#database)   |
+| [Cloudinary](#cloudinary) |
+| [Deployment](#deployment) |
+| [Email Setup](#Email-Setup)
+
+|                 **More**                 |
+| :--------------------------------------: |
+|        [Wireframes](#wireframes)         |
+|           [Credits](#credits)            |
+| [Future Features](#future-feature-ideas) |
 
 ## User Stories
 
@@ -268,7 +293,7 @@ The site allows users:
 
 ---
 
-### footer
+### Footer
 
 - Links to Social Sites, Legal, and Newsletter signup
 
@@ -284,69 +309,35 @@ The site allows users:
 
 **403**
 
-![403 html error](./staticfiles/images/feature_images/403_msg.png)
+![403 html error]()
 
 **404**
 
-![404 html error](./staticfiles/images/feature_images/404_page.png)
+![404 html error]()
 
 **500**
 
-![500 html error](./staticfiles/images/feature_images/500_page.png)
+![500 html error]()
 
 ### Django Admin
 
-- Django admin is a powerful tool designed to make managing a website easier for staff members. It provides a user-friendly interface where staff can easily add, edit, or delete content without needing technical skills. Staff members can log in and access a dashboard that gives them control over various aspects of the website, such as managing user accounts, updating product listings, posting articles, and more. The admin panel organizes information neatly, allowing staff to navigate through different sections effortlessly. It's like having a control center for the website, making it simple for staff members to keep everything running smoothly and up-to-date.
+- 
 
-![Admin login image](./staticfiles/images/feature_images/admin/admin_login_page.png)
+![Admin login image]()
 
-![Admin site logged in image](./staticfiles/images/feature_images/admin/admin_main_page.png)
+![Admin site logged in image]()
 
-**Django admin_interface and colorfield**
+**Products**
 
-- Lightly experimented but setteled quickly with the current theme this was a pip package I found that so far I really like.
+- Allows admins to view, create, edit, and delete products and categories as needed.
 
-![Theme main page](./staticfiles/images/feature_images/admin/admin_theme_page.png)
+![product admin]()
 
-![Theme edit page](./staticfiles/images/feature_images/admin/admin_theme_edit_page.png)
+![Product add or edit admin]()
 
-**Meals**
+![Category add or edit admin]()
 
-- Allows admins to view, create, edit, and delete meals as needed.
 
-![Main admin meals](./staticfiles/images/feature_images/admin/admin_meals_page.png)
-
-![Make or edit admin meals](./staticfiles/images/feature_images/admin/admin_meals_edit_page.png)
-
-**Reservations**
-
-- Allows admins to view, create, edit, and delete reservations as needed.
-
-![Main admin reservations](./staticfiles/images/feature_images/admin/admin_reservation_page.png)
-
-![Make or edit admin reservations](./staticfiles/images/feature_images/admin/admin_reservation_edit_page.png)
-
-![Action Email Sending](./staticfiles/images/feature_images/admin_reservation_send_emails.png)
-
-**Accounts User**
-
-- Allows admins to view, create accounts, and/or edit account details as needed.
-
-![Main user accounts](./staticfiles/images/feature_images/admin/admin_user_page.png)
-
-![Make user accounts](./staticfiles/images/feature_images/admin/admin_user_make_page.png)
-
-![Edit user accounts](./staticfiles/images/feature_images/admin/admin_user_edit_page.png)
-
-![Action Email Sending](./staticfiles/images/feature_images/admin_user_send_emails.png)
-
-**Accounts Group**
-
-- Allows admin's to view, create, or deltete group catigories. Used to set a permissions easily to certian accounts and change them as needed based on whats set by superusers or users with permissions.
-
-![Accounts main group page](./staticfiles/images/feature_images/admin/admin_group_page.png)
-
-![Accounts edit group page](./staticfiles/images/feature_images/admin/admin_group_edit_page.png)
 
 ---
 
@@ -372,26 +363,15 @@ The site allows users:
 |             Log out of Django admin as staff             |   Yes   |                                        |
 |     Successfully change any users data on main site      |   Yes   |                                        |
 |     Successfully change any users data on admin site     |   Yes   |   Can only be done as a satff member   |
-|           Make reservation as a customer/user            |   Yes   |                                        |
-|             Make reservation as a superuser              |   Yes   |                                        |
-|                Make reservation as staff                 |   Yes   |                                        |
-|           Edit reservation as a customer/user            |   Yes   |                                        |
-|             Edit reservation as a superuser              |   Yes   |                                        |
-|                Edit reservation as staff                 |   Yes   |                                        |
-|          Delete reservation as a customer/user           |   Yes   |                                        |
-|            Delete reservation as a superuser             |   Yes   |                                        |
-|               Delete reservation as staff                |   Yes   |                                        |
-|      Edit reservation as a superuser on admin site       |   Yes   |                                        |
-|         Edit reservation as staff on admin site          |   Yes   |                                        |
-|     Delete reservation as a superuser on admin site      |   Yes   |                                        |
-|        Delete reservation as staff on admin site         |   Yes   |                                        |
-|     Check no more then 14 day's into future booking      |   Yes   | Unable to book outside of constraints  |
-|      Check booking time frame ends 2h befor closing      |   Yes   | Unable to book outside of constraints  |
-|        Multiple users can book same day and time         |   Yes   |                                        |
-|     Cant book over 20 people in a single reservation     |   Yes   | Added contraint to reduce cancelations |
-|      Booking 20 or less returns value of 20 or less      |   Yes   |                                        |
-|      Booking 21 or more returns value of 20 no more      |   Yes   |                                        |
-|        Admin Action send_reservation_confirmation        |   Yes   |             Email Recieved             |
+|                Make review as a customer/user            |   Yes   |                                        |
+|                  Make review as a superuser              |   Yes   |                                        |
+|                     Make review as staff                 |   Yes   |                                        |
+|                Edit review as a customer/user            |   Yes   |                                        |
+|                  Edit review as a superuser              |   Yes   |                                        |
+|                     Edit review as staff                 |   Yes   |                                        |
+|               Delete review as a customer/user           |   Yes   |                                        |
+|                 Delete review as a superuser             |   Yes   |                                        |
+|                    Delete review as staff                |   Yes   |                                        |
 |           Admin Action send_reservation_update           |   Yes   |             Email Recieved             |
 |          Admin Action send_cancel_email_to_user          |   Yes   |             Email Recieved             |
 |             Admin Action send_welcome_email              |   Yes   |             Email Recieved             |
@@ -405,30 +385,19 @@ The site allows users:
 
 |             Script             | Passed? |  Other information  |
 | :----------------------------: | :-----: | :-----------------: |
-|         email_test.py          |   Yes   |   Email Recieved    |
-|        test_menu_add.py        |   Yes   | No redirect testing |
-|      test_menu_remove.py       |   Yes   | No redirect testing |
-| tests_authentication_basics.py |   Yes   |        None         |
+|  |  |  |
 
-|             Script             |                          Terminal line                           |
-| :----------------------------: | :--------------------------------------------------------------: |
-|         email_test.py          |                       Ran as a python file                       |
-|        test_menu_add.py        |            python manage.py test meals.test_menu_add             |
-|      test_menu_remove.py       |           python manage.py test meals.test_menu_remove           |
-| tests_authentication_basics.py | python manage.py test authentication.tests_authentication_basics |
+
+| Script | Terminal line |
+| :----: | :-----------: |
+|  |  |
 
 ### Bugs & Issues Encountered
 
-| Bugs/Issues Encountered                                                                    |                        How problem was fixed or ammended                         | Fixed? |
-| ------------------------------------------------------------------------------------------ | :------------------------------------------------------------------------------: | :----: |
-| Enabling user sign-up with email verification due to email sending issues.                 |                 Removed the verification prior to making it live                 |  Yes   |
-| Getting images to load into the menu items                                                 |              Removed due to time constraint may add back in future               |  Yes   |
-| Getting static files to work as intended                                                   |         Tried different code variations, settled on one store location.          |  Yes   |
-| Getting static file js to load for menu selection                                          |              added it in script tags instead as its a small script               |  Yes   |
-| Users could set any date or time in making reservation whether future or past              | JS and Python ensure bookings within opening hours, No same-day online bookings. |  Yes   |
-| If a user attempts to book two reservations for the same date and time, it won't be saved. |                  Removed the section of code causing the issue                   |  Yes   |
-| Show password disapearing on certian browsers such as chrome                               |                               Not fixed currently                                |   No   |
-| Edit reservation not populating the time due to the way field is set up                    |              <p> fields added to alert user to original reservation              |   No   |
+| Bugs/Issues Encountered | How problem was fixed or ammended | Fixed? |
+| ----------------------- | :-------------------------------: | :----: |
+|  |  |  |
+
 
 ---
 
@@ -440,34 +409,8 @@ All Scripts checked with [PEP8 Code institute](https://pep8ci.herokuapp.com/)
 
 |                   **File**                    | **Line** | **Errors or Warnings** |
 | :-------------------------------------------: | :------: | :--------------------: |
-|                 about\apps.py                 |   All    |          None          |
-|                about\forms.py                 |   All    |          None          |
-|                 about\urls.py                 |   All    |          None          |
-|                about\views.py                 |   All    |          None          |
-|            authentication\apps.py             |   All    |          None          |
-|            authentication\forms.py            |   All    |          None          |
-| authentication\tests_authentication_basics.py |   All    |          None          |
-|            authentication\urls.py             |   All    |          None          |
-|            authentication\views.py            |   All    |          None          |
-|             burger_blast\asgi.py              |   All    |          None          |
-|           burger_blast\settings.py            |   All    |          None          |
-|             burger_blast\urls.py              |   All    |          None          |
-|             burger_blast\wsgi.py              |   All    |          None          |
-|                 email_test.py                 |   All    |          None          |
-|                   manage.py                   |   All    |          None          |
-|                meals\admin.py                 |   All    |          None          |
-|                 meals\apps.py                 |   All    |          None          |
-|                meals\models.py                |   All    |          None          |
-|            meals\test_menu_add.py             |   All    |          None          |
-|           meals\test_menu_remove.py           |   All    |          None          |
-|                 meals\urls.py                 |   All    |          None          |
-|                meals\views.py                 |   All    |          None          |
-|             reservation\admin.py              |   All    |          None          |
-|              reservation\apps.py              |   All    |          None          |
-|             reservation\forms.py              |   All    |          None          |
-|             reservation\models.py             |   All    |          None          |
-|              reservation\urls.py              |   All    |          None          |
-|             reservation\views.py              |   All    |          None          |
+| blossom_haven\settings.py |   All    |          None          |
+
 
 ## Javascript
 
@@ -569,115 +512,11 @@ All Scripts checked with [PEP8 Code institute](https://pep8ci.herokuapp.com/)
 
 **Chrome lighthouse desktop**
 
-![Screencap index lighthouse desktop](./staticfiles/images/burger_blast_lighthouse/Index_lh_desktop.png)
+![Screencap index lighthouse desktop]()
 
 **Chrome mobile lighthouse**
 
-![Screencap index lighthouse mobile](./staticfiles/images/burger_blast_lighthouse/Index_lh_mobile.png)
-
-### About LH
-
-**Chrome lighthouse desktop**
-
-![Screencap about lighthouse desktop](./staticfiles/images/burger_blast_lighthouse/aboutus_lh_desktop.png)
-
-**Chrome mobile lighthouse**
-
-![Screencap about lighthouse mobile](./staticfiles/images/burger_blast_lighthouse/aboutus_lh_mobile.png)
-
-### Admin LH
-
-**Admin Login lighthouse desktop**
-
-![Screencap admin login lighthouse desktop](./staticfiles/images/burger_blast_lighthouse/admin_signin_lh_desktop.png)
-
-**Admin Login mobile lighthouse**
-
-![Screencap admin login lighthouse mobile](./staticfiles/images/burger_blast_lighthouse/admin_signin_lh_mobile.png)
-
-**Admin site lighthouse desktop**
-
-![Screencap admin site lighthouse desktop](./staticfiles/images/burger_blast_lighthouse/admin_lh_desktop.png)
-
-**Admin site mobile lighthouse**
-
-![Screencap admin site lighthouse mobile](./staticfiles/images/burger_blast_lighthouse/admin_lh_mobile.png)
-
-### Reservations LH
-
-**Edit Reservation lighthouse desktop**
-
-![Screencap edit reservationt lighthouse desktop](./staticfiles/images/burger_blast_lighthouse/edit_reservations_lh_desktop.png)
-
-**Edit Reservation mobile lighthouse**
-
-![Screencap edit reservation lighthouse mobile](./staticfiles/images/burger_blast_lighthouse/edit_reservations_lh_mobile.png)
-
-**Make Reservation lighthouse desktop**
-
-![Screencap make reservation lighthouse desktop](./staticfiles/images/burger_blast_lighthouse/make_reservations_lh_desktop.png)
-
-**Make Reservation mobile lighthouse**
-
-![Screencap make reservation lighthouse mobile](./staticfiles/images/burger_blast_lighthouse/make_reservations_lh_mobile.png)
-
-**My Reservation lighthouse desktop**
-
-![Screencap my reservation lighthouse desktop](./staticfiles/images/burger_blast_lighthouse/my_reservations_lh_desktop.png)
-
-**My Reservation mobile lighthouse**
-
-![Screencap my reservation lighthouse mobile](./staticfiles/images/burger_blast_lighthouse/my_reservations_lh_mobile.png)
-
-### Menu LH
-
-**Lighthouse desktop**
-
-![Screencap menu lighthouse desktop](./staticfiles/images/burger_blast_lighthouse/menu_lh_desktop.png)
-
-**Lighthouse mobile**
-
-![Screencap menu lighthouse mobile](./staticfiles/images/burger_blast_lighthouse/menu_lh_mobile.png)
-
-### Signup LH
-
-**Lighthouse desktop**
-
-![Screencap signup lighthouse desktop](./staticfiles/images/burger_blast_lighthouse/signup_lh_desktop.png)
-
-**Lighthouse mobile**
-
-![Screencap singup lighthouse mobile](./staticfiles/images/burger_blast_lighthouse/signup_lh_mobile.png)
-
-### Sign In LH
-
-**ighthouse desktop**
-
-![Screencap sign in lighthouse desktop](./staticfiles/images/burger_blast_lighthouse/signin_lh_desktop.png)
-
-**Lighthouse mobile**
-
-![Screencap sign in lighthouse mobile](./staticfiles/images/burger_blast_lighthouse/signin_lh_mobile.png)
-
-### Change Details LH
-
-**lighthouse desktop**
-
-![Screencap change details lighthouse desktop](./staticfiles/images/burger_blast_lighthouse/update_details_lh_desktop.png)
-
-**Lighthouse mobile**
-
-![Screencap change details lighthouse mobile](./staticfiles/images/burger_blast_lighthouse/update_details_lh_mobile.png)
-
-### Contact Us Details LH
-
-**lighthouse desktop**
-
-![Screencap contact us lighthouse desktop](./staticfiles/images/burger_blast_lighthouse/contact_lh_desktop.png)
-
-**Lighthouse mobile**
-
-![Screencap contact us lighthouse mobile](./staticfiles/images/burger_blast_lighthouse/contact_lh_mobile.png)
+![Screencap index lighthouse mobile]()
 
 ---
 
@@ -773,23 +612,25 @@ python manage.py migrate
 
 2. **Configure Settings:** In your Django project's settings.py file, add the following configurations:
 
-   **.env**
+   **.env env.py or equivilent follow correct stucture for local deployment**
 
-|              Line to enter               |
-| :--------------------------------------: |
-|    CLOUDINARY_API_KEY = Api key value    |
-| CLOUDINARY_API_SECRET = Api secret value |
-| CLOUDINARY_CLOUD_NAME = Cloudinary Name  |
+|                  Line to enter                  |
+| :---------------------------------------------: |
+|    CLOUDINARY_API_KEY = Api key value           |
+| CLOUDINARY_API_SECRET = Api secret value        |
+| CLOUDINARY_CLOUD_NAME = Cloudinary Name         |
+| CLOUDINARY_FOLDER_NAME = Cloudinary folder name |
 
 (Replace all after **"="** with your information)
 
-**Heroku Cofig Variables**
+**[Heroku](https://www.heroku.com/) Cofig Variables for live delpoyment**
 
-|          Key          |      Value       |
-| :-------------------: | :--------------: |
-|  CLOUDINARY_API_KEY   |  Api key value   |
-| CLOUDINARY_API_SECRET | Api secret value |
-| CLOUDINARY_CLOUD_NAME | Cloudinary Name  |
+|          Key           |         Value          |
+| :--------------------: | :--------------------: |
+|  CLOUDINARY_API_KEY    |     Api key value      |
+| CLOUDINARY_API_SECRET  |    Api secret value    |
+| CLOUDINARY_CLOUD_NAME  |    Cloudinary Name     |
+| CLOUDINARY_FOLDER_NAME | Cloudinary Folder Name |
 
 (Replace all **Values** with your information)
 
@@ -813,9 +654,9 @@ python manage.py migrate
 
 ### Deployment
 
-Used Heroku to deploy the website. You can [Visit Live Site by clicking here](https://burger-blast-ci-2024-63403f4a3896.herokuapp.com/)
+Used Heroku to deploy the website. You can [Visit Live Site by clicking here](https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/)
 
-#### How to deploy to heroku:
+#### How to deploy to [Heroku](https://www.heroku.com/):
 
 1. **Run Migrations:** Once your project is deployed, you'll need to run any pending database migrations. You can do this using Heroku's web-based console or by running commands in your local terminal.
 2. **Create a Superuser:** If your project uses Django's admin interface, you may want to create a superuser account on Heroku. You can do this by accessing your app's shell through the Heroku dashboard and running the createsuperuser command.
@@ -829,7 +670,7 @@ Used Heroku to deploy the website. You can [Visit Live Site by clicking here](ht
 10. **Link GitHub Repo:** Under deploy tab in the settings link your GitHub repository.
 11. **Set Up Environment Variables:** Now under settings tab set any necessary environment variables for this django project. See chart below for needed key and values.
 
-**Heroku Cofig Variables**
+**[Heroku](https://www.heroku.com/) Cofig Variables**
 
 |          Key          |               Value               |
 | :-------------------: | :-------------------------------: |
@@ -845,72 +686,102 @@ Used Heroku to deploy the website. You can [Visit Live Site by clicking here](ht
 
 12. **Deploy Your Project:** Back under deploy tab on Heroku scroll down to manual deploy and choose the branch you wish to deploy and hit button "Deploy Branch" wait for the success and trouble shoot if needed.
 
+---
+
+### Email Setup
+
+**Using Gmail for this site others may varry slightly**
+
+1. Go to [Gmail](https://mail.google.com/):
+
+- If you already have a Gmail account, you can skip this step
+- If not, click on "Create account" and follow the instructions to set up a new Gmail account.
+
+2. Sign in to your Gmail account:
+
+- Visit [Gmail](https://mail.google.com/) and log in with your email and password.
+
+3. [Setting up app passowrd follow these instructions](https://support.google.com/accounts/answer/185833?hl=en)
+
+- if you dont see [app passwords](https://myaccount.google.com/apppasswords) click the link
+4. Set Up the settings.py File in Django
+
+**Add to your settings.py**
+
+|                      Line to enter                            |
+| :-----------------------------------------------------------: |
+| import os (if not already imported)                           |
+| EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend' |
+| EMAIL_USE_TLS = True                                          |
+| EMAIL_PORT = 587                                              |
+| EMAIL_HOST = 'smtp.gmail.com'                                 |
+| EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER', '')            |
+| EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASS', '')        |
+| DEFAULT_FROM_EMAIL = EMAIL_HOST_USER                          |
+
+5. Set Up Configuration Variables for Email Credentials
+
+   **.env env.py or equivilent follow correct stucture for local development**
+
+|    Line to enter in settings.py        |
+| :------------------------------------: |
+| EMAIL_HOST_USER = your_email@gmail.com |
+| EMAIL_HOST_PASS = your_app_password    |
+
+(Replace all after **"="** with your information)
+
+**[Heroku](https://www.heroku.com/) Cofig Variables for live deployments**
+
+|   Key           |         Value           |
+| :-------------: | :---------------------: |
+| EMAIL_HOST_USER | Your gamil email        |
+| EMAIL_HOST_PASS | your_app_password       |
+
+---
+
 ## Technology used
 
-- HTML
-- CSS
-- Fontawesome
-- Google Fonts
-- Visual Studios Code (VSCode)
-- Github
-- Git
-- Gyzo
-- mspaint
-- Github Desktop App
-- Cloudinary
-- Python
-- Django
-- Django-extensions
-- fotor (AI Image generator)
-- Logo designed by [app logo site](https://app.logo.com/login)
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [Fontawesome](https://fontawesome.com/)
+- [Visual Studios Code (VSCode)](https://code.visualstudio.com/)
+- [Github](https://github.com/)
+- [Git](https://git-scm.com/doc)
+- [Gyazo](https://gyazo.com/en)
+- [Github Desktop App](https://desktop.github.com/)
+- [Cloudinary](https://cloudinary.com/documentation)
+- [Python 3.12](https://docs.python.org/3/)
+- [Django 5.2](https://docs.djangoproject.com/en/5.0/)
+- [Django-allauth](https://docs.allauth.org/en/latest/)
+- [fooocus](https://github.com/lllyasviel/Fooocus?tab=readme-ov-file)
 
 ## Wireframes
-
-### Admin Page
-
-- Ended up going with a pre built one from ![django-admin-interface](https://pypi.org/project/django-admin-interface/0.6.0/) "pip install django-admin-interface"
-
-![Image for admin page wireframe](staticfiles/images/wireframes/admin_page.png)
 
 ### Landing Page
 
 ![Image for admin page wireframe](staticfiles/images/wireframes/landing_page.png)
 
-### Menu
-
-![Image for admin page wireframe](staticfiles/images/wireframes/menu_page.png)
-
-### Make/Edit Reservations
-
-![Image for admin page wireframe](staticfiles/images/wireframes/reservation_and_edit_reservastion_page.png)
-
 ## Credits
 
 **Images**
 
-![websitebackground Actual Image](./staticfiles/images/background_burger_two.jpg)
-
-- Website Background Image by [fotor:](https://www.fotor.com/)
-
-- Logo designed by [app logo](https://app.logo.com/)
+- All images use on the website are made by [fooocus](https://github.com/lllyasviel/Fooocus?tab=readme-ov-file) which at time of writting this is a completely free AI image generator that uses your own hardware to generate images.
 
 **More Credits**
 
-- My wife who’s been supper supportive of this change in career for me and just being out right amazing we will get her into this one way or another I am sure.
+- My wife who’s been super supportive of this change in career for me and just being out right amazing we will get her into this one way or another I am sure.
 
 - Code Institute for providing an excellent accelerated learning platform worth every penny.
+
+- Botique Ado walk through from code instiute as this was the basis of the project. I originally was going to expand on that but I had a spur of the moment idea for a floarist site and I think I have nailed my version of a MVP and even tweaked it some more.
+
+- My farmers market food stall [Bokit'la](https://www.bokitla.com/) they helped insprie the project unknowingly as I told them I had this project coming up and I will possibly be helping them soon impliment shopify to their website. As a side project I want to remake their site in Django and they said do it and send it so next up is theirs. I would have done it for this but they are specifically looking for shoppify and thats possibly out side the grading for this. They got my brain thinking of ideas and Blossom Haven came out of the wood works from that.
 
 ---
 
 ## Future feature ideas
 
-|              Feature Ideas               |    Why Not Implimented    |
-| :--------------------------------------: | :-----------------------: |
-|               Reviews page               |       Nice to have        |
-|            Email verification            |       Nice to have        |
-|          Users Delete accounts           |       Nice to have        |
-|          Reset/Forgot Password           |       Nice to have        |
-|        Online Ordering/Deliveries        |       Nice to have        |
-|          Better looking emails           |       Nice to have        |
-|  Auto admin site emails upon task save   |       Nice to have        |
-| Link socials to restaurant (if launched) | Needed if real restaurant |
+| Feature Ideas   | Why Not Implimented               |
+| :-------------: | :-------------------------------: |
+| Cuppons/voucher | Time and it wasn't needed for MVP |
