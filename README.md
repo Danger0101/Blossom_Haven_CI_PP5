@@ -498,12 +498,15 @@ All Scripts checked with [PEP8 Code institute](https://pep8ci.herokuapp.com/)
 
 - All my custom js scripts were run though [jshint](https://jshint.com/).
 
-| **File**                  | **Line** | **Image** |
-| :-----------------------: | :------: | :-------: |
-|  | All | ![]() |
-|  | All | ![]() |
-|  | All | ![]() |
-|  | All | ![]() |
+| **File**                    | **Line** | **Image**                                                                               |
+| :-------------------------: | :------: | :-------------------------------------------------------------------------------------: |
+| Cart HTML JS                | All      | ![Cart HTMl side js](./media/js-test/cart/cart-html-js.png)                             |
+| Stripe js                   | All      | ![Stripe js](./media/js-test/checkout/stripe-js.png)                                    |
+| Async loading product image | All      | ![Async product image](./media/js-test/products/async-product-images-js.png)            |
+| Scroll button               | All      | ![Scroll button](./media/js-test/products/btt-scroll-js.png)                            |
+| Add/Edit product html js    | All      | ![Add/Edit product html side js](./media/js-test/products/edit-add-product-html-js.png) |
+| Sortby js                   | All      | ![Sortby js](./media/js-test/products/sort-selector-js.png)                             |
+| Country Field js            | All      | ![Country Field js](./media/js-test/profiles/countryfield-js.png)                       |
 
 ---
 
