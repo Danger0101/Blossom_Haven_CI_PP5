@@ -2,9 +2,11 @@ from django.contrib import admin, messages
 from django.core.mail import send_mail
 from .models import Order, OrderLineItem
 
+
 class OrderLineItemAdminInline(admin.TabularInline):
     model = OrderLineItem
     readonly_fields = ('lineitem_total',)
+
 
 class OrderAdmin(admin.ModelAdmin):
     inlines = (OrderLineItemAdminInline,)
@@ -27,22 +29,32 @@ class OrderAdmin(admin.ModelAdmin):
     list_filter = ('status',)
 
     ordering = ('-date',)
-    
+
     search_fields = ('order_number', 'full_name', 'email', 'date')
-    
+
     actions = ['mark_as_shipped', 'mark_as_delivered', 'mark_as_cancelled']
 
     def send_status_change_email(self, request, queryset, new_status):
         for order in queryset:
             subject = f"Order #{order.order_number} Status Update"
-            message = f"Dear {order.full_name},\n\nYour order with tracking number {order.tracking_number} has been updated to '{new_status}' status.\n\nThank you for shopping with us!\n\nBest regards,\nThe Store Team"
-            send_mail(subject, message, 'your_email@example.com', [order.email])
+            message = render_to_string(
+                 'emails/order_status_update.txt',
+                 context)
+            send_mail(
+                subject, message,
+                'your_email@example.com',
+                [order.email])
 
     def mark_as_shipped(self, request, queryset):
         for order in queryset:
             if not order.tracking_number:  # If tracking number is not set
                 # Show a message to the admin in red
-                self.message_user(request, f"Tracking number not set for Order #{order.order_number}. Please set it manually.", level=messages.ERROR)
+                self.message_user(
+                    request, (
+                        "Tracking number not set for"
+                        f" Order #{order.order_number}. "
+                        "Please set it manually.",)
+                    level=messages.ERROR)
             else:
                 order.status = 'S'  # Update status to 'Shipped'
                 order.save()
@@ -62,5 +74,6 @@ class OrderAdmin(admin.ModelAdmin):
             order.save()
             self.send_status_change_email(request, [order], 'Cancelled')
     mark_as_cancelled.short_description = "Mark selected orders as cancelled"
+
 
 admin.site.register(Order, OrderAdmin)
