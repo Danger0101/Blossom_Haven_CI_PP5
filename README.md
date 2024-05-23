@@ -152,6 +152,12 @@ The site allows users:
 
 - [Testing, fixing and refactoring, Extras](https://github.com/Danger0101/Blossom_Haven_CI_PP5/milestone/8?closed=1)
 
+---
+
+[Back to table of contents](#Table-of-contents)
+
+---
+
 ## Features
 
 ### Navbar
@@ -341,6 +347,10 @@ The site allows users:
 
 ---
 
+[Back to table of contents](#Table-of-contents)
+
+---
+
 ## Testing
 
 ### Manual Testing
@@ -398,6 +408,10 @@ The site allows users:
 | ----------------------- | :-------------------------------: | :----: |
 |  |  |  |
 
+
+---
+
+[Back to table of contents](#Table-of-contents)
 
 ---
 
@@ -539,6 +553,10 @@ All Scripts checked with [PEP8 Code institute](https://pep8ci.herokuapp.com/)
 
 ---
 
+[Back to table of contents](#Table-of-contents)
+
+---
+
 ## Lighthouse
 
 ### Index LH
@@ -550,6 +568,10 @@ All Scripts checked with [PEP8 Code institute](https://pep8ci.herokuapp.com/)
 **Chrome mobile lighthouse**
 
 ![Screencap index lighthouse mobile]()
+
+---
+
+[Back to table of contents](#Table-of-contents)
 
 ---
 
@@ -628,6 +650,10 @@ python manage.py migrate
 
 ---
 
+[Back to table of contents](#Table-of-contents)
+
+---
+
 ### Cloudinary
 
 **Creating a Cloudinary Account**
@@ -685,6 +711,10 @@ python manage.py migrate
 
 ---
 
+[Back to table of contents](#Table-of-contents)
+
+---
+
 ### Deployment
 
 Used Heroku to deploy the website. You can [Visit Live Site by clicking here](https://blossom-haven-ci-pp5-d8c652557fbc.herokuapp.com/)
@@ -718,6 +748,10 @@ Used Heroku to deploy the website. You can [Visit Live Site by clicking here](ht
 (Replace all **Values** with your information)
 
 12. **Deploy Your Project:** Back under deploy tab on Heroku scroll down to manual deploy and choose the branch you wish to deploy and hit button "Deploy Branch" wait for the success and trouble shoot if needed.
+
+---
+
+[Back to table of contents](#Table-of-contents)
 
 ---
 
@@ -772,6 +806,10 @@ Used Heroku to deploy the website. You can [Visit Live Site by clicking here](ht
 
 ---
 
+[Back to table of contents](#Table-of-contents)
+
+---
+
 ## Technology used
 
 - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
@@ -811,6 +849,10 @@ Used Heroku to deploy the website. You can [Visit Live Site by clicking here](ht
 - Botique Ado walk through from code instiute as this was the basis of the project. I originally was going to expand on that but I had a spur of the moment idea for a floarist site and I think I have nailed my version of a MVP and even tweaked it some more.
 
 - My farmers market food stall [Bokit'la](https://www.bokitla.com/) they helped insprie the project unknowingly as I told them I had this project coming up and I will possibly be helping them soon impliment shopify to their website. As a side project I want to remake their site in Django and they said do it and send it so next up is theirs. I would have done it for this but they are specifically looking for shoppify and thats possibly out side the grading for this. They got my brain thinking of ideas and Blossom Haven came out of the wood works from that.
+
+---
+
+[Back to table of contents](#Table-of-contents)
 
 ---
 
