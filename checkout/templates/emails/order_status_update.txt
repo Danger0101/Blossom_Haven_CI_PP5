@@ -1,0 +1,8 @@
+Dear {{ full_name }},
+
+Your order with tracking number {{ tracking_number }} has been updated to '{{ new_status }}' status.
+
+Thank you for shopping with us!
+
+Best regards,
+Blossom Haven
