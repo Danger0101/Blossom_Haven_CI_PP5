@@ -41,8 +41,13 @@ def create_review(request, product_id):
             return redirect('product_detail', product_id=product_id)
     else:
         form = ReviewForm()
-    return render(request, (
-        'reviews/create_review.html', {'form': form, 'product': product}))
+
+    context = {
+        'form': form,
+        'product': product,
+    }
+
+    return render(request, 'reviews/create_review.html', context)
 
 
 @login_required
