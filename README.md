@@ -170,37 +170,41 @@ The site allows users:
 
 - 
 
-![Navbar]()
+![Navbar Desktop](./media/pages/nav/desktop-nav.png)
 
-![Navbar All Products]()
+![Navbar Mobile](./media/pages/nav/mobile-nav.png)
 
-![Navbar Floral Arrangements]()
+![Navbar All Products](./media/pages/nav/all-products-nav.png)
 
-![Navbar Ocassions]()
+![Navbar Floral Arrangements](./media/pages/nav/floral-arrangements-nav.png)
 
-![Navbar Register/Signin]()
+![Navbar Ocassions](./media/pages/nav/ocassions-nav.png)
 
-![Navbar Staff/Superuser logged in]()
+![Navbar Register/Signin](./media/pages/nav/rgister-login-nav.png)
 
-![Navbar Customer Logged in]()
+![Navbar Staff/Superuser logged in](./media/pages/nav/admin-nav.png)
+
+![Navbar Customer Logged in](./media/pages/nav/user-nav.png)
 
 ---
 ### Index
 
 - The landing page with a call to action and a soothing floral backgorund image.
 
-![Index Page]()
+![Index Page](./media/pages)
 
 ---
 ### Register
 
 - Django Allauth register page, allows users to make an account.
 
-![Register Page]()
+![Register Page](./media/pages/allauth/register-page.png)
 
-**Email link to confirm account activation**
+**Email link to confirm account activation and page**
 
-![Confirm Email Example]()
+![Confirm Email Example](./media/pages/allauth/verify-email-page.png)
+
+![Confimed Email Page](./media/pages/allauth/confirm-email-page.png)
 
 ---
 
@@ -208,15 +212,15 @@ The site allows users:
 
 - Django allauth page for users who forgot password and want to reset it
 
-![Forgot Password form email]()
+![Forgot Password form email](./media/pages/allauth)
 
 **Forgot Password Email**
 
-![Forgot Password Email Image]()
+![Forgot Password Email Image](./media/pages/allauth)
 
 **Forgot Pass Change Pass Page**
 
-![Forgotten password change password form]()
+![Forgotten password change password form](./media/pages/allauth)
 
 ---
 
@@ -224,11 +228,11 @@ The site allows users:
 
 - Django Allauth change password page. Allows logged in users to change account password.
 
-![Change Password Page]()
+![Change Password Page](./media/pages/allauth)
 
 **Change Password Email**
 
-![Change Password Email]()
+![Change Password Email](./media/pages/allauth)
 
 ---
 
@@ -236,7 +240,9 @@ The site allows users:
 
 - Django allauth sign in page, allows Users to sign into their accounts using username/Email and password.
 
-![Sign In Page]()
+![Sign In Page](./media/pages/allauth)
+
+![Wrong Email, username, or password](./media/pages/allauth/wrong-user-pass.png)
 
 ---
 
@@ -244,11 +250,11 @@ The site allows users:
 
 - Allows users to view past orders and their shipping information which can be updated here.
 
-![Profile Page]()
+![Profile Page](./media/pages/profiles/profile-page.png)
 
 **Change Shipping Details Email**
 
-![Change shipping email image]()
+![Change shipping email image](./media/pages)
 
 ---
 
@@ -256,19 +262,19 @@ The site allows users:
 
 - Allows all visitors to view user left reviews, if logged in can create, edit, and delete their reviews
 
-![Reviews Page]()
+![Reviews Page](./media/pages/reviews/review-page.png)
 
 **Review Confirmation Email**
 
-![Review confirmation email image]()
+![Review confirmation email image](./media/pages)
 
 **Review Edit Confirmation Email**
 
-![Change review email image]()
+![Change review email image](./media/pages)
 
 **Review Delete Confirmation Email**
 
-![Delete review email image]()
+![Delete review email image](./media/pages)
 
 ---
 
@@ -276,7 +282,7 @@ The site allows users:
 
 - This page has many versions based on user search's and sort parameters. Users can see availble products sorted here with image, product name, price, and average rating.
 
-![Product List Page]()
+![Product List Page](./media/pages/products/products-page.png)
 
 ---
 
@@ -284,7 +290,7 @@ The site allows users:
 
 - This is where users can view a specific product as well as the addons available. This will give a full indepth view into the product including the name (product and addons), if its availble and how many are available (product and addons), product decription, a quanity selector (product and addons), Add to cart (product and addons), and even the price (product and addons).
 
-![Product Detail Page]()
+![Product Detail Page](./media/pages/products/products-details-page.png)
 
 ---
 
@@ -294,13 +300,13 @@ The site allows users:
 
 - Here staff and super users can add new products and set all elements of the products.
 
-![Add Product Page]()
+![Add Product Page](./media/pages/products/add-product-page.png)
 
 **Edit Product**
 
 - Here staff and super users can edit products and set all elements of the products.
 
-![Edit Product Page]()
+![Edit Product Page](./media/pages/products/edit-product-page.png)
 
 ---
 
@@ -308,7 +314,7 @@ The site allows users:
 
 - The primary location for social marketing and escentially like a second storefront.
 
-![Facebook Screenshot]()
+![Facebook Screenshot](./media/pages/socials/facebook-page.png)
 
 ---
 
@@ -316,7 +322,7 @@ The site allows users:
 
 - The secondary more visual only social media marketing.
 
-![Instagram Screenshot]()
+![Instagram Screenshot](./media/pages)
 
 ---
 
@@ -324,7 +330,13 @@ The site allows users:
 
 - Links to Social Sites, Legal, and Newsletter signup
 
-![Image of footer]()
+![Image desktop footer](./media/pages/footer/footer-desktop.png)
+
+![Image mobile footer](./media/pages/footer/footer-mobile.png)
+
+![Image privacy policy example footer](./media/pages/footer/privacy-policy-pop-up.png)
+
+![Image terms of service footer](./media/pages/footer/tos-pop-up.png)
 
 ---
 
@@ -332,19 +344,19 @@ The site allows users:
 
 **400**
 
-![400 html error]()
+![400 html error](./media/pages/errors)
 
 **403**
 
-![403 html error]()
+![403 html error](./media/pages/errors)
 
 **404**
 
-![404 html error]()
+![404 html error](./media/pages/errors)
 
 **500**
 
-![500 html error]()
+![500 html error](./media/pages/errors/500-page.png)
 
 ### Django Admin
 
@@ -352,47 +364,47 @@ The site allows users:
 
 | Login                  |                                 |
 | :--------------------: | :-----------------------------: |
-| ![Admin login image]() | ![Admin site logged in image]() |
+| ![Admin login image](./media/pages) | ![Admin site logged in image](./media/pages) |
 
 | Groups                  |                                 |
 | :---------------------: | :-----------------------------: |
-| ![Admin Groups Main]() | ![Admin Groups Sub]() |
+| ![Admin Groups Main](./media/pages) | ![Admin Groups Sub](./media/pages) |
 
 | Users                  |                                 |
 | :--------------------: | :-----------------------------: |
-| ![Admin Users Main]() | ![Admin Users Sub]() |
+| ![Admin Users Main](./media/pages) | ![Admin Users Sub](./media/pages) |
 
 | Orders                 |                                 |
 | :--------------------: | :-----------------------------: |
-| ![Admin Order Main]() | ![Admin Order Sub]() |
+| ![Admin Order Main](./media/pages) | ![Admin Order Sub](./media/pages) |
 
 | Inventory              |                                 |
 | :--------------------: | :-----------------------------: |
-| ![Admin Inventory Main]() | ![Admin Inventory Sub]() |
+| ![Admin Inventory Main](./media/pages) | ![Admin Inventory Sub](./media/pages) |
 
 | Categories             |                                 |
 | :--------------------: | :-----------------------------: |
-| ![Admin Categories Main]() | ![Admin Categories Sub]() |
+| ![Admin Categories Main](./media/pages) | ![Admin Categories Sub](./media/pages) |
 
 | Products               |                                 |
 | :--------------------: | :-----------------------------: |
-| ![Admin Products Main]() | ![Admin Products Sub]() |
+| ![Admin Products Main](./media/pages) | ![Admin Products Sub](./media/pages) |
 
 | Reviews                |                                 |
 | :--------------------: | :-----------------------------: |
-| ![Admin Reviews Main]() | ![Admin Reviews Sub]() |
+| ![Admin Reviews Main](./media/pages) | ![Admin Reviews Sub](./media/pages) |
 
 | Social accounts        |                                 |
 | :--------------------: | :-----------------------------: |
-| ![Admin Social Account Main]() | ![Admin Social  Account Sub]() |
+| ![Admin Social Account Main](./media/pages) | ![Admin Social  Account Sub](./media/pages) |
 
 | Social app tokens      |                                 |
 | :--------------------: | :-----------------------------: |
-| ![Admin Social Token Main]() | ![Admin Social Token Sub]() |
+| ![Admin Social Token Main](./media/pages) | ![Admin Social Token Sub](./media/pages) |
 
 | Social applications    |                                 |
 | :--------------------: | :-----------------------------: |
-| ![Admin Social App Main]() | ![Admin Social App Sub]() |
+| ![Admin Social App Main](./media/pages) | ![Admin Social App Sub](./media/pages) |
 
 ---
 
@@ -699,6 +711,8 @@ All Scripts checked with [PEP8 Code institute](https://pep8ci.herokuapp.com/)
 
 - Checked all non logged in pages with [A11Y contrast checker](https://color.a11y.com/) Cameback with no issues.
 
+![Contrast Check](./media/contrast-check.png)
+
 **Index**
 
 ![Contrast checker index Image](./staticfiles/images/contrast_checks/index_page.png)
@@ -713,13 +727,73 @@ All Scripts checked with [PEP8 Code institute](https://pep8ci.herokuapp.com/)
 
 ### Index LH
 
-**Chrome lighthouse desktop**
+| **Chrome lighthouse desktop** | **Chrome mobile lighthouse** |
+| :---------------------------: | :--------------------------: |
+| ![Screencap index lighthouse desktop]() | ![Screencap index lighthouse mobile]() |
 
-![Screencap index lighthouse desktop]()
+### Products
 
-**Chrome mobile lighthouse**
+**Product Add LH**
 
-![Screencap index lighthouse mobile]()
+| **Chrome lighthouse desktop** | **Chrome mobile lighthouse** |
+| :---------------------------: | :--------------------------: |
+| ![Screencap product add lighthouse desktop]() | ![Screencap product add lighthouse mobile]() |
+
+**Product Edit LH**
+
+| **Chrome lighthouse desktop** | **Chrome mobile lighthouse** |
+| :---------------------------: | :--------------------------: |
+| ![Screencap product edit lighthouse desktop]() | ![Screencap product edit lighthouse mobile]() |
+
+**Products List LH**
+
+| **Chrome lighthouse desktop** | **Chrome mobile lighthouse** |
+| :---------------------------: | :--------------------------: |
+| ![Screencap products list lighthouse desktop]() | ![Screencap products list lighthouse mobile]() |
+
+**Product Details LH**
+
+| **Chrome lighthouse desktop** | **Chrome mobile lighthouse** |
+| :---------------------------: | :--------------------------: |
+| ![Screencap product details lighthouse desktop]() | ![Screencap product details lighthouse mobile]() |
+
+### Reviews
+
+**Product Reviews LH**
+
+| **Chrome lighthouse desktop** | **Chrome mobile lighthouse** |
+| :---------------------------: | :--------------------------: |
+| ![Screencap reviews lighthouse desktop]() | ![Screencap reviews lighthouse mobile]() |
+
+**Product Reviews Add LH**
+
+| **Chrome lighthouse desktop** | **Chrome mobile lighthouse** |
+| :---------------------------: | :--------------------------: |
+| ![Screencap review add lighthouse desktop]() | ![Screencap review add lighthouse mobile]() |
+
+**Product Reviews Edit LH**
+
+| **Chrome lighthouse desktop** | **Chrome mobile lighthouse** |
+| :---------------------------: | :--------------------------: |
+| ![Screencap review edit lighthouse desktop]() | ![Screencap review edit lighthouse mobile]() |
+
+### Cart LH
+
+| **Chrome lighthouse desktop** | **Chrome mobile lighthouse** |
+| :---------------------------: | :--------------------------: |
+| ![Screencap cart lighthouse desktop]() | ![Screencap cart lighthouse mobile]() |
+
+### Checkout
+
+| **Chrome lighthouse desktop** | **Chrome mobile lighthouse** |
+| :---------------------------: | :--------------------------: |
+| ![Screencap checkout lighthouse desktop]() | ![Screencap checkout lighthouse mobile]() |
+
+### Profiles
+
+| **Chrome lighthouse desktop** | **Chrome mobile lighthouse** |
+| :---------------------------: | :--------------------------: |
+| ![Screencap profiles lighthouse desktop]() | ![Screencap profiles lighthouse mobile]() |
 
 ---
 
@@ -968,17 +1042,18 @@ Used Heroku to deploy the website. You can [Visit Live Site by clicking here](ht
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 - [Fontawesome](https://fontawesome.com/)
-- [Visual Studios Code (VSCode)](https://code.visualstudio.com/)
-- [Github](https://github.com/)
-- [Git](https://git-scm.com/doc)
-- [Gyazo](https://gyazo.com/en)
-- [Github Desktop App](https://desktop.github.com/)
-- [Cloudinary](https://cloudinary.com/documentation)
 - [Python 3.12](https://docs.python.org/3/)
 - [Django 5.2](https://docs.djangoproject.com/en/5.0/)
 - [Django-allauth](https://docs.allauth.org/en/latest/)
+- [Visual Studios Code (VSCode)](https://code.visualstudio.com/)
+- [Github](https://github.com/)
+- [Git](https://git-scm.com/doc)
+- [Github Desktop App](https://desktop.github.com/)
+- [Cloudinary](https://cloudinary.com/documentation)
 - [fooocus](https://github.com/lllyasviel/Fooocus?tab=readme-ov-file)
 - [Microsoft Paint](https://www.microsoft.com/en-gb/windows/paint)
+- [Gyazo](https://gyazo.com/en)
+- [Microsoft Snipping tool](https://support.microsoft.com/en-us/windows/use-snipping-tool-to-capture-screenshots-00246869-1843-655f-f220-97299b865f6b)
 
 ## Wireframes
 
