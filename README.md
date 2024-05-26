@@ -355,39 +355,142 @@ The site allows users:
 
 ### Manual Testing
 
-|                 What test was completed                  | Passed? |           Other information            |
-| :------------------------------------------------------: | :-----: | :------------------------------------: |
-|               Make a super user (Manager)                |   Yes   |                                        |
-|                  Make a staff member ()                  |   Yes   |                                        |
-| Sign up as a customer/user (Jane.Doe, John.Doe, Jon.Doe) |   Yes   |                                        |
-|               Login to site as a superuser               |   Yes   |                                        |
-|                 Login to site as a staff                 |   Yes   |                                        |
-|             Login to site as a customer/user             |   Yes   |                                        |
-|              Log out of site as a superuser              |   Yes   |                                        |
-|                Log out of site as a staff                |   Yes   |                                        |
-|            Log out of site as a customer/user            |   Yes   |                                        |
-|          Login to Django admin as customer/user          |   Yes   |   Only staff can log in successfully   |
-|            Login to Django admin as superuser            |   Yes   |   Only staff can log in successfully   |
-|              Login to Django admin as staff              |   Yes   |   Only staff can log in successfully   |
-|           Log out of Django admin as superuser           |   Yes   |                                        |
-|             Log out of Django admin as staff             |   Yes   |                                        |
-|     Successfully change any users data on main site      |   Yes   |                                        |
-|     Successfully change any users data on admin site     |   Yes   |   Can only be done as a satff member   |
-|                Make review as a customer/user            |   Yes   |                                        |
-|                  Make review as a superuser              |   Yes   |                                        |
-|                     Make review as staff                 |   Yes   |                                        |
-|                Edit review as a customer/user            |   Yes   |                                        |
-|                  Edit review as a superuser              |   Yes   |                                        |
-|                     Edit review as staff                 |   Yes   |                                        |
-|               Delete review as a customer/user           |   Yes   |                                        |
-|                 Delete review as a superuser             |   Yes   |                                        |
-|                    Delete review as staff                |   Yes   |                                        |
-|           Admin Action send_reservation_update           |   Yes   |             Email Recieved             |
-|          Admin Action send_cancel_email_to_user          |   Yes   |             Email Recieved             |
-|             Admin Action send_welcome_email              |   Yes   |             Email Recieved             |
-|           Admin Action send_admin_notification           |   Yes   |             Email Recieved             |
-|           Admin Action send_edit_notification            |   Yes   |             Email Recieved             |
-|          Admin Action send_delete_notification           |   Yes   |             Email Recieved             |
+**Accounts/Profiles**
+
+| What test was completed                   | Passed? |           Other information            |
+| :---------------------------------------: | :-----: | :------------------------------------: |
+| Login to site as a superuser(Admin)       |   Yes   |                                        |
+| Log out of site as a superuser            |   Yes   |                                        |
+| Login to site as a staff (BB)             |   Yes   |                                        |
+| Log out of site as a staff                |   Yes   |                                        |
+| Sign up as a customer/user (John.Doe)     |   Yes   |                                        |
+| Login to site as a customer/user          |   Yes   |                                        |
+| Log out of site as a customer/user        |   Yes   |                                        |
+| Email verification Email sent             |   Yes   |                                        |
+| Can't progress with out verifying         |   Yes   |                                        |
+| Forgot Password Email sent                |   Yes   |                                        |
+| Link working and resets password          |   Yes   |                                        |
+| Change password form                      |   Yes   | Changes the password after submission  |
+| Save details check box (checkout) updates |   Yes   | Changes the form after submission      |
+| Profile details page form loads           |   Yes   |                                        |
+| Profile page orders made and links work   |   Yes   |                                        |
+| Profile update information button works   |   Yes   | Changes the form after submission      |
+
+**Products**
+
+|                 What test was completed                   | Passed? | Other information   |
+| :-------------------------------------------------------: | :-----: | ------------------: |
+| Can add products and get a prompt confirming add          | Yes     | Staff and superuser |
+| Can edit products and get a prompt confirming edit        | Yes     | Staff and superuser |
+| Can remove products and get a prompt confirming deletion  | Yes     | Staff and superuser |
+| All products are avialable to be viewed by everyone       | Yes     |                     |
+| Can designate products as addon and they appear in addons | Yes     |                     |
+| To top scroll arrow works                                 | Yes     |                     |
+| Sort by A-Z                                               | Yes     |                     |
+| Sort by Z-A                                               | Yes     |                     |
+| Sort by rating low to high                                | Yes     |                     |
+| Sort by rating high to low                                | Yes     |                     |
+| Sort by price low to high                                 | Yes     |                     |
+| Sort by price high to low                                 | Yes     |                     |
+| View catigory nav roses                                   | Yes     |                     |
+| View catigory nav vibrant                                 | Yes     |                     |
+| View catigory nav Luxurious                               | Yes     |                     |
+| View catigory nav all arangements                         | Yes     |                     |
+| View catigory nav Valintines                              | Yes     |                     |
+| View catigory nav Birthday                                | Yes     |                     |
+| View catigory nav Mothers Day                             | Yes     |                     |
+| View catigory nav Houswarming                             | Yes     |                     |
+| View catigory nav Thank You                               | Yes     |                     |
+| View catigory nav Anniversaries                           | Yes     |                     |
+| View catigory nav Graduations                             | Yes     |                     |
+| View catigory nav Sympathy                                | Yes     |                     |
+| View catigory nav all ocassion's                          | Yes     |                     |
+
+**Inventory**
+
+| What test was completed                    | Passed? | Other information                     |
+| :----------------------------------------: | :-----: | :-----------------------------------: |
+| Can add inventory                          | Yes     | Staff and superuser                   |
+| Can edit inventory                         | Yes     | Staff and superuser                   |
+| Can remove inventory                       | Yes     | Staff and superuser                   |
+| Inventory updates with purchases           | Yes     | Decrease as bought by correct ammount |
+| Users can see the stock available          | Yes     |                                       |
+| Out of stock shows visibly                 | Yes     |                                       |
+| Cant add more then availble to cart        | Yes     |                                       |
+| Cant checkout with more then available     | Yes     |                                       |
+| Out of stock items display visual messages | Yes     |                                       |
+
+**Cart**
+
+|  What test was completed                   | Passed? | Other information |
+| :----------------------------------------: | :-----: | :---------------: |
+| Can set quantity of product to add to cart | Yes     |                   |
+| Can set quanity of addons to add to cart   | Yes     |                   |
+| Cant add more then allowed to cart         | Yes     |                   |
+| Get a prompt when adding to cart           | Yes     |                   |
+| Can view cart as superuser                 | Yes     |                   |
+| Can view cart as staff                     | Yes     |                   |
+| Can view cart as customer                  | Yes     |                   |
+| Can update product quantity in cart        | Yes     |                   |
+| Get prompt for new cart update             | Yes     |                   |
+| Can remove product from cart               | Yes     |                   |
+| Get prompt for new cart deletions update   | Yes     |                   |
+| Cart carries over to checkout              | Yes     |                   |
+
+**Checkout**
+
+| What test was completed                     | Passed? | Other information |
+| :-----------------------------------------: | :-----: | :---------------: |
+| Cart carries over to checkout               | Yes     |                   |
+| Checkout shipping info form loads           | Yes     |                   |
+| Checkout strip form loads                   | Yes     |                   |
+| Checkout form submits                       | Yes     |                   |
+| Checkout loaing blue and white arrows loads | Yes     |                   |
+| Checkout successful                         | Yes     |                   |
+| Checkout unsuccessful                       | Yes     |                   |
+| Checkout mssing needed information error    | Yes     |                   |
+| Checkout success confirmation page          | Yes     |                   |
+| Checkout success confirmation email         | Yes     |                   |
+| Order shows on admin site                   | Yes     |                   |
+
+**Reviews**
+
+| What test was completed          | Passed? | Other information |
+| :----------------- ------------: | :-----: | :---------------: |
+| Make review as a customer/user   |   Yes   |                   |
+| Make review as a superuser       |   Yes   |                   |
+| Make review as staff             |   Yes   |                   |
+| Edit review as a customer/user   |   Yes   |                   |
+| Edit review as a superuser       |   Yes   |                   |
+| Edit review as staff             |   Yes   |                   |
+| Delete review as a customer/user |   Yes   |                   |
+| Delete review as a superuser     |   Yes   |                   |
+| Delete review as staff           |   Yes   |                   |
+| Review creation email sends      |   Yes   |                   |
+| Review edited email sends        |   Yes   |                   |
+| Review deletion email sends      |   Yes   |                   |
+
+**Admin**
+
+| What test was completed                          | Passed? | Other information                  |
+| :----------------------------------------------: | :-----: | :--------------------------------: |
+| Make a super user (Admin)                        |   Yes   |                                    |
+| make staff role and permissions                  |   Yes   |                                    |
+| Login to Django admin as customer/user           |   Yes   | Only staff can log in successfully |
+| Login to Django admin as superuser               |   Yes   | Only staff can log in successfully |
+| Login to Django admin as staff                   |   Yes   | Only staff can log in successfully |
+| Log out of Django admin as superuser             |   Yes   |                                    |
+| Log out of Django admin as staff                 |   Yes   |                                    |
+| Successfully change any users data on admin site |   Yes   |                                    |
+| Superuser can visit all links                    |   Yes   |                                    |
+| Staff can visit appropriate links only           |   Yes   |                                    |
+| Accounts functionality working as intended       |   Yes   |                                    |
+| Products functionality working as intended       |   Yes   |                                    |
+| Checkout functionality working as intended       |   Yes   |                                    |
+| Admin Action send order shiped email             |   Yes   | Email Recieved                     |
+| Admin Action send order delivered email          |   Yes   | Email Recieved                     |
+| Admin Action send order cancled                  |   Yes   | Email Recieved                     |
+| Reviews functionality working as intended        |   Yes   |                                    |
 
 ### Automated Testing Scripts
 
