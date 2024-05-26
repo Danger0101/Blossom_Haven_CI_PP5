@@ -20,7 +20,7 @@ from reviews.models import Review
 def all_products(request):
     """ A view to show all products, including sorting and search queries """
     products = Product.objects.all().annotate(
-        avg_rating=Avg('revies__user_rating'))
+        avg_rating=Avg('reviews__user_rating'))
     query = None
     categories = None
     sort = None
