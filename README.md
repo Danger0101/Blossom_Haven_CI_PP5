@@ -14,23 +14,23 @@ The site allows users:
 
 - [User Stories & Sprints](#user-stories)
 
-|           **[Features](#features)**             |
-| :---------------------------------------------: |
-|            [Navbar](#navbar)                    |
-|             [Index](#index)                     |
-|          [About Us](#about-us)                  |
-|           [Sign Up](#signup)                    |
-|           [Sign in](#sign-in)                   |
-|          [Profiles](#Profiles)                  |
-|           [Reviews](#Reviews)                   |
-|      [Products List](#Products-List)            |
-| [Products Details](#Products-Details)           |
-| [Add & Edit Products](#Add-or-Edit-Products)  |
-|       [Facebook Page](#Facebook-Page)           |
-|    [Instagram Page](#Instagram-Page)            |
-|    [Footer](#Footer)                            |
-|       [Error Pages](#error-pages)               |
-|      [Django Admin](#django-admin)              |  
+| **[Features](#features)**                    |
+| :------------------------------------------: |
+| [Marketing Plan](#Marketing-Plan)            |
+| [Navbar](#navbar)                            |
+| [Index](#index)                              |
+| [Register](#Register)                        |
+| [Sign in/out](#sign-in-and-out)              |
+| [Profiles](#Profiles)                        |
+| [Reviews](#Reviews)                          |
+| [Products List](#Products-List)              |
+| [Products Details](#Products-Details)        |
+| [Add & Edit Products](#Add-or-Edit-Products) |
+| [Facebook Page](#Facebook-Page)              |
+| [Instagram Page](#Instagram-Page)            |
+| [Footer](#Footer)                            |
+| [Error Pages](#error-pages)                  |
+| [Django Admin](#django-admin)                |
 
 |               **[Testing](#testing)**                |
 | :--------------------------------------------------: |
@@ -158,6 +158,12 @@ The site allows users:
 
 ---
 
+## Marketing Plan
+
+- 
+
+---
+
 ## Features
 
 ### Navbar
@@ -166,46 +172,57 @@ The site allows users:
 
 ![Navbar]()
 
+![Navbar All Products]()
+
+![Navbar Floral Arrangements]()
+
+![Navbar Ocassions]()
+
+![Navbar Register/Signin]()
+
+![Navbar Staff/Superuser logged in]()
+
+![Navbar Customer Logged in]()
+
 ---
 ### Index
 
-- 
+- The landing page with a call to action and a soothing floral backgorund image.
 
 ![Index Page]()
 
 ---
-
 ### Register
 
-- Allows Users to signup/register for an account
+- Django Allauth register page, allows users to make an account.
 
-![Signup Page]()
+![Register Page]()
 
-**Signup Email Customer**
+**Email link to confirm account activation**
 
-![Signup Email Image]()
-
-**Signup Email Restaurant**
-
-![Signup Email Image]()
+![Confirm Email Example]()
 
 ---
 
 ### Forgot Password
 
-- 
+- Django allauth page for users who forgot password and want to reset it
 
-![Forgot Password]()
+![Forgot Password form email]()
 
 **Forgot Password Email**
 
 ![Forgot Password Email Image]()
 
+**Forgot Pass Change Pass Page**
+
+![Forgotten password change password form]()
+
 ---
 
 ### Chnage Password
 
--
+- Django Allauth change password page. Allows logged in users to change account password.
 
 ![Change Password Page]()
 
@@ -217,7 +234,7 @@ The site allows users:
 
 ### Sign In
 
-- Allows Users to sign into their accounts using username/Email and password.
+- Django allauth sign in page, allows Users to sign into their accounts using username/Email and password.
 
 ![Sign In Page]()
 
@@ -225,11 +242,11 @@ The site allows users:
 
 ### Profiles
 
-- 
+- Allows users to view past orders and their shipping information which can be updated here.
 
 ![Profile Page]()
 
-**Change Details Email**
+**Change Shipping Details Email**
 
 ![Change shipping email image]()
 
@@ -237,7 +254,7 @@ The site allows users:
 
 ### Reviews
 
-- 
+- Allows all visitors to view user left reviews, if logged in can create, edit, and delete their reviews
 
 ![Reviews Page]()
 
@@ -249,11 +266,15 @@ The site allows users:
 
 ![Change review email image]()
 
+**Review Delete Confirmation Email**
+
+![Delete review email image]()
+
 ---
 
 ### Products List
 
-- 
+- This page has many versions based on user search's and sort parameters. Users can see availble products sorted here with image, product name, price, and average rating.
 
 ![Product List Page]()
 
@@ -261,7 +282,7 @@ The site allows users:
 
 ### Products Details
 
-- 
+- This is where users can view a specific product as well as the addons available. This will give a full indepth view into the product including the name (product and addons), if its availble and how many are available (product and addons), product decription, a quanity selector (product and addons), Add to cart (product and addons), and even the price (product and addons).
 
 ![Product Detail Page]()
 
@@ -271,13 +292,13 @@ The site allows users:
 
 **Add Product**
 
-- 
+- Here staff and super users can add new products and set all elements of the products.
 
 ![Add Product Page]()
 
 **Edit Product**
 
-- 
+- Here staff and super users can edit products and set all elements of the products.
 
 ![Edit Product Page]()
 
@@ -285,7 +306,7 @@ The site allows users:
 
 ### Facebook Page
 
--
+- The primary location for social marketing and escentially like a second storefront.
 
 ![Facebook Screenshot]()
 
@@ -293,7 +314,7 @@ The site allows users:
 
 ### Instagram Page
 
--
+- The secondary more visual only social media marketing.
 
 ![Instagram Screenshot]()
 
@@ -327,23 +348,51 @@ The site allows users:
 
 ### Django Admin
 
-- 
+- This is the default django admin page for more granual control of site elements.
 
-![Admin login image]()
+| Login                  |                                 |
+| :--------------------: | :-----------------------------: |
+| ![Admin login image]() | ![Admin site logged in image]() |
 
-![Admin site logged in image]()
+| Groups                  |                                 |
+| :---------------------: | :-----------------------------: |
+| ![Admin Groups Main]() | ![Admin Groups Sub]() |
 
-**Products**
+| Users                  |                                 |
+| :--------------------: | :-----------------------------: |
+| ![Admin Users Main]() | ![Admin Users Sub]() |
 
-- Allows admins to view, create, edit, and delete products and categories as needed.
+| Orders                 |                                 |
+| :--------------------: | :-----------------------------: |
+| ![Admin Order Main]() | ![Admin Order Sub]() |
 
-![product admin]()
+| Inventory              |                                 |
+| :--------------------: | :-----------------------------: |
+| ![Admin Inventory Main]() | ![Admin Inventory Sub]() |
 
-![Product add or edit admin]()
+| Categories             |                                 |
+| :--------------------: | :-----------------------------: |
+| ![Admin Categories Main]() | ![Admin Categories Sub]() |
 
-![Category add or edit admin]()
+| Products               |                                 |
+| :--------------------: | :-----------------------------: |
+| ![Admin Products Main]() | ![Admin Products Sub]() |
 
+| Reviews                |                                 |
+| :--------------------: | :-----------------------------: |
+| ![Admin Reviews Main]() | ![Admin Reviews Sub]() |
 
+| Social accounts        |                                 |
+| :--------------------: | :-----------------------------: |
+| ![Admin Social Account Main]() | ![Admin Social  Account Sub]() |
+
+| Social app tokens      |                                 |
+| :--------------------: | :-----------------------------: |
+| ![Admin Social Token Main]() | ![Admin Social Token Sub]() |
+
+| Social applications    |                                 |
+| :--------------------: | :-----------------------------: |
+| ![Admin Social App Main]() | ![Admin Social App Sub]() |
 
 ---
 
