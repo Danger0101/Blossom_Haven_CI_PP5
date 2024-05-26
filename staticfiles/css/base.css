@@ -144,6 +144,12 @@ footer .btn-primary:hover {
     max-width: 256px;
 }
 
+/* Reviews */
+.review-container {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
 /* from Bulma */
 .icon {
     align-items: center;
