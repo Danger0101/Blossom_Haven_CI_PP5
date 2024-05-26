@@ -679,11 +679,11 @@ All Scripts checked with [PEP8 Code institute](https://pep8ci.herokuapp.com/)
 
 ### CSS
 
-- checked my custom css with [W3 CSS Validator](https://jigsaw.w3.org/css-validator/) direct input; completed with no issues found.
+- checked my custom base.css with [W3 CSS Validator](https://jigsaw.w3.org/css-validator/) direct input; completed with a few warnings.
 
 **static\css\base.css**
 
-![css verification img]()
+![css verification img](./media/base_css_verification.png)
 
 ---
 
