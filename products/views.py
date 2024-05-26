@@ -19,7 +19,8 @@ from reviews.models import Review
 
 def all_products(request):
     """ A view to show all products, including sorting and search queries """
-    products = Product.objects.all()
+    products = Product.objects.all().annotate(
+        avg_rating=Avg('revies__user_rating'))
     query = None
     categories = None
     sort = None
@@ -37,8 +38,6 @@ def all_products(request):
                 sortkey = 'category__name'
             if sortkey == 'rating':
                 sortkey = 'avg_rating'
-                products = (
-                    products.annotate(avg_rating=Avg('reviews__user_rating')))
             if 'direction' in request.GET:
                 direction = request.GET['direction']
                 if direction == 'desc':
