@@ -797,14 +797,13 @@ All Scripts checked with [PEP8 Code institute](https://pep8ci.herokuapp.com/)
 | Reviews | ![Reviews](./media/html-check/reviews-html-check.png) |
 | Django-allauth Register | ![Django-allauth Register](./media/html-check/django-all-auth-register-html-check.png) |
 | Django-allauth Login | ![Django-allauth Login](./media/html-check/django-all-auth-login-html-check.png) |
-| Django-allauth Logout | ![Django-allauth Logout](./media/html-check) |
+| Django-allauth Logout | ![Django-allauth Logout](./media/html-check/django-all-auth-logout-html-check.png) |
 | Django-allauth Change Password | ![Django-allauth Change Password](./media/html-check/django-all-auth-change-password-html-check.png) |
 | Django-allauth Reset Password | ![Django-allauth Reset Password](./media/html-check/django-all-auth-pass-reset-html-check.png) |
 | Add Product | ![Add Product](./media/html-check/products-add-html-check.png) |
 | Edit Product | ![Edit Product](./media/html-check/products-edit-html-check.png) |
-| Add Review | ![Add Review](./media/html-check) |
-| Edit Review | ![Edit Review](./media/html-check) |
-|  | ![](./media/html-check) |
+| Add Review | ![Add Review](./media/html-check/reviews-add-html-check.png) |
+| Edit Review | ![Edit Review](./media/html-check/reviews-edit-html-check.png) |
 
 ### Contrast
 
