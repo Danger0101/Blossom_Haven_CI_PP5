@@ -605,7 +605,7 @@ If have the £££ look into paid marketing stradegies to get a broader reach lo
 **Reviews**
 
 | What test was completed          | Passed? | Other information |
-| :----------------- ------------: | :-----: | :---------------: |
+| :------------------------------: | :-----: | :---------------: |
 | Make review as a customer/user   |   Yes   |                   |
 | Make review as a superuser       |   Yes   |                   |
 | Make review as staff             |   Yes   |                   |
