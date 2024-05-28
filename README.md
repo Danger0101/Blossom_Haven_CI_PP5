@@ -269,7 +269,7 @@ If have the £££ look into paid marketing stradegies to get a broader reach lo
 
 - The landing page with a call to action and a soothing floral backgorund image.
 
-![Index Page](./media/pages)
+![Index Page](./media/pages/home/index_page.jpg)
 
 ---
 ### Register
