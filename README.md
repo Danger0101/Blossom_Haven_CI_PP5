@@ -342,7 +342,7 @@ If have the £££ look into paid marketing stradegies to get a broader reach lo
 
 **Change Shipping Details Email**
 
-![Change shipping email image](./media/pages)
+![Change shipping email image](./media/pages/profiles/profile-update-email.png)
 
 ---
 
