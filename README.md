@@ -290,15 +290,17 @@ If have the £££ look into paid marketing stradegies to get a broader reach lo
 
 - Django allauth page for users who forgot password and want to reset it
 
-![Forgot Password form email](./media/pages/allauth)
+![Forgot Password email page](./media/pages/allauth/forgot-password-page.png)
 
-**Forgot Password Email**
+**Forgot Password Emails**
 
-![Forgot Password Email Image](./media/pages/allauth)
+![Forgot Password Email Image](./media/pages/allauth/forgot-password-email.png)
+
+![Forgot Password Email Image](./media/pages/allauth/email-delivery-forgot-pass-no-account.png)
 
 **Forgot Pass Change Pass Page**
 
-![Forgotten password change password form](./media/pages/allauth)
+![Forgotten password change password form](./media/pages/allauth/change-password-email-direct-page.png)
 
 ---
 
@@ -306,11 +308,11 @@ If have the £££ look into paid marketing stradegies to get a broader reach lo
 
 - Django Allauth change password page. Allows logged in users to change account password.
 
-![Change Password Page](./media/pages/allauth)
+![Change Password Page](./media/pages/allauth/change-password-page.png)
 
 **Change Password Email**
 
-![Change Password Email](./media/pages/allauth)
+![Change Password Email](./media/pages/allauth/change-password-email.png)
 
 ---
 
@@ -318,9 +320,17 @@ If have the £££ look into paid marketing stradegies to get a broader reach lo
 
 - Django allauth sign in page, allows Users to sign into their accounts using username/Email and password.
 
-![Sign In Page](./media/pages/allauth)
+![Sign In Page](./media/pages/allauth/signin-page.png)
 
 ![Wrong Email, username, or password](./media/pages/allauth/wrong-user-pass.png)
+
+---
+
+### Sign out
+
+- Django allauth sign out page, allows Users to sign out of their accounts.
+
+![Sign out Page](./media/pages/allauth/signout-page.png)
 
 ---
 
@@ -344,15 +354,15 @@ If have the £££ look into paid marketing stradegies to get a broader reach lo
 
 **Review Confirmation Email**
 
-![Review confirmation email image](./media/pages)
+![Review confirmation email image](./media/pages/reviews/new-review-email.png)
 
 **Review Edit Confirmation Email**
 
-![Change review email image](./media/pages)
+![Change review email image](./media/pages/reviews/edit-review-email.png)
 
 **Review Delete Confirmation Email**
 
-![Delete review email image](./media/pages)
+![Delete review email image](./media/pages/reviews/delete-review-email.png)
 
 ---
 
