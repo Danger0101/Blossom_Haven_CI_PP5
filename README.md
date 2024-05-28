@@ -1,11 +1,15 @@
 # Blossom Haven
 
-Welcome to Burger Blast, where flavor meets delight! We're a culinary haven dedicated to crafting unforgettable experiences through sensational bites and impeccable service. This is a theoretical burger restaurant based in London, UK.
+Welcome to Blossom Haven, where beauty blooms in every petal! We're a floral haven dedicated to crafting unforgettable experiences through exquisite arrangements and impeccable service. Based in London, UK, we bring the charm of fresh flowers to your doorstep.
 
 The site allows users:
 
-- 
-- 
+- Browse a wide selection of stunning floral arrangements for every occasion
+- To easily place orders for delivery.
+- To create and manage user profiles for a personalized experience.
+- To read and leave reviews on our products and services.
+- To follow us on social media for the latest updates and inspirations.
+- And more!
 
 
 ---
@@ -13,10 +17,10 @@ The site allows users:
 ## Table of contents
 
 - [User Stories & Sprints](#user-stories)
+- [Marketing Plan](#Marketing-Plan)
 
 | **[Features](#features)**                      |
 | :--------------------------------------------: |
-| [Marketing Plan](#Marketing-Plan)              |
 | [Navbar](#navbar)                              |
 | [Index](#index)                                |
 | [Register](#Register)                          |
@@ -164,7 +168,77 @@ The site allows users:
 
 ## Marketing Plan
 
-- 
+### Social Media Marketing
+
+**Facebook**
+
+1. Create Engaging Content
+- Post high-quality images of your floral arrangements regularly.
+- Share behind-the-scenes content to show the process of creating your arrangements.
+- Post customer testimonials and user-generated content.
+- Use Facebook Stories to share daily updates and limited-time offers.
+
+2. Leverage Facebook Groups
+- Join local community groups and participate in discussions, subtly promoting your business when relevant.
+
+3. Run Contests and Giveaways
+- Host contests where participants need to like, share, and comment on your posts for a chance to win a free floral arrangement.
+
+4. Engage with Your Audience
+- Respond promptly to comments and messages.
+- Ask questions in your posts to encourage interaction.
+- Host live Q&A sessions to engage directly with your audience.
+
+**Instagram**
+
+1. Optimize Instagram Profile
+- Ensure bio clearly describes your business and includes a link to your website.
+- Use a consistent profile picture (logo) for brand recognition.
+
+2. Create Visually Appealing Content
+- Post high-quality photos and videos of your floral arrangements.
+- Use Instagram Stories to share daily updates and behind-the-scenes content.
+- Use Instagram Reels to showcase quick tutorials, floral arrangement ideas, or customer stories.
+
+3. Use Hashtags Strategically
+- Use a mix of popular and niche hashtags to increase your reach. Examples include #Florist, #FlowerDelivery, #LondonFlorist, #BlossomHaven, etc.
+- Create a branded hashtag (#BlossomHaven) and encourage customers to use it when they post their own photos.
+
+4. Engage with Your Community
+- Like and comment on posts from users who use your hashtags or tag you.
+- Follow relevant accounts and engage with their content.
+- Host Instagram Live sessions for real-time interaction with your audience.
+
+5. Run Contests and Giveaways
+- Similar to Facebook, host Instagram contests where participants need to follow your account, like your post, and tag friends to enter.
+
+**Search Engine Optimization (SEO)**
+
+1. Keyword Research
+- Identify relevant keywords that potential customers are using to search for florists and floral arrangements in London. Use tools like Google Keyword Planner, Ahrefs, or Ubersuggest.
+
+2. On-Page SEO
+- Optimize your website’s content with the identified keywords, ensuring they appear in titles, headers, meta descriptions, and throughout your content.
+- Ensure your website is mobile-friendly and has a fast loading speed.
+
+3. Content Marketing
+- Start a blog on your website where you can post articles related to flowers, floral arrangements, care tips, and occasion-specific floral advice.
+- Create high-quality, informative content that answers common questions and solves problems for your audience.
+
+4. Local SEO
+- Create a Google My Business profile and keep it updated with your latest information, including business hours, address, and contact details.
+- Encourage satisfied customers to leave positive reviews on your Google My Business profile and other review sites.
+
+5. Backlink Building
+- Reach out to local bloggers and websites to write guest posts or get featured.
+- Partner with local businesses for cross-promotion and backlinks.
+
+6. Social Signals
+- Ensure that your social media activity links back to your website. Share your blog posts, promotions, and important updates on your social media profiles to drive traffic and improve your search engine rankings.
+
+**Other**
+
+If have the £££ look into paid marketing stradegies to get a broader reach look for a good ROI by investigating the target market and plan accordingly.
 
 ---
 
