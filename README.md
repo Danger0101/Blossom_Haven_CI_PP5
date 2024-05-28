@@ -734,7 +734,7 @@ All Scripts checked with [PEP8 Code institute](https://pep8ci.herokuapp.com/)
 
 | **Chrome lighthouse desktop** | **Chrome mobile lighthouse** |
 | :---------------------------: | :--------------------------: |
-| ![Screencap index lighthouse desktop]() | ![Screencap index lighthouse mobile]() |
+| ![Screencap index lighthouse desktop](./media/lighthouse/home/home-lh-desktop.png) | ![Screencap index lighthouse mobile](./media/lighthouse/home/home-lh-mobile.png) |
 
 ### Products
 
@@ -742,25 +742,25 @@ All Scripts checked with [PEP8 Code institute](https://pep8ci.herokuapp.com/)
 
 | **Chrome lighthouse desktop** | **Chrome mobile lighthouse** |
 | :---------------------------: | :--------------------------: |
-| ![Screencap product add lighthouse desktop]() | ![Screencap product add lighthouse mobile]() |
+| ![Screencap product add lighthouse desktop](./media/lighthouse/products/products-add-lh-desktop.png) | ![Screencap product add lighthouse mobile](./media/lighthouse/products/products-add-lh-mobile.png) |
 
 **Product Edit LH**
 
 | **Chrome lighthouse desktop** | **Chrome mobile lighthouse** |
 | :---------------------------: | :--------------------------: |
-| ![Screencap product edit lighthouse desktop]() | ![Screencap product edit lighthouse mobile]() |
+| ![Screencap product edit lighthouse desktop](./media/lighthouse/products/products-edit-lh-desktop.png) | ![Screencap product edit lighthouse mobile](./media/lighthouse/products/products-edit-lh-mobile.png) |
 
 **Products List LH**
 
 | **Chrome lighthouse desktop** | **Chrome mobile lighthouse** |
 | :---------------------------: | :--------------------------: |
-| ![Screencap products list lighthouse desktop]() | ![Screencap products list lighthouse mobile]() |
+| ![Screencap products list lighthouse desktop](./media/lighthouse/products/products-all-lh-desktop.png) | ![Screencap products list lighthouse mobile](./media/lighthouse/products/products-all-lh-mobile.png) |
 
 **Product Details LH**
 
 | **Chrome lighthouse desktop** | **Chrome mobile lighthouse** |
 | :---------------------------: | :--------------------------: |
-| ![Screencap product details lighthouse desktop]() | ![Screencap product details lighthouse mobile]() |
+| ![Screencap product details lighthouse desktop](./media/lighthouse/products/products-details-lh-desktop.png) | ![Screencap product details lighthouse mobile](./media/lighthouse/products/products-details-lh-mobile.png) |
 
 ### Reviews
 
@@ -768,37 +768,37 @@ All Scripts checked with [PEP8 Code institute](https://pep8ci.herokuapp.com/)
 
 | **Chrome lighthouse desktop** | **Chrome mobile lighthouse** |
 | :---------------------------: | :--------------------------: |
-| ![Screencap reviews lighthouse desktop]() | ![Screencap reviews lighthouse mobile]() |
+| ![Screencap reviews lighthouse desktop](./media/lighthouse/reviews/reviews-lh-all-desktop.png) | ![Screencap reviews lighthouse mobile](./media/lighthouse/reviews/reviews-lh-all-mobile.png) |
 
 **Product Reviews Add LH**
 
 | **Chrome lighthouse desktop** | **Chrome mobile lighthouse** |
 | :---------------------------: | :--------------------------: |
-| ![Screencap review add lighthouse desktop]() | ![Screencap review add lighthouse mobile]() |
+| ![Screencap review add lighthouse desktop](./media/lighthouse/reviews/reviews-add-lh-desktop.png) | ![Screencap review add lighthouse mobile](./media/lighthouse/reviews/reviews-add-lh-mobile.png) |
 
 **Product Reviews Edit LH**
 
 | **Chrome lighthouse desktop** | **Chrome mobile lighthouse** |
 | :---------------------------: | :--------------------------: |
-| ![Screencap review edit lighthouse desktop]() | ![Screencap review edit lighthouse mobile]() |
+| ![Screencap review edit lighthouse desktop](./media/lighthouse/reviews/reviews-edit-lh-desktop.png) | ![Screencap review edit lighthouse mobile](./media/lighthouse/reviews/reviews-edit-lh-mobile.png) |
 
 ### Cart LH
 
 | **Chrome lighthouse desktop** | **Chrome mobile lighthouse** |
 | :---------------------------: | :--------------------------: |
-| ![Screencap cart lighthouse desktop]() | ![Screencap cart lighthouse mobile]() |
+| ![Screencap cart lighthouse desktop](./media/lighthouse/cart/cart-lh-desktop.png) | ![Screencap cart lighthouse mobile](./media/lighthouse/cart/cart-lh-mobile.png) |
 
 ### Checkout
 
 | **Chrome lighthouse desktop** | **Chrome mobile lighthouse** |
 | :---------------------------: | :--------------------------: |
-| ![Screencap checkout lighthouse desktop]() | ![Screencap checkout lighthouse mobile]() |
+| ![Screencap checkout lighthouse desktop](./media/lighthouse/checkout/checkout-lh-desktop.png) | ![Screencap checkout lighthouse mobile](./media/lighthouse/checkout/checkout-lh-mobile.png) |
 
 ### Profiles
 
 | **Chrome lighthouse desktop** | **Chrome mobile lighthouse** |
 | :---------------------------: | :--------------------------: |
-| ![Screencap profiles lighthouse desktop]() | ![Screencap profiles lighthouse mobile]() |
+| ![Screencap profiles lighthouse desktop](./media/lighthouse/profiles/profile-lh-desktop.png) | ![Screencap profiles lighthouse mobile](./media/lighthouse/profiles/profile-lh-mobile.png) |
 
 ---
 
