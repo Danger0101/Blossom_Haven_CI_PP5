@@ -723,10 +723,6 @@ All Scripts checked with [PEP8 Code institute](https://pep8ci.herokuapp.com/)
 
 ![Contrast Check](./media/contrast-check.png)
 
-**Index**
-
-![Contrast checker index Image](./staticfiles/images/contrast_checks/index_page.png)
-
 ---
 
 [Back to table of contents](#Table-of-contents)
