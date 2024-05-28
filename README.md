@@ -14,23 +14,23 @@ The site allows users:
 
 - [User Stories & Sprints](#user-stories)
 
-|           **[Features](#features)**             |
-| :---------------------------------------------: |
-|            [Navbar](#navbar)                    |
-|             [Index](#index)                     |
-|          [About Us](#about-us)                  |
-|           [Sign Up](#signup)                    |
-|           [Sign in](#sign-in)                   |
-|          [Profiles](#Profiles)                  |
-|           [Reviews](#Reviews)                   |
-|      [Products List](#Products-List)            |
-| [Products Details](#Products-Details)           |
-| [Add & Edit Products](#Add-or-Edit-Products)  |
-|       [Facebook Page](#Facebook-Page)           |
-|    [Instagram Page](#Instagram-Page)            |
-|    [Footer](#Footer)                            |
-|       [Error Pages](#error-pages)               |
-|      [Django Admin](#django-admin)              |  
+| **[Features](#features)**                    |
+| :------------------------------------------: |
+| [Marketing Plan](#Marketing-Plan)            |
+| [Navbar](#navbar)                            |
+| [Index](#index)                              |
+| [Register](#Register)                        |
+| [Sign in/out](#sign-in-and-out)              |
+| [Profiles](#Profiles)                        |
+| [Reviews](#Reviews)                          |
+| [Products List](#Products-List)              |
+| [Products Details](#Products-Details)        |
+| [Add & Edit Products](#Add-or-Edit-Products) |
+| [Facebook Page](#Facebook-Page)              |
+| [Instagram Page](#Instagram-Page)            |
+| [Footer](#Footer)                            |
+| [Error Pages](#error-pages)                  |
+| [Django Admin](#django-admin)                |
 
 |               **[Testing](#testing)**                |
 | :--------------------------------------------------: |
@@ -158,112 +158,139 @@ The site allows users:
 
 ---
 
+## Marketing Plan
+
+- 
+
+---
+
 ## Features
 
 ### Navbar
 
 - 
 
-![Navbar]()
+![Navbar Desktop](./media/pages/nav/desktop-nav.png)
+
+![Navbar Mobile](./media/pages/nav/mobile-nav.png)
+
+![Navbar All Products](./media/pages/nav/all-products-nav.png)
+
+![Navbar Floral Arrangements](./media/pages/nav/floral-arrangements-nav.png)
+
+![Navbar Ocassions](./media/pages/nav/ocassions-nav.png)
+
+![Navbar Register/Signin](./media/pages/nav/rgister-login-nav.png)
+
+![Navbar Staff/Superuser logged in](./media/pages/nav/admin-nav.png)
+
+![Navbar Customer Logged in](./media/pages/nav/user-nav.png)
 
 ---
 ### Index
 
-- 
+- The landing page with a call to action and a soothing floral backgorund image.
 
-![Index Page]()
+![Index Page](./media/pages)
 
 ---
-
 ### Register
 
-- Allows Users to signup/register for an account
+- Django Allauth register page, allows users to make an account.
 
-![Signup Page]()
+![Register Page](./media/pages/allauth/register-page.png)
 
-**Signup Email Customer**
+**Email link to confirm account activation and page**
 
-![Signup Email Image]()
+![Confirm Email Example](./media/pages/allauth/verify-email-page.png)
 
-**Signup Email Restaurant**
-
-![Signup Email Image]()
+![Confimed Email Page](./media/pages/allauth/confirm-email-page.png)
 
 ---
 
 ### Forgot Password
 
-- 
+- Django allauth page for users who forgot password and want to reset it
 
-![Forgot Password]()
+![Forgot Password form email](./media/pages/allauth)
 
 **Forgot Password Email**
 
-![Forgot Password Email Image]()
+![Forgot Password Email Image](./media/pages/allauth)
+
+**Forgot Pass Change Pass Page**
+
+![Forgotten password change password form](./media/pages/allauth)
 
 ---
 
 ### Chnage Password
 
--
+- Django Allauth change password page. Allows logged in users to change account password.
 
-![Change Password Page]()
+![Change Password Page](./media/pages/allauth)
 
 **Change Password Email**
 
-![Change Password Email]()
+![Change Password Email](./media/pages/allauth)
 
 ---
 
 ### Sign In
 
-- Allows Users to sign into their accounts using username/Email and password.
+- Django allauth sign in page, allows Users to sign into their accounts using username/Email and password.
 
-![Sign In Page]()
+![Sign In Page](./media/pages/allauth)
+
+![Wrong Email, username, or password](./media/pages/allauth/wrong-user-pass.png)
 
 ---
 
 ### Profiles
 
-- 
+- Allows users to view past orders and their shipping information which can be updated here.
 
-![Profile Page]()
+![Profile Page](./media/pages/profiles/profile-page.png)
 
-**Change Details Email**
+**Change Shipping Details Email**
 
-![Change shipping email image]()
+![Change shipping email image](./media/pages)
 
 ---
 
 ### Reviews
 
-- 
+- Allows all visitors to view user left reviews, if logged in can create, edit, and delete their reviews
 
-![Reviews Page]()
+![Reviews Page](./media/pages/reviews/review-page.png)
 
 **Review Confirmation Email**
 
-![Review confirmation email image]()
+![Review confirmation email image](./media/pages)
 
 **Review Edit Confirmation Email**
 
-![Change review email image]()
+![Change review email image](./media/pages)
+
+**Review Delete Confirmation Email**
+
+![Delete review email image](./media/pages)
 
 ---
 
 ### Products List
 
-- 
+- This page has many versions based on user search's and sort parameters. Users can see availble products sorted here with image, product name, price, and average rating.
 
-![Product List Page]()
+![Product List Page](./media/pages/products/products-page.png)
 
 ---
 
 ### Products Details
 
-- 
+- This is where users can view a specific product as well as the addons available. This will give a full indepth view into the product including the name (product and addons), if its availble and how many are available (product and addons), product decription, a quanity selector (product and addons), Add to cart (product and addons), and even the price (product and addons).
 
-![Product Detail Page]()
+![Product Detail Page](./media/pages/products/products-details-page.png)
 
 ---
 
@@ -271,31 +298,31 @@ The site allows users:
 
 **Add Product**
 
-- 
+- Here staff and super users can add new products and set all elements of the products.
 
-![Add Product Page]()
+![Add Product Page](./media/pages/products/add-product-page.png)
 
 **Edit Product**
 
-- 
+- Here staff and super users can edit products and set all elements of the products.
 
-![Edit Product Page]()
+![Edit Product Page](./media/pages/products/edit-product-page.png)
 
 ---
 
 ### Facebook Page
 
--
+- The primary location for social marketing and escentially like a second storefront.
 
-![Facebook Screenshot]()
+![Facebook Screenshot](./media/pages/socials/facebook-page.png)
 
 ---
 
 ### Instagram Page
 
--
+- The secondary more visual only social media marketing.
 
-![Instagram Screenshot]()
+![Instagram Screenshot](./media/pages)
 
 ---
 
@@ -303,7 +330,13 @@ The site allows users:
 
 - Links to Social Sites, Legal, and Newsletter signup
 
-![Image of footer]()
+![Image desktop footer](./media/pages/footer/footer-desktop.png)
+
+![Image mobile footer](./media/pages/footer/footer-mobile.png)
+
+![Image privacy policy example footer](./media/pages/footer/privacy-policy-pop-up.png)
+
+![Image terms of service footer](./media/pages/footer/tos-pop-up.png)
 
 ---
 
@@ -311,39 +344,67 @@ The site allows users:
 
 **400**
 
-![400 html error]()
+![400 html error](./media/pages/errors)
 
 **403**
 
-![403 html error]()
+![403 html error](./media/pages/errors)
 
 **404**
 
-![404 html error]()
+![404 html error](./media/pages/errors)
 
 **500**
 
-![500 html error]()
+![500 html error](./media/pages/errors/500-page.png)
 
 ### Django Admin
 
-- 
+- This is the default django admin page for more granual control of site elements.
 
-![Admin login image]()
+| Login                  |                                 |
+| :--------------------: | :-----------------------------: |
+| ![Admin login image](./media/pages) | ![Admin site logged in image](./media/pages) |
 
-![Admin site logged in image]()
+| Groups                  |                                 |
+| :---------------------: | :-----------------------------: |
+| ![Admin Groups Main](./media/pages) | ![Admin Groups Sub](./media/pages) |
 
-**Products**
+| Users                  |                                 |
+| :--------------------: | :-----------------------------: |
+| ![Admin Users Main](./media/pages) | ![Admin Users Sub](./media/pages) |
 
-- Allows admins to view, create, edit, and delete products and categories as needed.
+| Orders                 |                                 |
+| :--------------------: | :-----------------------------: |
+| ![Admin Order Main](./media/pages) | ![Admin Order Sub](./media/pages) |
 
-![product admin]()
+| Inventory              |                                 |
+| :--------------------: | :-----------------------------: |
+| ![Admin Inventory Main](./media/pages) | ![Admin Inventory Sub](./media/pages) |
 
-![Product add or edit admin]()
+| Categories             |                                 |
+| :--------------------: | :-----------------------------: |
+| ![Admin Categories Main](./media/pages) | ![Admin Categories Sub](./media/pages) |
 
-![Category add or edit admin]()
+| Products               |                                 |
+| :--------------------: | :-----------------------------: |
+| ![Admin Products Main](./media/pages) | ![Admin Products Sub](./media/pages) |
 
+| Reviews                |                                 |
+| :--------------------: | :-----------------------------: |
+| ![Admin Reviews Main](./media/pages) | ![Admin Reviews Sub](./media/pages) |
 
+| Social accounts        |                                 |
+| :--------------------: | :-----------------------------: |
+| ![Admin Social Account Main](./media/pages) | ![Admin Social  Account Sub](./media/pages) |
+
+| Social app tokens      |                                 |
+| :--------------------: | :-----------------------------: |
+| ![Admin Social Token Main](./media/pages) | ![Admin Social Token Sub](./media/pages) |
+
+| Social applications    |                                 |
+| :--------------------: | :-----------------------------: |
+| ![Admin Social App Main](./media/pages) | ![Admin Social App Sub](./media/pages) |
 
 ---
 
@@ -355,39 +416,142 @@ The site allows users:
 
 ### Manual Testing
 
-|                 What test was completed                  | Passed? |           Other information            |
-| :------------------------------------------------------: | :-----: | :------------------------------------: |
-|               Make a super user (Manager)                |   Yes   |                                        |
-|                  Make a staff member ()                  |   Yes   |                                        |
-| Sign up as a customer/user (Jane.Doe, John.Doe, Jon.Doe) |   Yes   |                                        |
-|               Login to site as a superuser               |   Yes   |                                        |
-|                 Login to site as a staff                 |   Yes   |                                        |
-|             Login to site as a customer/user             |   Yes   |                                        |
-|              Log out of site as a superuser              |   Yes   |                                        |
-|                Log out of site as a staff                |   Yes   |                                        |
-|            Log out of site as a customer/user            |   Yes   |                                        |
-|          Login to Django admin as customer/user          |   Yes   |   Only staff can log in successfully   |
-|            Login to Django admin as superuser            |   Yes   |   Only staff can log in successfully   |
-|              Login to Django admin as staff              |   Yes   |   Only staff can log in successfully   |
-|           Log out of Django admin as superuser           |   Yes   |                                        |
-|             Log out of Django admin as staff             |   Yes   |                                        |
-|     Successfully change any users data on main site      |   Yes   |                                        |
-|     Successfully change any users data on admin site     |   Yes   |   Can only be done as a satff member   |
-|                Make review as a customer/user            |   Yes   |                                        |
-|                  Make review as a superuser              |   Yes   |                                        |
-|                     Make review as staff                 |   Yes   |                                        |
-|                Edit review as a customer/user            |   Yes   |                                        |
-|                  Edit review as a superuser              |   Yes   |                                        |
-|                     Edit review as staff                 |   Yes   |                                        |
-|               Delete review as a customer/user           |   Yes   |                                        |
-|                 Delete review as a superuser             |   Yes   |                                        |
-|                    Delete review as staff                |   Yes   |                                        |
-|           Admin Action send_reservation_update           |   Yes   |             Email Recieved             |
-|          Admin Action send_cancel_email_to_user          |   Yes   |             Email Recieved             |
-|             Admin Action send_welcome_email              |   Yes   |             Email Recieved             |
-|           Admin Action send_admin_notification           |   Yes   |             Email Recieved             |
-|           Admin Action send_edit_notification            |   Yes   |             Email Recieved             |
-|          Admin Action send_delete_notification           |   Yes   |             Email Recieved             |
+**Accounts/Profiles**
+
+| What test was completed                   | Passed? |           Other information            |
+| :---------------------------------------: | :-----: | :------------------------------------: |
+| Login to site as a superuser(Admin)       |   Yes   |                                        |
+| Log out of site as a superuser            |   Yes   |                                        |
+| Login to site as a staff (BB)             |   Yes   |                                        |
+| Log out of site as a staff                |   Yes   |                                        |
+| Sign up as a customer/user (John.Doe)     |   Yes   |                                        |
+| Login to site as a customer/user          |   Yes   |                                        |
+| Log out of site as a customer/user        |   Yes   |                                        |
+| Email verification Email sent             |   Yes   |                                        |
+| Can't progress with out verifying         |   Yes   |                                        |
+| Forgot Password Email sent                |   Yes   |                                        |
+| Link working and resets password          |   Yes   |                                        |
+| Change password form                      |   Yes   | Changes the password after submission  |
+| Save details check box (checkout) updates |   Yes   | Changes the form after submission      |
+| Profile details page form loads           |   Yes   |                                        |
+| Profile page orders made and links work   |   Yes   |                                        |
+| Profile update information button works   |   Yes   | Changes the form after submission      |
+
+**Products**
+
+|                 What test was completed                   | Passed? | Other information   |
+| :-------------------------------------------------------: | :-----: | ------------------: |
+| Can add products and get a prompt confirming add          | Yes     | Staff and superuser |
+| Can edit products and get a prompt confirming edit        | Yes     | Staff and superuser |
+| Can remove products and get a prompt confirming deletion  | Yes     | Staff and superuser |
+| All products are avialable to be viewed by everyone       | Yes     |                     |
+| Can designate products as addon and they appear in addons | Yes     |                     |
+| To top scroll arrow works                                 | Yes     |                     |
+| Sort by A-Z                                               | Yes     |                     |
+| Sort by Z-A                                               | Yes     |                     |
+| Sort by rating low to high                                | Yes     |                     |
+| Sort by rating high to low                                | Yes     |                     |
+| Sort by price low to high                                 | Yes     |                     |
+| Sort by price high to low                                 | Yes     |                     |
+| View catigory nav roses                                   | Yes     |                     |
+| View catigory nav vibrant                                 | Yes     |                     |
+| View catigory nav Luxurious                               | Yes     |                     |
+| View catigory nav all arangements                         | Yes     |                     |
+| View catigory nav Valintines                              | Yes     |                     |
+| View catigory nav Birthday                                | Yes     |                     |
+| View catigory nav Mothers Day                             | Yes     |                     |
+| View catigory nav Houswarming                             | Yes     |                     |
+| View catigory nav Thank You                               | Yes     |                     |
+| View catigory nav Anniversaries                           | Yes     |                     |
+| View catigory nav Graduations                             | Yes     |                     |
+| View catigory nav Sympathy                                | Yes     |                     |
+| View catigory nav all ocassion's                          | Yes     |                     |
+
+**Inventory**
+
+| What test was completed                    | Passed? | Other information                     |
+| :----------------------------------------: | :-----: | :-----------------------------------: |
+| Can add inventory                          | Yes     | Staff and superuser                   |
+| Can edit inventory                         | Yes     | Staff and superuser                   |
+| Can remove inventory                       | Yes     | Staff and superuser                   |
+| Inventory updates with purchases           | Yes     | Decrease as bought by correct ammount |
+| Users can see the stock available          | Yes     |                                       |
+| Out of stock shows visibly                 | Yes     |                                       |
+| Cant add more then availble to cart        | Yes     |                                       |
+| Cant checkout with more then available     | Yes     |                                       |
+| Out of stock items display visual messages | Yes     |                                       |
+
+**Cart**
+
+|  What test was completed                   | Passed? | Other information |
+| :----------------------------------------: | :-----: | :---------------: |
+| Can set quantity of product to add to cart | Yes     |                   |
+| Can set quanity of addons to add to cart   | Yes     |                   |
+| Cant add more then allowed to cart         | Yes     |                   |
+| Get a prompt when adding to cart           | Yes     |                   |
+| Can view cart as superuser                 | Yes     |                   |
+| Can view cart as staff                     | Yes     |                   |
+| Can view cart as customer                  | Yes     |                   |
+| Can update product quantity in cart        | Yes     |                   |
+| Get prompt for new cart update             | Yes     |                   |
+| Can remove product from cart               | Yes     |                   |
+| Get prompt for new cart deletions update   | Yes     |                   |
+| Cart carries over to checkout              | Yes     |                   |
+
+**Checkout**
+
+| What test was completed                     | Passed? | Other information |
+| :-----------------------------------------: | :-----: | :---------------: |
+| Cart carries over to checkout               | Yes     |                   |
+| Checkout shipping info form loads           | Yes     |                   |
+| Checkout strip form loads                   | Yes     |                   |
+| Checkout form submits                       | Yes     |                   |
+| Checkout loaing blue and white arrows loads | Yes     |                   |
+| Checkout successful                         | Yes     |                   |
+| Checkout unsuccessful                       | Yes     |                   |
+| Checkout mssing needed information error    | Yes     |                   |
+| Checkout success confirmation page          | Yes     |                   |
+| Checkout success confirmation email         | Yes     |                   |
+| Order shows on admin site                   | Yes     |                   |
+
+**Reviews**
+
+| What test was completed          | Passed? | Other information |
+| :----------------- ------------: | :-----: | :---------------: |
+| Make review as a customer/user   |   Yes   |                   |
+| Make review as a superuser       |   Yes   |                   |
+| Make review as staff             |   Yes   |                   |
+| Edit review as a customer/user   |   Yes   |                   |
+| Edit review as a superuser       |   Yes   |                   |
+| Edit review as staff             |   Yes   |                   |
+| Delete review as a customer/user |   Yes   |                   |
+| Delete review as a superuser     |   Yes   |                   |
+| Delete review as staff           |   Yes   |                   |
+| Review creation email sends      |   Yes   |                   |
+| Review edited email sends        |   Yes   |                   |
+| Review deletion email sends      |   Yes   |                   |
+
+**Admin**
+
+| What test was completed                          | Passed? | Other information                  |
+| :----------------------------------------------: | :-----: | :--------------------------------: |
+| Make a super user (Admin)                        |   Yes   |                                    |
+| make staff role and permissions                  |   Yes   |                                    |
+| Login to Django admin as customer/user           |   Yes   | Only staff can log in successfully |
+| Login to Django admin as superuser               |   Yes   | Only staff can log in successfully |
+| Login to Django admin as staff                   |   Yes   | Only staff can log in successfully |
+| Log out of Django admin as superuser             |   Yes   |                                    |
+| Log out of Django admin as staff                 |   Yes   |                                    |
+| Successfully change any users data on admin site |   Yes   |                                    |
+| Superuser can visit all links                    |   Yes   |                                    |
+| Staff can visit appropriate links only           |   Yes   |                                    |
+| Accounts functionality working as intended       |   Yes   |                                    |
+| Products functionality working as intended       |   Yes   |                                    |
+| Checkout functionality working as intended       |   Yes   |                                    |
+| Admin Action send order shiped email             |   Yes   | Email Recieved                     |
+| Admin Action send order delivered email          |   Yes   | Email Recieved                     |
+| Admin Action send order cancled                  |   Yes   | Email Recieved                     |
+| Reviews functionality working as intended        |   Yes   |                                    |
 
 ### Automated Testing Scripts
 
@@ -527,11 +691,11 @@ All Scripts checked with [PEP8 Code institute](https://pep8ci.herokuapp.com/)
 
 ### CSS
 
-- checked my custom css with [W3 CSS Validator](https://jigsaw.w3.org/css-validator/) direct input; completed with no issues found.
+- checked my custom base.css with [W3 CSS Validator](https://jigsaw.w3.org/css-validator/) direct input; completed with a few warnings.
 
 **static\css\base.css**
 
-![css verification img]()
+![css verification img](./media/base_css_verification.png)
 
 ---
 
@@ -547,6 +711,8 @@ All Scripts checked with [PEP8 Code institute](https://pep8ci.herokuapp.com/)
 
 - Checked all non logged in pages with [A11Y contrast checker](https://color.a11y.com/) Cameback with no issues.
 
+![Contrast Check](./media/contrast-check.png)
+
 **Index**
 
 ![Contrast checker index Image](./staticfiles/images/contrast_checks/index_page.png)
@@ -561,13 +727,73 @@ All Scripts checked with [PEP8 Code institute](https://pep8ci.herokuapp.com/)
 
 ### Index LH
 
-**Chrome lighthouse desktop**
+| **Chrome lighthouse desktop** | **Chrome mobile lighthouse** |
+| :---------------------------: | :--------------------------: |
+| ![Screencap index lighthouse desktop]() | ![Screencap index lighthouse mobile]() |
 
-![Screencap index lighthouse desktop]()
+### Products
 
-**Chrome mobile lighthouse**
+**Product Add LH**
 
-![Screencap index lighthouse mobile]()
+| **Chrome lighthouse desktop** | **Chrome mobile lighthouse** |
+| :---------------------------: | :--------------------------: |
+| ![Screencap product add lighthouse desktop]() | ![Screencap product add lighthouse mobile]() |
+
+**Product Edit LH**
+
+| **Chrome lighthouse desktop** | **Chrome mobile lighthouse** |
+| :---------------------------: | :--------------------------: |
+| ![Screencap product edit lighthouse desktop]() | ![Screencap product edit lighthouse mobile]() |
+
+**Products List LH**
+
+| **Chrome lighthouse desktop** | **Chrome mobile lighthouse** |
+| :---------------------------: | :--------------------------: |
+| ![Screencap products list lighthouse desktop]() | ![Screencap products list lighthouse mobile]() |
+
+**Product Details LH**
+
+| **Chrome lighthouse desktop** | **Chrome mobile lighthouse** |
+| :---------------------------: | :--------------------------: |
+| ![Screencap product details lighthouse desktop]() | ![Screencap product details lighthouse mobile]() |
+
+### Reviews
+
+**Product Reviews LH**
+
+| **Chrome lighthouse desktop** | **Chrome mobile lighthouse** |
+| :---------------------------: | :--------------------------: |
+| ![Screencap reviews lighthouse desktop]() | ![Screencap reviews lighthouse mobile]() |
+
+**Product Reviews Add LH**
+
+| **Chrome lighthouse desktop** | **Chrome mobile lighthouse** |
+| :---------------------------: | :--------------------------: |
+| ![Screencap review add lighthouse desktop]() | ![Screencap review add lighthouse mobile]() |
+
+**Product Reviews Edit LH**
+
+| **Chrome lighthouse desktop** | **Chrome mobile lighthouse** |
+| :---------------------------: | :--------------------------: |
+| ![Screencap review edit lighthouse desktop]() | ![Screencap review edit lighthouse mobile]() |
+
+### Cart LH
+
+| **Chrome lighthouse desktop** | **Chrome mobile lighthouse** |
+| :---------------------------: | :--------------------------: |
+| ![Screencap cart lighthouse desktop]() | ![Screencap cart lighthouse mobile]() |
+
+### Checkout
+
+| **Chrome lighthouse desktop** | **Chrome mobile lighthouse** |
+| :---------------------------: | :--------------------------: |
+| ![Screencap checkout lighthouse desktop]() | ![Screencap checkout lighthouse mobile]() |
+
+### Profiles
+
+| **Chrome lighthouse desktop** | **Chrome mobile lighthouse** |
+| :---------------------------: | :--------------------------: |
+| ![Screencap profiles lighthouse desktop]() | ![Screencap profiles lighthouse mobile]() |
 
 ---
 
@@ -816,17 +1042,18 @@ Used Heroku to deploy the website. You can [Visit Live Site by clicking here](ht
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 - [Fontawesome](https://fontawesome.com/)
-- [Visual Studios Code (VSCode)](https://code.visualstudio.com/)
-- [Github](https://github.com/)
-- [Git](https://git-scm.com/doc)
-- [Gyazo](https://gyazo.com/en)
-- [Github Desktop App](https://desktop.github.com/)
-- [Cloudinary](https://cloudinary.com/documentation)
 - [Python 3.12](https://docs.python.org/3/)
 - [Django 5.2](https://docs.djangoproject.com/en/5.0/)
 - [Django-allauth](https://docs.allauth.org/en/latest/)
+- [Visual Studios Code (VSCode)](https://code.visualstudio.com/)
+- [Github](https://github.com/)
+- [Git](https://git-scm.com/doc)
+- [Github Desktop App](https://desktop.github.com/)
+- [Cloudinary](https://cloudinary.com/documentation)
 - [fooocus](https://github.com/lllyasviel/Fooocus?tab=readme-ov-file)
 - [Microsoft Paint](https://www.microsoft.com/en-gb/windows/paint)
+- [Gyazo](https://gyazo.com/en)
+- [Microsoft Snipping tool](https://support.microsoft.com/en-us/windows/use-snipping-tool-to-capture-screenshots-00246869-1843-655f-f220-97299b865f6b)
 
 ## Wireframes
 
