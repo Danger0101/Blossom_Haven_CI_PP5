@@ -14,28 +14,28 @@ The site allows users:
 
 - [User Stories & Sprints](#user-stories)
 
-| **[Features](#features)**                    |
-| :------------------------------------------: |
-| [Marketing Plan](#Marketing-Plan)            |
-| [Navbar](#navbar)                            |
-| [Index](#index)                              |
-| [Register](#Register)                        |
-| [Sign in/out](#sign-in-and-out)              |
-| [Profiles](#Profiles)                        |
-| [Reviews](#Reviews)                          |
-| [Products List](#Products-List)              |
-| [Products Details](#Products-Details)        |
+| **[Features](#features)**                      |
+| :--------------------------------------------: |
+| [Marketing Plan](#Marketing-Plan)              |
+| [Navbar](#navbar)                              |
+| [Index](#index)                                |
+| [Register](#Register)                          |
+| [Sign in/out](#sign-in-and-out)                |
+| [Profiles](#Profiles)                          |
+| [Reviews](#Reviews)                            |
+| [Products List](#Products-List)                |
+| [Products Details](#Products-Details)          |
 | [Add & Edit Products](#Add-or-Edit-Products) |
-| [Facebook Page](#Facebook-Page)              |
-| [Instagram Page](#Instagram-Page)            |
-| [Footer](#Footer)                            |
-| [Error Pages](#error-pages)                  |
-| [Django Admin](#django-admin)                |
+| [Facebook Page](#Facebook-Page)                |
+| [Instagram Page](#Instagram-Page)              |
+| [Footer](#Footer)                              |
+| [Error Pages](#error-pages)                    |
+| [Django Admin](#django-admin)                  |
 
-|               **[Testing](#testing)**                |
-| :--------------------------------------------------: |
-| [Manual Testing](#manual-testing)                    |
-| [Bugs & Issues Encounterd](#bugs--issues-encountered)|
+|               **[Testing](#testing)**                 |
+| :---------------------------------------------------: |
+| [Manual Testing](#manual-testing)                     |
+| [Bugs & Issues Encounterd](#bugs--issues-encountered) |
 
 | **[Validation Testing](#validation-testing)** | 
 | :-------------------------------------------: |
@@ -50,12 +50,12 @@ The site allows users:
 |  |
 
 
-|    **[Setup](#setup)**    |
-| :-----------------------: |
-|   [Database](#database)   |
-| [Cloudinary](#cloudinary) |
-| [Deployment](#deployment) |
-| [Email Setup](#Email-Setup)
+|    **[Setup](#setup)**      |
+| :-------------------------: |
+|   [Database](#database)     |
+| [Cloudinary](#cloudinary)   |
+| [Deployment](#deployment)   |
+| [Email Setup](#Email-Setup) |
 
 |                 **More**                 |
 | :--------------------------------------: |
@@ -816,28 +816,28 @@ All Scripts checked with [PEP8 Code institute](https://pep8ci.herokuapp.com/)
 2. Make an account or sign in (I used my GitHub account)
 3. Once logged in hit the "+ Create New Instance"
 
-![elephantsql loggedin page](./staticfiles/images/esql_img/esql_loggedin_page.png)
+![elephantsql loggedin page](./media/esql_img/esql_loggedin_page.png)
 
 4. Set up a name for the plan.
 5. Select version for the plan.
 6. **Optional** Add any tags if you wish
 7. Hit "select region" button
 
-![elephantsql Setup Paln page](./staticfiles/images/esql_img/esql_plan_setup_page.png)
+![elephantsql Setup Paln page](./media/esql_img/esql_plan_setup_page.png)
 
 8. Select a Data Center.
 9. Once chosen hit the "Review" button
 
-![elephantsql Data Center page](./staticfiles/images/esql_img/esql_select_region_page.png)
+![elephantsql Data Center page](./media/esql_img/esql_select_region_page.png)
 
 10. If all looks correct hit "Create Instance"
 
-![elephantsql Conrifm page](./staticfiles/images/esql_img/esql_confirm_page.png)
+![elephantsql Conrifm page](./media/esql_img/esql_confirm_page.png)
 
 11. Now you have your database set up all that is left is linking it to django project.
 12. URL has a copy button hit this to copy your URL
 
-![elephantsql Data Base page](./staticfiles/images/esql_img/esql_db_page.png)
+![elephantsql Data Base page](./media/esql_img/esql_db_page.png)
 
 12. Now you need to put this in your env file for the project or in your heroku config variables
 
@@ -865,19 +865,9 @@ python manage.py migrate
 
 **Visualization of Databae**
 
-![Data Base Visiualization](./staticfiles/images/database_models_visualization.png)
+- I was able to make this using [django-extensions](https://pypi.org/project/django-extensions/) and [pydotplus](https://pypi.org/project/pydotplus/)
 
-- I was able to make this using [django-extensions](https://pypi.org/project/django-extensions/) and [graphviz](https://django-extensions.readthedocs.io/en/latest/graph_models.html)
-
-**Broken apart visuals**
-
-![Main Data Visiualization](./staticfiles/images/db_visualization/main_data.png)
-
-![Admin Interface Data Visiualization](./staticfiles/images/db_visualization/admin_interface.png)
-
-![Meals Data Visiualization](./staticfiles/images/db_visualization/meals_data.png)
-
-![Session Data Visiualization](./staticfiles/images/db_visualization/session_data.png)
+![Data Visiualization](./media/database-visual.png)
 
 ---
 
@@ -939,6 +929,28 @@ python manage.py migrate
 7. **Further Customizations:** Explore [Cloudinary's documentation](https://cloudinary.com/documentation) for more advanced features and customizations, such as video processing, secure URLs, and transformation options.
 
 8. **Congradulations you should be all set up**
+
+---
+
+[Back to table of contents](#Table-of-contents)
+
+---
+
+### Stripe for this project
+
+1. Creat a [Stripe](https://stripe.com/gb) account.
+2. Once created following Stripes steps click developer at the top.
+3. Click API Keys and coppy API keys (Public and Secret) into the env file or on heroku if deployed there:
+
+| Key Name          | Key Value      |
+| :---------------: | :------------: |
+| STRIPE_PUBLIC_KEY | API_Public_Key |
+| STRIPE_SECRET_KEY | API_Secret_Key |
+
+4. Next set up a webhook on stripe and copy its secrect key (Signing secret) to do this Follow step 2 and then hit webhook this time.
+| Key Name          | Key Value      |
+| :---------------: | :------------: |
+| STRIPE_WH_SECRET | WH_Signing_Secret |
 
 ---
 
