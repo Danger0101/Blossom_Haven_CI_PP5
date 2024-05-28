@@ -410,7 +410,7 @@ If have the £££ look into paid marketing stradegies to get a broader reach lo
 
 - The secondary more visual only social media marketing.
 
-![Instagram Screenshot](./media/pages)
+![Instagram Screenshot](./media/pages/socials/insta-page.png)
 
 ---
 
@@ -432,15 +432,15 @@ If have the £££ look into paid marketing stradegies to get a broader reach lo
 
 **400**
 
-![400 html error](./media/pages/errors)
+![400 html error](./media/pages/errors/400-page.png)
 
 **403**
 
-![403 html error](./media/pages/errors)
+![403 html error](./media/pages/errors/403-page.png)
 
 **404**
 
-![404 html error](./media/pages/errors)
+![404 html error](./media/pages/errors/404-page.png)
 
 **500**
 
