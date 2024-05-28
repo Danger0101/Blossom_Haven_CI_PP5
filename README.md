@@ -452,47 +452,47 @@ If have the £££ look into paid marketing stradegies to get a broader reach lo
 
 | Login                  |                                 |
 | :--------------------: | :-----------------------------: |
-| ![Admin login image](./media/pages) | ![Admin site logged in image](./media/pages) |
+| ![Admin login image](./media/pages/admin/admin-login.png) | ![Admin site logged in image](./media/pages/admin/admin-logged-in.png) |
 
 | Groups                  |                                 |
 | :---------------------: | :-----------------------------: |
-| ![Admin Groups Main](./media/pages) | ![Admin Groups Sub](./media/pages) |
+| ![Admin Groups Main](./media/pages/admin/admin-groups-main.png) | ![Admin Groups Sub](./media/pages/admin/admin-groups-sub.png) |
 
 | Users                  |                                 |
 | :--------------------: | :-----------------------------: |
-| ![Admin Users Main](./media/pages) | ![Admin Users Sub](./media/pages) |
+| ![Admin Users Main](./media/pages/admin/admin-users-main.png) | ![Admin Users Sub](./media/pages/admin/admin-users-sub.png) |
 
 | Orders                 |                                 |
 | :--------------------: | :-----------------------------: |
-| ![Admin Order Main](./media/pages) | ![Admin Order Sub](./media/pages) |
+| ![Admin Order Main](./media/pages/admin/admin-orders-main.png) | ![Admin Order Sub](./media/pages/admin/admin-orders-sub.png) |
 
 | Inventory              |                                 |
 | :--------------------: | :-----------------------------: |
-| ![Admin Inventory Main](./media/pages) | ![Admin Inventory Sub](./media/pages) |
+| ![Admin Inventory Main](./media/pages/admin/admin-inv-main.png) | ![Admin Inventory Sub](./media/pages/admin/admin-inv-sub.png) |
 
 | Categories             |                                 |
 | :--------------------: | :-----------------------------: |
-| ![Admin Categories Main](./media/pages) | ![Admin Categories Sub](./media/pages) |
+| ![Admin Categories Main](./media/pages/admin/admin-cat-main.png) | ![Admin Categories Sub](./media/pages/admin/admin-cat-sub.png) |
 
 | Products               |                                 |
 | :--------------------: | :-----------------------------: |
-| ![Admin Products Main](./media/pages) | ![Admin Products Sub](./media/pages) |
+| ![Admin Products Main](./media/pages/admin/admin-products-main.png) | ![Admin Products Sub](./media/pages/admin/admin-products-sub.png) |
 
 | Reviews                |                                 |
 | :--------------------: | :-----------------------------: |
-| ![Admin Reviews Main](./media/pages) | ![Admin Reviews Sub](./media/pages) |
+| ![Admin Reviews Main](./media/pages/admin/admin-reviews-main.png) | ![Admin Reviews Sub](./media/pages/admin/admin-reviews-sub.png) |
 
 | Social accounts        |                                 |
 | :--------------------: | :-----------------------------: |
-| ![Admin Social Account Main](./media/pages) | ![Admin Social  Account Sub](./media/pages) |
+| ![Admin Social Account Main](./media/pages/admin/admin-soc-acct-main.png) | ![Admin Social  Account Sub](./media/pages/admin/admin-soc-app-sub.png) |
 
 | Social app tokens      |                                 |
 | :--------------------: | :-----------------------------: |
-| ![Admin Social Token Main](./media/pages) | ![Admin Social Token Sub](./media/pages) |
+| ![Admin Social Token Main](./media/pages/admin/admin-soc-app-token-main.png) | ![Admin Social Token Sub](./media/pages/admin/admin-soc-app-token-sub.png) |
 
 | Social applications    |                                 |
 | :--------------------: | :-----------------------------: |
-| ![Admin Social App Main](./media/pages) | ![Admin Social App Sub](./media/pages) |
+| ![Admin Social App Main](./media/pages/admin/admin-soc-app-main.png) | ![Admin Social App Sub](./media/pages/admin/admin-soc-app-sub.png) |
 
 ---
 
