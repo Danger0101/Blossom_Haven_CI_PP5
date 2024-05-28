@@ -553,18 +553,7 @@ The site allows users:
 | Admin Action send order cancled                  |   Yes   | Email Recieved                     |
 | Reviews functionality working as intended        |   Yes   |                                    |
 
-### Automated Testing Scripts
-
-- Must use local Django database for the django tests
-
-|             Script             | Passed? |  Other information  |
-| :----------------------------: | :-----: | :-----------------: |
-|  |  |  |
-
-
-| Script | Terminal line |
-| :----: | :-----------: |
-|  |  |
+---
 
 ### Bugs & Issues Encountered
 
