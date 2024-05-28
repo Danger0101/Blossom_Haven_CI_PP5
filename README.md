@@ -246,7 +246,7 @@ If have the £££ look into paid marketing stradegies to get a broader reach lo
 
 ### Navbar
 
-- 
+- Allows users to navigate the site
 
 ![Navbar Desktop](./media/pages/nav/desktop-nav.png)
 
@@ -635,10 +635,15 @@ If have the £££ look into paid marketing stradegies to get a broader reach lo
 
 ### Bugs & Issues Encountered
 
-| Bugs/Issues Encountered | How problem was fixed or ammended | Fixed? |
-| ----------------------- | :-------------------------------: | :----: |
-|  |  |  |
-
+| Bugs/Issues Encountered link                                                                           | More about the issue                                   | Fixed? |
+| :----------------------------------------------------------------------------------------------------: | :----------------------------------------------------: | :----: |
+| [Issues loading css from file](https://github.com/Danger0101/Blossom_Haven_CI_PP5/issues/20)           | Ended up being a issue in settings.py                  | Yes    |
+| [Stock going negative](https://github.com/Danger0101/Blossom_Haven_CI_PP5/issues/35)                   | added checks to any where stock can be effected        | Yes    |
+| [Ratings not showing](https://github.com/Danger0101/Blossom_Haven_CI_PP5/issues/42)                    | Users could set 0 rating leading to no ratings showing | Yes    |
+| [Sort by ratings](https://github.com/Danger0101/Blossom_Haven_CI_PP5/issues/43)                        | Ratings had caused pages not to load                   | Yes    |
+| [Sort by ratings](https://github.com/Danger0101/Blossom_Haven_CI_PP5/issues/43)                        | No Rating shows before ratings in high to low          | No     |
+| [Webhook Issue](https://github.com/Danger0101/Blossom_Haven_CI_PP5/issues/45)                          | Missing env varriable                                  | Yes    |
+| [Webhook payment_intent.succeeded Issue](https://github.com/Danger0101/Blossom_Haven_CI_PP5/issues/45) | Missing env varriable                                  | Yes    |
 
 ---
 
@@ -1229,6 +1234,11 @@ Used Heroku to deploy the website. You can [Visit Live Site by clicking here](ht
 
 ## Future feature ideas
 
-| Feature Ideas   | Why Not Implimented               |
-| :-------------: | :-------------------------------: |
-| Cuppons/voucher | Time and it wasn't needed for MVP |
+| Feature Ideas            | Why Not Implimented                                                            |
+| :----------------------: | :----------------------------------------------------------------------------: |
+| Cuppons/voucher          | Time and it wasn't needed for MVP                                              |
+| Blog page                | Decided at time of writing marketing plan                                      |
+| Further bug squashing    | Time left till project is due                                                  |
+| Better product rendering | Time to complete and needs to be re thought also couldn't find a good CDN free |
+| Custom Domain            | Cost                                                                           |
+| Rebranding               | Noticed it to late but many Blossom Havens Exist                               |
