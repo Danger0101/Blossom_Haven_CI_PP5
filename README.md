@@ -1251,3 +1251,4 @@ Used Heroku to deploy the website. You can [Visit Live Site by clicking here](ht
 | Better product rendering | Time to complete and needs to be re thought also couldn't find a good CDN free |
 | Custom Domain            | Cost                                                                           |
 | Rebranding               | Noticed it to late but many Blossom Havens Exist                               |
+| Figure out webhook issue | Was unable to debug it in time for submission alternative email method provided leaving webhook in submission as its still mostly working just payment_intent.succeeded keeps giving 500 code all others are working correctly with 200 code |
