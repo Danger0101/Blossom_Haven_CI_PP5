@@ -35,7 +35,6 @@ The site allows users:
 |               **[Testing](#testing)**                |
 | :--------------------------------------------------: |
 | [Manual Testing](#manual-testing)                    |
-| [Automated Testing](#automated-testing-scripts)      |
 | [Bugs & Issues Encounterd](#bugs--issues-encountered)|
 
 | **[Validation Testing](#validation-testing)** | 
@@ -690,11 +689,28 @@ All Scripts checked with [PEP8 Code institute](https://pep8ci.herokuapp.com/)
 
 ### HTML
 
-- checked all non logged in pages as html urls and logged in pages as raw html with [W3 HTML Validator](https://validator.w3.org/) on all pages with no errors or warnings.
+- checked all non logged in pages as html urls and logged in pages as raw html with [W3 HTML Validator](https://validator.w3.org/) on all custom pages with no errors or warnings. Django allauth and a few cripsy forms have some errors.
 
-**Index**
-
-![Index HTML w3 Validation Image](./staticfiles/images/html_checks/index_html_check.png)
+| Page | Image |
+| :--: | :---: |
+| Home | ![Home page html check](./media/html-check/home-html-check.png) |
+| Products list | ![All products](./media/html-check/products-html-check.png) |
+| Product Details | ![Product Details](./media/html-check/products-details-html-check.png) |
+| Cart | ![Cart](./media/html-check/cart-html-check.png) |
+| Checkout | ![Checkout](./media/html-check/checkout-html-check.png) |
+| Order view | ![Order View](./media/html-check/checkout-order-success-html-check.png) |
+| Profiles | ![Profiles](./media/html-check/profiles-html-check.png) |
+| Reviews | ![Reviews](./media/html-check/reviews-html-check.png) |
+| Django-allauth Register | ![Django-allauth Register](./media/html-check/django-all-auth-register-html-check.png) |
+| Django-allauth Login | ![Django-allauth Login](./media/html-check/django-all-auth-login-html-check.png) |
+| Django-allauth Logout | ![Django-allauth Logout](./media/html-check) |
+| Django-allauth Change Password | ![Django-allauth Change Password](./media/html-check/django-all-auth-change-password-html-check.png) |
+| Django-allauth Reset Password | ![Django-allauth Reset Password](./media/html-check/django-all-auth-pass-reset-html-check.png) |
+| Add Product | ![Add Product](./media/html-check/products-add-html-check.png) |
+| Edit Product | ![Edit Product](./media/html-check/products-edit-html-check.png) |
+| Add Review | ![Add Review](./media/html-check) |
+| Edit Review | ![Edit Review](./media/html-check) |
+|  | ![](./media/html-check) |
 
 ### Contrast
 
