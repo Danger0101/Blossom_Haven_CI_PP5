@@ -61,7 +61,7 @@
                         <div class="card h-100 border-0">
                             {% if product.image %}
                             <a href="{% url 'product_detail' product.id %}">
-                                <img class="card-img-top img-fluid product-image" data-src="{{ product.image.url }}" alt="{{ product.name }}">
+                                <img class="card-img-top img-fluid product-image" src="https://res.cloudinary.com/dcfn1wr8r/image/upload/f_auto,q_auto/ebyvaxpq9apybsagk0xu" data-src="{{ product.image.url }}" alt="{{ product.name }}">
                             </a>
                             {% else %}
                             <a href="{% url 'product_detail' product.id %}">
