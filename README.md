@@ -1107,9 +1107,29 @@ Used Heroku to deploy the website. You can [Visit Live Site by clicking here](ht
 
 ## Wireframes
 
-### Landing Page
+**Landing Page**
 
-![Image for admin page wireframe](staticfiles/images/wireframes/landing_page.png)
+![Image for admin page wireframe](./media/wireframes/landing_page.png)
+
+**Product Page**
+
+![Image for admin page wireframe](./media/wireframes/product_list_page.png)
+
+**Product detail Page**
+
+![Image for admin page wireframe](./media/wireframes/product_details_page.png)
+
+**Cart Page**
+
+![Image for admin page wireframe](./media/wireframes/cart_page.png)
+
+**Checkout Page**
+
+![Image for admin page wireframe](./media/wireframes/checkout_page.png)
+
+**Reviews Page**
+
+![Image for admin page wireframe](./media/wireframes/reviews_page.png)
 
 ## Credits
 
