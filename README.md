@@ -47,8 +47,13 @@ The site allows users:
 
 | **[Lighthouse](#Lighthouse)** |
 | :---------------------------: |
-|  |
-
+| [Index LH](#Index-LH) |
+| [Products LH](#Products-LH) |
+| [Reviews LH](#Reviews-LH) |
+| [Cart LH](#Cart-LH) |
+| [Checkout LH](#Checkout-LH) |
+| [Profiles LH](#Profiles-LH) |
+| [Django Alltuh LH](#Django-Alltuh-LH) |
 
 |    **[Setup](#setup)**      |
 | :-------------------------: |
@@ -736,7 +741,7 @@ All Scripts checked with [PEP8 Code institute](https://pep8ci.herokuapp.com/)
 | :---------------------------: | :--------------------------: |
 | ![Screencap index lighthouse desktop](./media/lighthouse/home/home-lh-desktop.png) | ![Screencap index lighthouse mobile](./media/lighthouse/home/home-lh-mobile.png) |
 
-### Products
+### Products LH
 
 **Product Add LH**
 
@@ -762,7 +767,7 @@ All Scripts checked with [PEP8 Code institute](https://pep8ci.herokuapp.com/)
 | :---------------------------: | :--------------------------: |
 | ![Screencap product details lighthouse desktop](./media/lighthouse/products/products-details-lh-desktop.png) | ![Screencap product details lighthouse mobile](./media/lighthouse/products/products-details-lh-mobile.png) |
 
-### Reviews
+### Reviews LH
 
 **Product Reviews LH**
 
@@ -788,17 +793,49 @@ All Scripts checked with [PEP8 Code institute](https://pep8ci.herokuapp.com/)
 | :---------------------------: | :--------------------------: |
 | ![Screencap cart lighthouse desktop](./media/lighthouse/cart/cart-lh-desktop.png) | ![Screencap cart lighthouse mobile](./media/lighthouse/cart/cart-lh-mobile.png) |
 
-### Checkout
+### Checkout LH
 
 | **Chrome lighthouse desktop** | **Chrome mobile lighthouse** |
 | :---------------------------: | :--------------------------: |
 | ![Screencap checkout lighthouse desktop](./media/lighthouse/checkout/checkout-lh-desktop.png) | ![Screencap checkout lighthouse mobile](./media/lighthouse/checkout/checkout-lh-mobile.png) |
 
-### Profiles
+### Profiles LH
 
 | **Chrome lighthouse desktop** | **Chrome mobile lighthouse** |
 | :---------------------------: | :--------------------------: |
 | ![Screencap profiles lighthouse desktop](./media/lighthouse/profiles/profile-lh-desktop.png) | ![Screencap profiles lighthouse mobile](./media/lighthouse/profiles/profile-lh-mobile.png) |
+
+### Django Alltuh LH
+
+**Login**
+
+| **Chrome lighthouse desktop** | **Chrome mobile lighthouse** |
+| :---------------------------: | :--------------------------: |
+| ![Screencap profiles lighthouse desktop](./media/lighthouse/allauth/login-lh-desktop.png) | ![Screencap profiles lighthouse mobile](./media/lighthouse/allauth/login-lh-mobile.png) |
+
+**Logout**
+
+| **Chrome lighthouse desktop** | **Chrome mobile lighthouse** |
+| :---------------------------: | :--------------------------: |
+| ![Screencap profiles lighthouse desktop](./media/lighthouse/allauth/logout-lh-desktop.png) | ![Screencap profiles lighthouse mobile](./media/lighthouse/allauth/logout-lh-mobile.png) |
+
+**Register**
+
+| **Chrome lighthouse desktop** | **Chrome mobile lighthouse** |
+| :---------------------------: | :--------------------------: |
+| ![Screencap profiles lighthouse desktop](./media/lighthouse/allauth/register-lh-desktop.png) | ![Screencap profiles lighthouse mobile](./media/lighthouse/allauth/register-lh-mobile.png) |
+
+**Change Password**
+
+| **Chrome lighthouse desktop** | **Chrome mobile lighthouse** |
+| :---------------------------: | :--------------------------: |
+| ![Screencap profiles lighthouse desktop](./media/lighthouse/allauth/change-pass-lh-desktop.png) | ![Screencap profiles lighthouse mobile](./media/lighthouse/allauth/change-pass-lh-mobile.png) |
+
+**Forgot Password**
+
+| **Chrome lighthouse desktop** | **Chrome mobile lighthouse** |
+| :---------------------------: | :--------------------------: |
+| ![Screencap profiles lighthouse desktop](./media/lighthouse/allauth/forgot-pass-lh-desktop.png) | ![Screencap profiles lighthouse mobile](./media/lighthouse/allauth/forgot-pass-lh-mobile.png) |
 
 ---
 
